@@ -1,0 +1,91 @@
+ <import src="/assets/libs/zanui/loadmore/index.wxml" />
+
+ <view class='imtop'>
+  <image class="lisjobimg" mode="widthFix" src='https://lg-jvaq236y-1255064220.cos.ap-shanghai.myqcloud.com/JobListBanner.png'></image>
+  <view class='sousuyexy'>
+    <zan-search
+        placeholder="搜索公司/职位"
+        inputStyle="height: 68rpx; border-radius: 100rpx;"
+        keyword="{{ inputValue }}"
+        bindsearch="searchDone"
+        bindchange="searchChange"
+        bindcancel="handleCancel"
+    />
+  </view>
+</view>
+
+<!-- 这里是筛选tab -->
+<view id="swiper-tab">
+    <view class="swiper-tab">
+      <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="tabNav">{{YueXin}}
+        <i></i>
+      </view>
+      <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="tabNav">{{XueLi}}
+        <i></i>
+      </view>
+      <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="tabNav">{{ZhuSu}}
+        <i></i>
+      </view>
+    </view>
+    <swiper current="{{currentTab}}" duration="1000" class="swiper-item" style='display:{{displays}}' bindchange="Cnagetabfun">
+      <swiper-item>
+          <view class="location_bottom" hidden="">
+            <view class="{{YueXin_num == 1?'add_citying':'add_city'}} leftonetab" data-num="1" bindtap="clickYueXinNum" data-name="3000以上">3000以上</view>
+            <view class="{{YueXin_num == 2?'add_citying':'add_city'}} leftonetab" data-num="2" bindtap="clickYueXinNum" data-name="4000以上">4000以上</view>
+            <view class="{{YueXin_num == 3?'add_citying':'add_city'}} leftonetab" data-num="3" bindtap="clickYueXinNum" data-name="5000以上">5000以上</view>
+            <view class="{{YueXin_num == 4?'add_citying':'add_city'}} leftonetab" data-num="4" bindtap="clickYueXinNum" data-name="6000以上">6000以上</view>
+            <view class="{{YueXin_num == 5?'add_citying':'add_city'}} leftonetab" data-num="5" bindtap="clickYueXinNum" data-name="7000以上">7000以上</view>
+            <view class="{{YueXin_num == 6?'add_citying':'add_city'}} leftonetab" data-num="6" bindtap="clickYueXinNum" data-name="8000以上">8000以上</view>
+            <view class="{{YueXin_num == 7?'add_citying':'add_city'}} leftonetab" data-num="7" bindtap="clickYueXinNum" data-name="9000以上">9000以上</view>
+            <view class="{{YueXin_num == 8?'add_citying':'add_city'}} leftonetab" data-num="8" bindtap="clickYueXinNum" data-name="10000以上">10000以上</view>
+          </view>
+        </swiper-item>
+        <swiper-item>
+          <view class="location_bottom" hidden="">
+            <view class="{{XueLi_num == 1?'add_citying':'add_city'}}" data-num="1" bindtap="clickXueLiNum" data-name="无要求">无要求</view>
+            <view class="{{XueLi_num == 2?'add_citying':'add_city'}}" data-num="2" bindtap="clickXueLiNum" data-name="小学">小学</view>
+            <view class="{{XueLi_num == 3?'add_citying':'add_city'}}" data-num="3" bindtap="clickXueLiNum" data-name="初中">初中</view>
+            <view class="{{XueLi_num == 4?'add_citying':'add_city'}}" data-num="4" bindtap="clickXueLiNum" data-name="高中">高中</view>
+            <view class="{{XueLi_num == 5?'add_citying':'add_city'}}" data-num="5" bindtap="clickXueLiNum" data-name="大专">大专</view>
+            <view class="{{XueLi_num == 6?'add_citying':'add_city'}}" data-num="6" bindtap="clickXueLiNum" data-name="本科">本科</view>
+            <view class="{{XueLi_num == 7?'add_citying':'add_city'}}" data-num="7" bindtap="clickXueLiNum" data-name="研究生及以上">研究生及以上</view>
+          </view>
+        </swiper-item>
+        <swiper-item>
+          <view class="location_bottom" hidden="">
+            <view class="{{ZhuSu_num == 0?'add_citying':'add_city'}} rightonetab" data-num="0" bindtap="clickZhuSuNum" data-name="住宿无要求">住宿无要求</view>
+            <view class="{{ZhuSu_num == 1?'add_citying':'add_city'}} rightonetab" data-num="1" bindtap="clickZhuSuNum" data-name="不提供住宿">不提供住宿</view>
+            <view class="{{ZhuSu_num == 2?'add_citying':'add_city'}} rightonetab" data-num="2" bindtap="clickZhuSuNum" data-name="提供住宿">提供住宿</view>
+            <view class="{{ZhuSu_num == 3?'add_citying':'add_city'}} rightonetab" data-num="3" bindtap="clickZhuSuNum" data-name="提供夫妻房">提供夫妻房</view>
+          </view>
+        </swiper-item>
+    </swiper>
+  </view>
+
+<view class="swiper-beijing topbjin" bindtap="hideNav" style='display:{{displays}}'></view>
+<view class="swiper-beijing" bindtap="hideNav" style='display:{{displays}}'></view>
+
+
+<!-- 职位列表 start -->
+<view class='jobs_list'  style="margin-top: 18rpx;">
+  <navigator url="/page/zh_Jobs/ShowOneJob?id={{ item.Id }}" class='onejobs_c' wx:for="{{ comjob }}" wx:key="key">
+    <zan-row>
+      <zan-col col="18" col-class="custom-zan-col">
+        <text class='j_name'>{{item.name}}</text>
+        <text class='j_cont'>{{item.zhusuname}} | {{item.Safename}} | {{item.Educationname}}</text>
+        <text class='j_com'>{{item.recruitcompany.name}}</text>
+      </zan-col>
+      <zan-col col="6" col-class="custom-zan-col">
+        <text class='j_pric'>{{item.goldtext}}</text>
+        <text class='j_qita'>{{item.XinZhiname}}</text>
+      </zan-col>
+    </zan-row>
+  </navigator>
+</view>
+<!-- 职位列表 end -->
+
+  <!-- S 加载更多 -->
+  <template is="zan-loadmore" data="{{ loading: loading }}" />
+  <template is="zan-loadmore" data="{{ nodata: nodata }}" />
+  <template is="zan-loadmore" data="{{ nomore: nomore }}" />
+  <!-- E 加载更多 -->

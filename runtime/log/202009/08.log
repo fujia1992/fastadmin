@@ -1,0 +1,315 @@
+---------------------------------------------------------------
+[ 2020-09-08T08:20:23+08:00 ] 127.0.0.1 POST admin.fastadmin.com/api/exams/useranswer
+[运行时间：0.250654s] [吞吐率：3.99req/s] [内存消耗：4,379.31kb] [文件加载：147]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000130s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003757s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000045s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000809s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'exams',
+    2 => 'useranswer',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1599269020%7C2c06b225d7cbf49853aa827659bdd43d; uid=2; token=1d4112f9-1272-4244-b4c6-f22e19a862bf',
+  'referer' => 'http://admin.fastadmin.com/api.html',
+  'connection' => 'close',
+  'origin' => 'http://admin.fastadmin.com',
+  'content-length' => '520',
+  'content-type' => 'multipart/form-data; boundary=---------------------------345016083510001437003401489022',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:80.0) Gecko/20100101 Firefox/80.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'answer' => '',
+  'user_id' => '',
+  'questions_id' => '',
+  'exams_id' => '',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001715s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Exams->useranswer[ E:\fastadmin\application\api\controller\Exams.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-08T08:20:30+08:00 ] 127.0.0.1 POST admin.fastadmin.com/api/exams/useranswer
+[运行时间：0.086625s] [吞吐率：11.54req/s] [内存消耗：4,379.35kb] [文件加载：147]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003518s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000031s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000047s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000537s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'exams',
+    2 => 'useranswer',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1599269020%7C2c06b225d7cbf49853aa827659bdd43d; uid=2; token=1d4112f9-1272-4244-b4c6-f22e19a862bf',
+  'referer' => 'http://admin.fastadmin.com/api.html',
+  'connection' => 'close',
+  'origin' => 'http://admin.fastadmin.com',
+  'content-length' => '525',
+  'content-type' => 'multipart/form-data; boundary=---------------------------154815720322325472361785031049',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:80.0) Gecko/20100101 Firefox/80.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'answer' => '',
+  'user_id' => '1',
+  'questions_id' => '27',
+  'exams_id' => '21',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001240s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Exams->useranswer[ E:\fastadmin\application\api\controller\Exams.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-08T08:26:46+08:00 ] 127.0.0.1 POST admin.fastadmin.com/api/exams/useranswer
+[运行时间：0.114086s] [吞吐率：8.77req/s] [内存消耗：4,385.13kb] [文件加载：147]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000035s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003501s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000029s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000044s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000511s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'exams',
+    2 => 'useranswer',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1599269020%7C2c06b225d7cbf49853aa827659bdd43d; uid=2; token=1d4112f9-1272-4244-b4c6-f22e19a862bf',
+  'referer' => 'http://admin.fastadmin.com/api.html',
+  'connection' => 'close',
+  'origin' => 'http://admin.fastadmin.com',
+  'content-length' => '510',
+  'content-type' => 'multipart/form-data; boundary=---------------------------117273213136430454140055918',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:80.0) Gecko/20100101 Firefox/80.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'answer' => '',
+  'user_id' => '1',
+  'questions_id' => '27',
+  'exams_id' => '21',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001225s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Exams->useranswer[ E:\fastadmin\application\api\controller\Exams.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-08T08:27:01+08:00 ] 127.0.0.1 POST admin.fastadmin.com/api/exams/useranswer
+[运行时间：0.256782s] [吞吐率：3.89req/s] [内存消耗：4,408.71kb] [文件加载：147]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003434s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000029s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000044s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000444s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'exams',
+    2 => 'useranswer',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1599269020%7C2c06b225d7cbf49853aa827659bdd43d; uid=2; token=1d4112f9-1272-4244-b4c6-f22e19a862bf',
+  'referer' => 'http://admin.fastadmin.com/api.html',
+  'connection' => 'close',
+  'origin' => 'http://admin.fastadmin.com',
+  'content-length' => '520',
+  'content-type' => 'multipart/form-data; boundary=---------------------------17245713898349123373491266551',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:80.0) Gecko/20100101 Firefox/80.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'answer' => '',
+  'user_id' => '1',
+  'questions_id' => '27',
+  'exams_id' => '22',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001152s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Exams->useranswer[ E:\fastadmin\application\api\controller\Exams.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-08T08:49:29+08:00 ] 127.0.0.1 POST admin.fastadmin.com/api/exams/useranswer
+[运行时间：0.094638s] [吞吐率：10.57req/s] [内存消耗：4,392.08kb] [文件加载：147]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003527s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000045s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000517s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'exams',
+    2 => 'useranswer',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1599269020%7C2c06b225d7cbf49853aa827659bdd43d; uid=2; token=1d4112f9-1272-4244-b4c6-f22e19a862bf',
+  'referer' => 'http://admin.fastadmin.com/api.html',
+  'connection' => 'close',
+  'origin' => 'http://admin.fastadmin.com',
+  'content-length' => '594',
+  'content-type' => 'multipart/form-data; boundary=---------------------------220486514014682753873090765107',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:80.0) Gecko/20100101 Firefox/80.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'answer' => 'for (i = 0; i < cars.length; i++) {      text += cars[i] + "<br>";  }',
+  'user_id' => '1',
+  'questions_id' => '27',
+  'exams_id' => '22',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001252s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Exams->useranswer[ E:\fastadmin\application\api\controller\Exams.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-08T08:49:30+08:00 ] 127.0.0.1 POST admin.fastadmin.com/api/exams/useranswer
+[运行时间：0.088768s] [吞吐率：11.27req/s] [内存消耗：4,392.08kb] [文件加载：147]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003302s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000029s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000044s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000455s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'exams',
+    2 => 'useranswer',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1599269020%7C2c06b225d7cbf49853aa827659bdd43d; uid=2; token=1d4112f9-1272-4244-b4c6-f22e19a862bf',
+  'referer' => 'http://admin.fastadmin.com/api.html',
+  'connection' => 'close',
+  'origin' => 'http://admin.fastadmin.com',
+  'content-length' => '594',
+  'content-type' => 'multipart/form-data; boundary=---------------------------397740288738364812262043221805',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:80.0) Gecko/20100101 Firefox/80.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'answer' => 'for (i = 0; i < cars.length; i++) {      text += cars[i] + "<br>";  }',
+  'user_id' => '1',
+  'questions_id' => '27',
+  'exams_id' => '22',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001204s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Exams->useranswer[ E:\fastadmin\application\api\controller\Exams.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-08T08:50:05+08:00 ] 127.0.0.1 POST admin.fastadmin.com/api/exams/useranswer
+[运行时间：0.178941s] [吞吐率：5.59req/s] [内存消耗：4,408.83kb] [文件加载：147]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003415s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000046s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000430s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'exams',
+    2 => 'useranswer',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1599269020%7C2c06b225d7cbf49853aa827659bdd43d; uid=2; token=1d4112f9-1272-4244-b4c6-f22e19a862bf',
+  'referer' => 'http://admin.fastadmin.com/api.html',
+  'connection' => 'close',
+  'origin' => 'http://admin.fastadmin.com',
+  'content-length' => '584',
+  'content-type' => 'multipart/form-data; boundary=---------------------------9739152915267300981509589419',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:80.0) Gecko/20100101 Firefox/80.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'answer' => 'for (i = 0; i < cars.length; i++) {      text += cars[i] + "<br>";  }',
+  'user_id' => '1',
+  'questions_id' => '27',
+  'exams_id' => '22',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001227s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Exams->useranswer[ E:\fastadmin\application\api\controller\Exams.php ]
+[ info ] [ LOG ] INIT File

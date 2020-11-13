@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../LuckyAdmin/.idea/LuckyAdmin.iml" filepath="$PROJECT_DIR$/../LuckyAdmin/.idea/LuckyAdmin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TRTC/.idea/TRTC.iml" filepath="$PROJECT_DIR$/../TRTC/.idea/TRTC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dami/.idea/dami.iml" filepath="$PROJECT_DIR$/../dami/.idea/dami.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/fastadmin.iml" filepath="$PROJECT_DIR$/.idea/fastadmin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../jitsi-meet/.idea/jitsi-meet.iml" filepath="$PROJECT_DIR$/../jitsi-meet/.idea/jitsi-meet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pros/.idea/pros.iml" filepath="$PROJECT_DIR$/../pros/.idea/pros.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../python/.idea/python.iml" filepath="$PROJECT_DIR$/../python/.idea/python.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../report/.idea/report.iml" filepath="$PROJECT_DIR$/../report/.idea/report.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../we7/.idea/we7.iml" filepath="$PROJECT_DIR$/../we7/.idea/we7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../xiaoyao/.idea/xiaoyao.iml" filepath="$PROJECT_DIR$/../xiaoyao/.idea/xiaoyao.iml" />
+    </modules>
+  </component>
+</project>

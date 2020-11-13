@@ -1,0 +1,177 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Title')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-title" data-rule="required" class="form-control" name="row[title]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Image')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-image" class="form-control" size="50" name="row[image]" type="text">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-image" class="btn btn-danger plupload" data-input-id="c-image" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-image"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-image" class="btn btn-primary fachoose" data-input-id="c-image" data-mimetype="image/*" data-multiple="false"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-image"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-image"></ul>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Keywords')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-keywords" class="form-control" name="row[keywords]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Description')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-description" class="form-control" name="row[description]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Intro')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-intro" data-rule="required" class="form-control" rows="5" name="row[intro]" cols="50"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Content')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-content" data-rule="required" class="form-control editor" rows="5" name="row[content]" cols="50"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Banner')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-banner" class="form-control" size="50" name="row[banner]" type="text">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-banner" class="btn btn-danger plupload" data-input-id="c-banner" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-banner"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-banner" class="btn btn-primary fachoose" data-input-id="c-banner" data-mimetype="image/*" data-multiple="false"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-banner"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-banner"></ul>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Pervotenums')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-pervotenums" data-rule="required" class="form-control" name="row[pervotenums]" type="number" value="5">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Pervotelimit')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-pervotelimit" data-rule="required" class="form-control" name="row[pervotelimit]" type="number" value="1">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Pagesize')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-pagesize" data-rule="required" class="form-control" name="row[pagesize]" type="number" value="0" data-tip="为0表示一页显示全部">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Limitarea')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-limitarea" class="form-control city-picker" name="row[limitarea]" type="hidden" value="">
+            <div class="city-select" id="mcs"></div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Needlogin')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            {:Form::radios('row[needlogin]',[1=>__('Yes'), 0=>__('No')])}
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Onlywechat')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            {:Form::radios('row[onlywechat]',[1=>__('Yes'), 0=>__('No')],0)}
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Diyname')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-diyname" data-rule="required; diyname" class="form-control" name="row[diyname]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Playername')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-playername" data-rule="required" class="form-control" name="row[playername]" type="text" value="选手">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Subjecttpl')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-subjecttpl" class="form-control selectpage" data-source="vote/subject/get_template_list" data-field="name" data-primary-key="name" data-params='{"type":"subject"}' name="row[subjecttpl]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Playertpl')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-playertpl" class="form-control selectpage" data-source="vote/subject/get_template_list" data-field="name" data-primary-key="name" data-params='{"type":"player"}' name="row[playertpl]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Ranktpl')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-ranktpl" class="form-control selectpage" data-source="vote/subject/get_template_list" data-field="name" data-primary-key="name" data-params='{"type":"rank"}' name="row[ranktpl]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Applytpl')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-applytpl" class="form-control selectpage" data-source="vote/subject/get_template_list" data-field="name" data-primary-key="name" data-params='{"type":"apply"}' name="row[applytpl]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Isapply')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            {:Form::radios('row[isapply]',[1=>__('Yes'), 0=>__('No')])}
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Iscomment')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            {:Form::radios('row[iscomment]',[1=>__('Yes'), 0=>__('No')])}
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Begintime')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-begintime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[begintime]" type="text" value="{:date('Y-m-d H:i:s')}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Endtime')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-endtime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[endtime]" type="text" value="{:date('Y-m-d H:i:s',strtotime('+7 days'))}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <div class="radio">
+            {foreach name="statusList" item="vo"}
+            <label for="row[status]-{$key}"><input id="row[status]-{$key}" name="row[status]" type="radio" value="{$key}" {in name="key" value="hidden"}checked{/in} /> {$vo}</label>
+            {/foreach}
+            </div>
+
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

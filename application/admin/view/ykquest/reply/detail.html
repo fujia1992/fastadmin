@@ -1,0 +1,37 @@
+<style>
+    .tbd{width: 80%;margin-left: auto;margin-right: auto}  
+    .tbd .form-group{line-height: 30px}
+</style>
+<div class="tbd">
+    <form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+        <div class="form-group">
+            <div class="col-xs-12 col-md-12">{:__("Title")}：{$info.title}</div>
+        </div>
+        {if condition="$info.option_type eq 0"}
+        <div class="form-group ">
+            {volist name="oplist" id="val"}
+            <div class="col-xs-12 col-md-12">
+                <input type="radio"  name="gender" value="{$val.id}" disabled  {$val.id==$content?"checked":""} />{$val.content}
+            </div>
+            {/volist}
+        </div>
+        {/if}
+        {if condition="$info.option_type eq 3"}
+        <div class="form-group ">
+            <div class="col-xs-12 col-md-12">
+                <textarea class="form-control" disabled>{$content}</textarea>
+            </div> 
+        </div>
+        {/if}
+
+        {if condition="$info.option_type eq 1"}
+        <div class="form-group ">
+            {volist name="oplist" id="val"} 
+            <div class="col-xs-12 col-md-12">
+                <input type="checkbox" value="{$val.id}" {:in_array($val.id,$content)?"checked":""}> {$val.content}
+            </div> 
+            {/volist}
+        </div>
+        {/if}
+    </form>
+</div>

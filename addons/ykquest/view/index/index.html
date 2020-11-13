@@ -1,0 +1,39 @@
+{include file="common/header"}
+<div class="wjlist">
+    <div class="wjlist-content">
+        {if condition="count($list)>0"}
+        {volist name="list" id="val"}
+        <div class="wjlist-row">
+            <a href="{:addon_url('ykquest/index/detail',array('id'=>$val.id))}">
+                <div class="wjlist-row-cont">
+                    <div class="wjlist-row-title f14">{$val.name}</div>
+                    <div class="wjlist-row-top"></div>
+                    <div class="wjlist-row-start f12">
+                        开始： {$val.starttime|date='Y-m-d',###}
+                    </div>
+
+                </div>
+            </a>
+        </div>
+
+        {/volist}
+        {else}
+        <div class="anIser">
+            <div>
+                <image src="__ADDON__/image/null.png">
+            </div>
+            <div>
+                暂无问卷
+            </div>
+        </div>
+        {/if}
+    </div>
+    <div class="wjlist-end">
+    </div>
+    <div class="wjlist-page" id="page">
+        {$page}
+    </div>
+    <div class="wjlist-end">
+    </div>
+</div>
+{include file="common/footer"}

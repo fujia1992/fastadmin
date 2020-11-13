@@ -1,0 +1,130 @@
+<view class="container">
+  <view class="header">
+    <view class="avatar">
+      <image bindtap="uploadAvatar" src='{{ userInfo.avatar }}'></image>
+    </view>
+    
+    <view wx:if="{{userInfo.mobile=='NoLoginData'}}">
+      <view class="account">
+        <view class="zan-font-16">
+          {{ userInfo.nickname }}
+        </view>
+       <button class="zan-btn zan-btn--small btn-auth zan-btn--blue" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">点击登录
+        </button>
+    </view>
+  </view>
+  <navigator url="profile" wx:else>
+      <view class="account">
+        <view class="zan-font-16">
+          {{ userInfo.nickname }}
+        </view>
+        <view class="zan-font-12">{{ userInfo.bio ? userInfo.bio : '写点什么介绍下自己吧!' }}</view>
+      </view>
+    </navigator>
+
+  </view>
+
+  <zan-panel class="panel-z">
+    <zan-row row-class="my-statistics">
+      <zan-col col="8" col-class="zan-col">
+        <view bindtap="" data-type="balance">
+          <view class="nums">角色</view>
+          <view class="placeholder">{{ userInfo.group_id==2 ? "企业主" : "求职者" }}</view>
+        </view>
+      </zan-col>
+      <zan-col col="8" col-class="zan-col">
+        <view bindtap="" data-type="level">
+          <view class="nums">
+          <text wx:if="{{userInfo.group_id==2}}">{{com_name==''?'未关联\n企业':com_name}}</text>
+            <text wx:else>{{ JobfairCount==0 ? "未参加过" : JobfairCount+"次报名" }}\n招聘会</text>
+          </view>
+        </view>
+      </zan-col>
+      <zan-col col="8" col-class="zan-col">
+        <view bindtap="" data-type="score">
+        <block wx:if="{{userInfo.group_id==2}}">
+          <view class="nums">{{jobs_num}}份</view>
+          <view class="placeholder">职位</view>
+        </block>
+        <block wx:else>
+          <view class="nums">简历</view>
+          <view class="placeholder">{{ resum_num==0 ? "未生成" : "已生成" }}</view>
+        </block>
+        </view>
+      </zan-col>
+    </zan-row>
+  </zan-panel>
+
+  <zan-panel class="panel-z my-menu" wx:if="{{userInfo.group_id==2}}">
+    <zan-cell-group>
+       <zan-cell title="企业信息维护" is-link linkType="navigateTo" url="../zh_company/MyCompany">
+         <view slot="icon" class="fa-stack fa-lg">
+          <i class="fa fa-square fa-stack-2x icon-green"></i>
+          <i class="fa fa-university fa-stack-1x fa-inverse"></i>
+        </view>
+       </zan-cell>
+       <zan-cell title="职位信息维护" is-link linkType="navigateTo" url="../zh_Jobs/Myjobs">
+         <view slot="icon" class="fa-stack fa-lg">
+          <i class="fa fa-square fa-stack-2x icon-blue"></i>
+          <i class="fa fa-archive fa-stack-1x fa-inverse"></i>
+        </view>
+       </zan-cell>
+<!--
+       <zan-cell title="推荐人员查询" is-link url="profile">
+         <view slot="icon" class="fa-stack fa-lg">
+          <i class="fa fa-square fa-stack-2x" style='color: #de3639'></i>
+          <i class="fa fa-universal-access fa-stack-1x fa-inverse"></i>
+        </view>
+       </zan-cell>
+-->
+    </zan-cell-group>
+  </zan-panel>
+
+  <zan-panel class="panel-z my-menu" wx:else>
+      <zan-cell-group>
+        <zan-cell title="个人信息维护" is-link url="profile">
+          <view slot="icon" class="fa-stack fa-lg">
+            <i class="fa fa-square fa-stack-2x icon-green"></i>
+            <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+          </view>
+        </zan-cell>
+        <zan-cell title="简历信息维护" is-link linkType="navigateTo" url="../zh_resume/MyResunme">
+          <view slot="icon" class="fa-stack fa-lg">
+            <i class="fa fa-square fa-stack-2x icon-blue"></i>
+            <i class="fa fa-vcard fa-stack-1x fa-inverse"></i>
+          </view>
+        </zan-cell>
+       <zan-cell title="简历投递历史" is-link url="profile" url="resumedelivery">
+          <view slot="icon" class="fa-stack fa-lg">
+            <i class="fa fa-square fa-stack-2x" style='color: #de3639'></i>
+            <i class="fa fa-universal-access fa-stack-1x fa-inverse"></i>
+          </view>
+        </zan-cell>
+        <zan-cell title="劳动力信息收集" is-link url="profile" url="../zh_workforce/Myworkforce">
+          <view slot="icon" class="fa-stack fa-lg">
+            <i class="fa fa-square fa-stack-2x" style='color: #8d14b7'></i>
+            <i class="fa fa-bank fa-stack-1x fa-inverse"></i>
+          </view>
+        </zan-cell>
+
+      </zan-cell-group>
+    </zan-panel>
+
+
+    <zan-panel class="panel-z my-menu">
+    <zan-cell-group>
+      <zan-cell title="角色切换" is-link value="{{ userInfo.group_id==2 ? '我是企业主' : '我是求职者' }}" bindtap="change_js">
+         <view slot="icon" class="fa-stack fa-lg">
+          <i class="fa fa-square fa-stack-2x" style='color: #101010'></i>
+          <i class="fa fa-exchange fa-stack-1x fa-inverse"></i>
+        </view>
+       </zan-cell>
+    </zan-cell-group>
+  </zan-panel>
+</view>
+
+<include src="../zh_other/foot_right.wxml"/>
+
+
+
+<zan-dialog id="zan-dialog-test"></zan-dialog>

@@ -1,0 +1,54 @@
+
+
+<body class="exampindex">
+<div class="cheader">
+    <div class="headerleft">
+        <span>欢迎您，{$username}</span>
+    </div>
+    <div class="headeright">
+        <a href="{:addon_url('kaoshi/user/index')}"><span class="imgicon imgicon_person"></span>个人资料</a>
+    </div>
+</div>
+<div class="cmain">
+    
+    <ul class="examtype_list">
+        <li>
+            <a href="{:addon_url('kaoshi/user_plan/study')}">
+                <span class="imgicon examptype1"></span>
+                <p>在线学习</p>
+            </a>
+        </li>
+        <li>
+            <a href="{:addon_url('kaoshi/user_plan/exam')}">
+                <span class="imgicon examptype2"></span>
+                <p>在线考试</p>
+            </a>
+        </li>
+        <li>
+            <a href="{:addon_url('kaoshi/user_plan/studyhistory')}">
+                <span class="imgicon examptype3"></span>
+                <p>我的学习</p>
+            </a>
+        </li>
+        <li>
+            <a href="{:addon_url('kaoshi/user_plan/examhistory')}">
+                <span class="imgicon examptype4"></span>
+                <p>考试记录</p>
+            </a>
+        </li>
+        <li>
+            <a href="{:addon_url('kaoshi/exams/rank',array('type'=>1))}">
+                <span class="imgicon examptype6"></span>
+                <p>学习排行榜</p>
+            </a>
+        </li>
+        <li>
+            <a href="{:addon_url('kaoshi/exams/rank',array('type'=>0))}">
+                <span class="imgicon examptype5"></span>
+                <p>考试排行榜</p>
+            </a>
+        </li>
+    </ul>
+</div>
+
+</body>

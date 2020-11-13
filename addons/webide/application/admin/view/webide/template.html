@@ -1,0 +1,291 @@
+{switch name=":input('view')"}
+    {//创建文件}
+  {case value="create"}
+    <form>
+        <input type="hidden" name="path" value="{:input('path')}">
+        <input type="hidden" name="type" value="{:input('type')}">
+        <label><span class="icon-pencil"></span> {:__(ucfirst(input('type')))}</label>
+        <input type="text" name="object_name" autofocus="autofocus" autocomplete="off">
+        <button class="btn-left">{:__('Create')}</button>
+        <button class="btn-right" onclick="codiad.modal.unload(); return false;">{:__('Cancel')}</button>
+    </form>
+  {/case}
+    {//重命名文件}
+  {case value="rename"}
+    <form>
+        <input type="hidden" name="path" value="{:input('path')}">
+        <input type="hidden" name="type" value="{:input('type')}">
+        <label><span class="icon-pencil"></span> {:__("Rename")} {:__(ucfirst(input('type')))}</label>
+        <input type="text" name="object_name" autofocus="autofocus" autocomplete="off" value="{:input('short_name')}">
+        <button class="btn-left">{:__("Rename")}</button>
+      <button class="btn-right" onclick="codiad.modal.unload(); return false;">{:__('Cancel')}</button>
+    </form>
+  {/case}
+    {//删除文件}
+  {case value="delete"}
+    <form>
+      <input type="hidden" name="path" value="{:input('path')}">
+      <label>{:__("Are you sure you wish to delete the following:")}</label>
+      <pre>{:input('path')}</pre>
+      <button class="btn-left">{:__("Delete")}</button>
+    <button class="btn-right" onclick="codiad.modal.unload();return false;">{:__('Cancel')}</button>
+    </form>
+  {/case}
+    
+    {//预览文件}
+  {case value="preview"}
+    <form>
+        <label>{:__("Inline Preview")}</label>
+        <div><br><br><img src="{:str_replace('/public','', input('path'))}"><br><br></div>
+        <button class="btn-right" onclick="codiad.modal.unload();return false;">{:__("Close")}</button>
+    </form>
+  {/case}
+    
+    {//覆盖文件}
+  {case value="overwrite"}
+    <form>
+      <input type="hidden" name="path" value="{:input('path')}">
+      <label>{:__("Would you like to overwrite or duplicate the following:")}</label>
+      <pre>{:input('path')}</pre>
+      <select name="or_action">
+          <option value="0">{:__("Overwrite Original")}</option>
+          <option value="1">{:__("Create Duplicate")}</option>
+      </select>
+      <button class="btn-left">{:__("Continue")}</button>
+    <button class="btn-right" onclick="codiad.modal.unload();return false;">{:__('Cancel')}</button>
+    </form>
+  {/case}
+    
+    {//搜索文本}
+  {case value="search"}
+    <form>
+      <!-- <input type="hidden" name="path" value="{:input('path')}"> -->
+      <table class="file-search-table">
+          <tr>
+              <td width="65%">
+                 <label>{:__("Search Files:")}</label>
+                 <input type="text" name="search_string" autofocus="autofocus">
+              </td>
+              <td width="5%">&nbsp;&nbsp;</td>
+              <td>
+                  <label>{:__("In:")}</label>
+                  <input type="text" value="{:input('path')}" name="path">
+              </td>
+          </tr>
+          <tr>
+              <td colspan="3">
+                 <label>{:__("File Type:")}</label>
+                 <input type="text" name="search_file_type" placeholder="{:__('space seperated file types eg: js c php')}">
+              </td>
+          </tr>
+      </table>
+      <pre id="filemanager-search-results"></pre>
+      <div id="filemanager-search-processing"></div>
+      <button class="btn-left">{:__("Search")}</button>
+    <button class="btn-right" onclick="codiad.modal.unload();return false;">{:__('Cancel')}</button>
+    </form>
+  {/case}
+
+    {// 文件上传}
+  {case value="upload"}
+    <form>
+        <label>{:__("Upload Files")} <pre>{:input('path')}</pre></label>
+        <div id="upload-drop-zone">
+            <span id="upload-wrapper">
+                <input id="fileupload" type="file" name="upload[]" data-url="{:url('file', ['action' => 'upload', 'path' => input('path')])}" data-path="{:input('path')}" multiple>
+                <span id="upload-clicker">{:__("Drag Files or Click Here to Upload")}</span>
+            </span>
+            <div id="upload-progress"><div class="bar"></div></div>
+            <div id="upload-complete">{:__("Complete!")}</div>
+        </div>
+        <button onclick="codiad.modal.unload();">{:__("Close Uploader")}</button>
+        <script>
+            codiad.filemanager.initFileUpload();
+        </script>
+    </form>
+  {/case}
+
+    {// 全局设置}
+  {case value="setting"}
+    <div class="settings-view">
+        <div class="config-menu">
+            <label>{:__("Settings")}</label>
+            <div class="panels-components">
+                <ul>
+                    <li name="editor-settings" data-file="{:url('template', ['view' => 'editor'])}" data-name="editor" class="active">
+                        <a><span class="icon-home bigger-icon"></span>{:__("Editor")}</a>
+                    </li>
+                    <li name="system-settings" data-file="{:url('template', ['view' => 'system'])}" data-name="system">
+                        <a><span class="icon-doc-text bigger-icon"></span>{:__("System")}</a>
+                    </li>
+                    <li name="extension-settings" data-file="{:url('template', ['view' => 'extension'])}" data-name="fileext_textmode">
+                        <a><span class="icon-pencil bigger-icon"></span>{:__("Extensions")}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="panels">
+            <div class="panel active" data-file="{:url('template', ['view' => 'editor'])}">
+                {include file="webide/setting_editor" /} 
+            </div>
+        </div>
+    </div>
+    <button class="btn-right" onclick="codiad.settings.saveSetting(); return false;">{:__("Save")}</button>
+    <button class="btn-right" onclick="codiad.modal.unload(); return false;">{:__("Close")}</button>
+  {/case}
+
+    {// iframe}
+  {case value="iframe"}
+    <script>
+        /*
+         *  Storage Event:
+         *  Note: Event fires only if change was made in different window and not in this one
+         *  Details: http://dev.w3.org/html5/webstorage/#dom-localstorage
+         */
+        window.addEventListener('storage', function(e){
+            if (/^codiad/.test(e.key)) {
+                var obj = { key: e.key, oldValue: e.oldValue, newValue: e.newValue };
+                /* Notify listeners */
+                window.parent.amplify.publish('settings.changed', obj);
+            }
+        }, false);
+    </script>
+  {/case}
+    
+    {// 编辑器配置}
+  {case value="editor"}
+        {include file="webide/setting_editor" /} 
+  {/case}
+  {case value="system"}
+        {include file="webide/setting_system" /} 
+  {/case}
+  {case value="extension"}
+        {include file="webide/setting_extension" /} 
+  {/case}
+    
+    {// 是否保存}
+  {case value="confirm"}
+    <label>{:__("Close Unsaved File?")}</label>
+    
+    <pre>{:input('path')}</pre>
+
+    <button class="btn-left" onclick="codiad.active.command.save_and_close('{:input('path')}'); return false;">{:__("Save & Close")}</button>
+    <button class="btn-mid" onclick="codiad.active.command.close_without_save('{:input('path')}'); return false;">{:__("Discard Changes")}</button>
+    <button class="btn-right" onclick="codiad.modal.unload(); return false;">{:__("Cancel")}</button>
+  {/case}
+
+  {case value="confirmAll"}
+    <label>{:__("Close Unsaved Files?")}</label>
+    <button class="btn-left" onclick="codiad.active.command.save_and_close_all(); return false;">{:__("Save & Close")}</button>
+    <button class="btn-mid" onclick="codiad.active.command.close_without_save_all(); return false;">{:__("Discard Changes")}</button>
+    <button class="btn-right" onclick="codiad.modal.unload(); return false;">{:__("Cancel")}</button>
+  {/case}
+
+    {// command 管理}
+  {case value="addCommand"}
+    <form>
+      <label>{:__("Command Name")}</label>
+      <input name="project_name" autofocus="autofocus" autocomplete="off">
+      <label>{:__("Command Content")}</label>
+      <input name="project_path" autofocus="off" autocomplete="off">
+      <button class="btn-left">{:__("Create Command")}</button>
+      <button class="btn-right" onclick="codiad.modal.unload();return false;">{:__("Cancel")}</button>
+    <form>
+  {/case}
+
+  {case value="listCommand"}
+      {php}
+        $commands = (new \addons\webide\service\CProject)->getCommands();
+        $trigger = input('trigger') === 'true' ? 'ondblclick' : 'onclick';
+      {/php}
+      <ul>
+      {foreach name="commands" item="work"}
+        <li>
+          <div class="icon-archive icon"></div>
+          {$work['name']}
+
+          <a title="{:__('Execute Command')}" onclick="codiad.project.execute('{$work['key']}')" class="bigger-icon icon-rocket right" style="padding: 5px;"></a>
+        </li>
+      {/foreach}
+      </ul>
+  {/case}
+
+  {case value="manageCommand"}
+      <label>{:__("Command List")}</label>
+      <div id="project-list">
+      <table width="100%">
+          <tr>
+              <th width="70">{:__("Execute")}</th>
+              <th width="150">{:__("Command Name")}</th>
+              <th width="250">{:__("Command Content")}</th>
+              <th width="70">{:__("Delete")}</th>
+          </tr>
+      </table>
+      <div class="project-wrapper">
+      <table width="100%" style="word-wrap: break-word;word-break: break-all;">
+        {php}
+          $commands = (new \addons\webide\service\CProject)->getCommands();
+        {/php}
+        {foreach name="commands" item="work"}
+          <tr>
+              <td width="70">
+                <a title="{:__('Execute Command')}" onclick="codiad.project.execute('{$work['key']}')" class="bigger-icon icon-rocket"></a>
+              </td>
+              <td width="150">{$work['name']}</td>
+              <td width="250">{$work['path']}</td>
+              <td width="70">
+                {if condition="isset($work['system']) && $work['system']"}
+                  <a onclick="codiad.message.error(i18n('System Command Cannot Be Removed'));" class="icon-block bigger-icon"></a>
+                  {else}
+                  <a onclick="codiad.project.delete('{$work['key']}');" class="icon-cancel-circled bigger-icon"></a>
+                {/if}
+              </td>
+          </tr>
+        {/foreach}
+      </table>
+      </div>
+  {/case}
+
+  {case value="confirmExecute"}
+    {php}
+      $command = (new \addons\webide\service\CProject)->findCommand(input('key'));
+    {/php}
+    <label>{:__("Confrim Execute Command")} ：{$command['name']}? </label>
+    
+    <pre>{$command['path']}</pre>
+
+    <button class="btn-left" onclick="codiad.project.confirmExcute('{:input('key')}'); return false;">{:__("Execute Command")}</button>
+    <button class="btn-right" onclick="codiad.modal.unload(); return false;">{:__("Cancel")}</button>
+  {/case}
+
+  {case value="executeResult"}
+    {php}
+      $command = (new \addons\webide\service\CProject)->execCommand(input('key'));
+    {/php}
+    <label>{$command['name']}</label>
+    <pre>#&gt; {$command['path']}</pre>
+    <pre>{$command['output']}</pre>
+    <button class="btn-right" onclick="codiad.modal.unload(); return false;">{:__("Close")}</button>
+  {/case}
+
+  {case value="searchDialog"}
+    <label>{:__("Find:")}</label>
+    <input type="text" name="find" autofocus="autofocus" autocomplete="off">
+  
+    {if condition="input('type') == 'replace'"}
+    <label>{:__("Replace:")}</label>
+    <input type="text" name="replace">
+    {/if}
+
+    <button class="btn-left" onclick="codiad.editor.search('find');return false;">{:__("Find")}</button>
+    {if condition="input('type') == 'replace'"}
+      <button class="btn-mid" onclick="codiad.editor.search('replace');return false;">{:__("Replace")}</button>
+      <button class="btn-mid" onclick="codiad.editor.search('replaceAll');return false;">{:__("Replace ALL")}</button>
+    {/if}
+    <button class="btn-right" onclick="codiad.modal.unload(); return false;">{:__("Cancel")}</button>
+    <script>
+      $('input[name="find"]').val(codiad.active.getSelectedText());
+    </script>
+  {/case}
+
+{/switch}

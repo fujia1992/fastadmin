@@ -1,0 +1,144 @@
+
+  <view id="swiper-tab">
+    <view class="swiper-tab">
+      <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="tabNav">{{first}}
+        <i></i>
+      </view>
+      <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="tabNav">{{second}}
+        <i></i>
+      </view>
+      <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="tabNav">{{thirds}}
+        <i></i>
+      </view>
+      <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="tabNav">{{fours}}
+        <i></i>
+      </view>
+    </view>
+    <swiper current="{{currentTab}}" duration="1000" class="swiper-item" style='display:{{displays}}'>
+      <swiper-item>
+        <view>
+          <view class='qiehuannier'>
+            <view class="nav bc_white">
+              <view class="{{selected?'red':'default'}}" bindtap="selected">系统提醒</view>
+              <view class="{{selected1?'red':'default'}}" bindtap="selected1">优惠活动</view>
+              <view class="{{selected2?'red':'default'}}" bindtap="selected2">优惠活动</view>
+            </view>
+            <view id="rights">
+              <view class="{{selected?'show':'hidden'}}">
+                <view class="{{_sum == 1?'add_adress':'add_city'}}" data-num="1" bindtap="clickSum" data-name="北京">北京</view>
+                <view class="{{_sum == 2?'add_adress':'add_city'}}" data-num="2" bindtap="clickSum" data-name="上海">上海</view>
+                <view class="{{_sum == 3?'add_adress':'add_city'}}" data-num="3" bindtap="clickSum" data-name="上海">上海</view>
+                <view class="{{_sum == 4?'add_adress':'add_city'}}" data-num="4" bindtap="clickSum" data-name="上海">上海</view>
+                <view class="{{_sum == 5?'add_adress':'add_city'}}" data-num="5" bindtap="clickSum" data-name="上海">上海</view>
+                <view class="{{_sum == 6?'add_adress':'add_city'}}" data-num="6" bindtap="clickSum" data-name="上海">上海</view>
+              </view>
+              <view class="{{selected1?'show':'hidden'}}">
+                <view class="{{_mum == 1?'add_adre':'add_city'}}" data-num="1" bindtap="clickMum" data-name="北京">北京</view>
+                <view class="{{_mum == 2?'add_adre':'add_city'}}" data-num="2" bindtap="clickMum" data-name="上海">上海</view>
+                <view class="{{_mum == 3?'add_adre':'add_city'}}" data-num="3" bindtap="clickMum" data-name="上海">上海</view>
+                <view class="{{_mum == 4?'add_adre':'add_city'}}" data-num="4" bindtap="clickMum" data-name="上海">上海</view>
+              </view>
+              <view class="{{selected2?'show':'hidden'}}">
+                <view class="{{_cum == 1?'add_ad':'add_city'}}" data-num="1" bindtap="clickCum" data-name="北京">北京</view>
+                <view class="{{_cum == 2?'add_ad':'add_city'}}" data-num="2" bindtap="clickCum" data-name="上海">上海</view>
+                <view class="{{_cum == 3?'add_ad':'add_city'}}" data-num="3" bindtap="clickCum" data-name="上海">上海</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class="location_bottom" hidden="">
+          <view class="{{_num == 1?'add_citying':'add_city'}}" data-num="1" bindtap="clickNum" data-name="北京">北京</view>
+          <view class="{{_num == 2?'add_citying':'add_city'}}" data-num="2" bindtap="clickNum" data-name="上海">上海</view>
+          <view class="{{_num == 3?'add_citying':'add_city'}}" data-num="3" bindtap="clickNum" data-name="上海">上海</view>
+          <view class="{{_num == 4?'add_citying':'add_city'}}" data-num="4" bindtap="clickNum" data-name="上海">上海</view>
+          <view class="{{_num == 5?'add_citying':'add_city'}}" data-num="5" bindtap="clickNum" data-name="上海">上海</view>
+          <view class="{{_num == 6?'add_citying':'add_city'}}" data-num="6" bindtap="clickNum" data-name="上海">上海</view>
+          <view class="{{_num == 7?'add_citying':'add_city'}}" data-num="7" bindtap="clickNum" data-name="上海">上海</view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class="location_bottom" hidden="">
+          <view class="{{_res == 1?'add_House':'add_city'}}" data-num="1" bindtap="clickHouse" data-name="北京">北京</view>
+          <view class="{{_res == 2?'add_House':'add_city'}}" data-num="2" bindtap="clickHouse" data-name="北京">上海</view>
+          <view class="{{_res == 3?'add_House':'add_city'}}" data-num="3" bindtap="clickHouse" data-name="北京">上海</view>
+          <view class="{{_res == 4?'add_House':'add_city'}}" data-num="4" bindtap="clickHouse" data-name="北京">上海</view>
+          <view class="{{_res == 5?'add_House':'add_city'}}" data-num="5" bindtap="clickHouse" data-name="上海">上海</view>
+          <view class="{{_res == 6?'add_House':'add_city'}}" data-num="6" bindtap="clickHouse" data-name="北京">上海</view>
+          <view class="{{_res == 7?'add_House':'add_city'}}" data-num="7" bindtap="clickHouse" data-name="北京">上海</view>
+        </view>
+      </swiper-item>
+      <swiper-item class="shaixuankuang">
+        <view class="shaixuan">
+          <span class="shuaixuantiaojian">面积</span>
+          <block wx:for="{{array}}" wx:key="key">
+            <view class="chose-txt" data-id="{{index}}" bindtap="choseTxtColor" style="{{index == one?' border:1rpx solid #e8580c; color: #e8580c':'border:1rpx solid gainsboro;color:gray'}}">
+              <text class="chose-p">{{item.name}}</text>
+            </view>
+          </block>
+          <view class="zidingyi">
+            <span>自定义面积:</span>
+            <input class="front" type='text'></input>
+            <p>-</p>
+            <input class="back" type='text'></input>
+            <button>设置</button>
+          </view>
+        </view>
+        <view class="shaixuan">
+          <span class="shuaixuantiaojian">朝向</span>
+          <block wx:for="{{chaoxiang}}" wx:key="key">
+            <view class="chose-txt" data-id="{{index}}" bindtap="chaoxiang" style="{{index == two?'border:1rpx solid #e8580c; color: #e8580c':'border:1rpx solid gainsboro;color:gray'}}">
+              <text class="chose-p">{{item.name}}</text>
+            </view>
+          </block>
+        </view>
+ 
+        <view class="shaixuan">
+          <span class="shuaixuantiaojian">楼层</span>
+          <block wx:for="{{louceng}}" wx:key="key">
+            <view class="chose-txt" data-id="{{index}}" bindtap="louceng" style="{{index == third?'border:1rpx solid #e8580c; color: #e8580c':'border:1rpx solid gainsboro;color:gray'}}">
+              <text class="chose-p">{{item.name}}</text>
+            </view>
+          </block>
+        </view>
+        <view class="shaixuan">
+          <span class="shuaixuantiaojian">装修</span>
+          <block wx:for="{{zhuangxiu}}" wx:key="key">
+            <view class="chose-txt" data-id="{{index}}" bindtap="zhuangxiu" style="{{index == four?'border:1rpx solid #e8580c; color: #e8580c':'border:1rpx solid gainsboro;color:gray'}}">
+              <text class="chose-p">{{item.name}}</text>
+            </view>
+          </block>
+        </view>
+        <view class="shaixuan">
+          <span class="shuaixuantiaojian">建筑类别</span>
+          <block wx:for="{{leibei}}" wx:key="key">
+            <view class="chose-txt" data-id="{{index}}" bindtap="leibei" style="{{index == five?'border:1rpx solid #e8580c; color: #e8580c':'border:1rpx solid gainsboro;color:gray'}}">
+              <text class="chose-p">{{item.name}}</text>
+            </view>
+          </block>
+        </view>
+        <view class="shaixuan">
+          <span class="shuaixuantiaojian">特色</span>
+          <block wx:for="{{tese}}" wx:key="key">
+            <view class="chose-txt" data-id="{{index}}" bindtap="tese" style="{{index == six?'border:1rpx solid #e8580c; color: #e8580c':'border:1rpx solid gainsboro;color:gray'}}">
+              <text class="chose-p">{{item.name}}</text>
+            </view>
+          </block>
+        </view>
+        <view class="shaixuan">
+          <span class="shuaixuantiaojian">排序</span>
+          <block wx:for="{{paixu}}" wx:key="key">
+            <view class="chose-txt" data-id="{{index}}" bindtap="paixu" style="{{index == seven?'border:1rpx solid #e8580c; color: #e8580c':'border:1rpx solid gainsboro;color:gray'}}">
+              <text class="chose-p">{{item.name}}</text>
+            </view>
+          </block>
+        </view>
+        <view class="qingkong">
+          <span class="tianjian" bindtap="qingchu">清除条件</span>
+          <p class="queren" bindtap="queren">确认</p>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="swiper-beijing" bindtap="hideNav" style='display:{{displays}}'></view>

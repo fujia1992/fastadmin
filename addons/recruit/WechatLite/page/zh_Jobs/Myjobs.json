@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "管理我的职位",
+  "usingComponents": {
+    "zan-capsule": "../../assets/libs/zanui/capsule/index",
+    "zan-actionsheet": "../../assets/libs/zanui/actionsheet/index",
+    "zan-card": "../../assets/libs/zanui/card/index",
+    "zan-row": "../../assets/libs/zanui/row/index",
+    "zan-col": "../../assets/libs/zanui/col/index",
+    "zan-button": "../../assets/libs/zanui/btn/index"
+  }
+}

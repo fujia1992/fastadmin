@@ -1,0 +1,36 @@
+<body>
+<div class="cheader">
+	<div class="headerleft">
+		<a href="{:addon_url('kaoshi/index/index')}"><span class="arrow-left"></span></a>
+	</div>
+	<h1>{$title}</h1>
+</div>
+<div class="cmain nopad-lr">
+	{if condition="count($history) eq 0"}
+	<div style="text-align: center">暂无学习答题记录！</div>
+
+	{else/}
+	<ul class="study_list">
+		{foreach name="history" item="vo" }
+			<li>
+			<div >
+				<i class='study_statu {if condition="$vo.status eq 0"} half {else /} over {/if}'></i>
+				<div class="last_study">
+					<em>{$vo.lasttime|date='Y-m-d H:i',###}</em>
+				</div>
+				<div class="study_content">
+					<h4 class="study_name">{$vo.plan_name}</h4>
+					<div class="study_process">
+						<span class="answernum">已答 <em>{$vo.finished}</em>/{$vo.number}</span>
+						{if condition="$vo.status eq 1"}
+						<span class="study_num">分数:<em>{$vo.score|intval}</em></span>
+						{/if}
+					</div>
+				</div>
+			</div>
+		</li>
+		{/foreach}
+	</ul>
+	{/if}
+</div>
+</body>

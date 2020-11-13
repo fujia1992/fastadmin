@@ -1,0 +1,151 @@
+{include file="common/header"}
+<div class="wjcontent">
+    <form  method="post" name="myform" action="{:addon_url('ykquest/index/Answer')}" onsubmit="return check()">
+        {if condition="$isAnser"}
+        <div class="wj-title f18">
+            {$suery.name}
+            <input name="survey_id" value="{$suery.id}" type="hidden">
+        </div>
+        <div class="wj-des f16">  
+            {$suery.description}
+            <div class="wj-top"> </div>
+            <div class="wj-promble">
+                {volist name="proList" id="val" key="k"}
+                <div class="wj-promble-list">
+                    <div class="wj-pro-title f16">
+                        {$k}.{$val.title}
+
+                    </div>
+                    {if condition="$val.option_type==0"}
+                    <div class="wj-option f14">
+                        {volist name="$val.oplist" id="toption"}
+                        <div class="wj-rad">
+                            <input type="radio" value="{$toption.id}" name="row[{$val.id}]"  onblur="isNull(this)"> <span >{$toption.content}</span>
+                        </div>
+                        {/volist}
+                        <div class="mes">
+                            <span></span>
+                        </div>
+                    </div>
+                    {elseif condition="$val.option_type==1"}
+                    <div class="wj-option f14">
+                        {volist name="$val.oplist" id="toption"}
+                        <div class="wj-ck">
+                            <input type="checkbox" name="row[{$val.id}][]" value="{$toption.id}"  /> <span>{$toption.content}</span>
+                        </div>
+                        {/volist}
+                        <div class="mes">
+                            <span></span>
+                        </div>
+                    </div>
+                    {else /}
+                    <div class="wj-option f14">
+                        <div class="wj-txt">
+                            <textarea name="row[{$val.id}]"></textarea>
+                        </div>
+                        <div class="mes">
+                            <span></span>
+                        </div>
+                    </div>
+                    {/if}
+
+                </div>
+                {/volist}
+                <!--           <div class="wj-promble-list">
+                                <div class="wj-pro-title f16">
+                                  1.您的公司简称＋姓名*  
+                                </div>
+                               <div class="wj-option f14">
+                                   <div class="wj-rad">
+                                     <input type="radio" value="" name="radio"> <span >单选</span>
+                                   </div>
+                                   <div class="wj-rad">
+                                     <input type="radio" value="" name="radio"> <span>单选</span>
+                                   </div>
+                                   <div class="wj-rad">
+                                       <input type="radio" value="" name="radio"> <span>单选</span>
+                                   </div>
+                               </div>
+                           </div>-->
+
+                <!--           <div class="wj-promble-list">
+                                <div class="wj-pro-title f16">
+                                  1.您的公司简称＋姓名*  
+                                </div>
+                               <div class="wj-option f14">
+                                   <div class="wj-ck">
+                                       <input type="checkbox" name="vehicle" value="Car" checked="checked" /> <span>复选框</span>
+                                   </div>
+                                    <div class="wj-ck">
+                                       <input type="checkbox" name="vehicle" value="Car" checked="checked" /> <span>复选框</span>
+                                   </div>
+                                    <div class="wj-ck">
+                                       <input type="checkbox" name="vehicle" value="Car" checked="checked" /> <span>复选框</span>
+                                   </div>
+                               </div>
+                           </div>-->
+
+                <div class="wj-promble-list">
+                    <button type="submit" class="btn btn-info f14">提交</button>
+                </div>
+            </div>
+        </div>
+        {else}
+        <div class="anIser">
+            <div> <image src="__ADDON__/image/dui.png"></div>
+            <div> 您已经参与过该问卷，谢谢合作 ， <a href="{:addon_url('ykquest/index/index')}"> 返回问卷列表</a></div>
+        </div>
+        {/if}
+    </form>
+</div>
+<script>
+    function check() {
+        var a = $('form').ghostsf_serialize();
+        var arr;
+        for (var i = 0; i < a.length; i++) {
+            var name = a[i].name;
+            var type = $('input[name="' + name + '"]').attr('type');
+            if (type == "checkbox" || type == "radio") {
+                var b = $('input[name="' + name + '"]').is(':checked');
+                if (b == false) {
+                    $('input[name="' + name + '"]').parent().siblings('.mes').find("span").html("*请选中一个选项");
+                } else {
+                    $('input[name="' + name + '"]').parent().siblings('.mes').find("span").html("");
+                }
+            } else {
+                var val = $('textarea[name="' + name + '"]').val();
+                if (val == "") {
+                    $('textarea[name="' + name + '"]').parent().siblings('.mes').find("span").html("*请填写内容");
+                } else {
+                    $('textarea[name="' + name + '"]').parent().siblings('.mes').find("span").html("");
+                }
+            }
+        }
+        if ($(".mes span").text().length == 0) {
+            return true;
+        }
+        return false;
+    }
+    function isNull(a) {
+        var b = $(a).attr('name');
+//       console.log(b)
+    }
+    $.fn.ghostsf_serialize = function () {
+        var a = this.serializeArray();
+//        console.log(a)
+        var $radio = $('input[type=radio],input[type=checkbox]', this);
+        var temp = {};
+
+        $.each($radio, function () {
+            if (!temp.hasOwnProperty(this.name)) {
+                if ($("input[name='" + this.name + "']:checked").length == 0) {
+                    temp[this.name] = "";
+                    a.push({name: this.name, value: ""});
+                }
+            }
+        });
+        //console.log(a);
+        return a;
+    };
+</script>
+{include file="common/footer"}

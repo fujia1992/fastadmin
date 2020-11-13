@@ -1,0 +1,196 @@
+{layout name="common/layout" /}
+
+<div class="pix_section pix-padding-v-85 pix-cover-bg" id="header" style="background-image: linear-gradient(rgba({$__player__.rgb|implode=','}, 0.75), rgba({$__player__.rgb|implode=','}, 0.75)), url('{$__player__.banner|cdnurl}');">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-xs-12 col-sm-12 column">
+                <div class="pix-content text-center">
+                    <div class="pix-margin-bottom-30 header-logo">
+                        <a href="javascript:" class="pix-circle-btn">
+                            <img src="{$__player__.image|cdnurl}" class="img-circle" width="120" height="120" alt="">
+                        </a>
+                    </div>
+                    <h2 class="pix-white text-center pix-no-margin-top secondary-font">
+                        <span><strong>{$__player__.nickname}</strong></span>
+                    </h2>
+                    <h5 class="pix-white text-center">
+                        <span>{$__player__.intro}</span>
+                    </h5>
+                    <div class="pix-content text-center player-item">
+                        <h2 class="pix-white pix-no-margin-top">
+                            <span><strong>当前票数：<span data-to="{$__player__.votes}" class="number-count">{$__player__.votes|number_format}</span> 票</strong></span>
+                        </h2>
+                        <p class="pix-white pix-padding-20">
+                            <span class="pix-margin-right-10">排名：{$__player__.rank}</span>
+                            <!--<span class="pix-margin-right-10">分类排名：{$__player__.category_rank}</span>-->
+                            <span>得票占比：{$__player__->getPercent($__subject__.votes)} %</span>
+                        </p>
+                        <a href="javascript:" data-id="{$__player__.id}" class="btn orange-bg btn-round-lg small-text btn-xl wide-2 pix-white pix-margin-right-10 wide pix-margin-top-10 btn-vote {:$__subject__.pervotelimit<=$__player__.voted||$__subject__.status=='expired'?'disabled':''}">
+                            <i class="fa fa-thumbs-up"></i>
+                            <!--@formatter:off-->
+                            {if $__player__.voted}
+                                <span><strong>{if $__subject__.pervotelimit==1}已投票{else/}已投 {$__player__.voted} 票{/if}</strong></span>
+                            {elseif($__subject__.status == 'expired') /}
+                                <span><strong>已结束</strong></span>
+                            {else /}
+                                <span><strong>投一票</strong></span>
+                            {/if}
+                            <!--@formatter:on-->
+                        </a>
+                    </div>
+                    <div class="pix-margin-top-50">
+                        <a href="javascript:" class="small-social btn-share" data-type="timeline">
+                            <i class="iconfont icon-pengyouquan pix-light-white"></i>
+                        </a>
+                        <a href="javascript:" class="small-social btn-share" data-type="friend">
+                            <i class="iconfont icon-weixin pix-light-white"></i>
+                        </a>
+                        <a href="javascript:" class="small-social btn-copylink" data-clipboard-text="{:request()->url(true)}">
+                            <i class="iconfont icon-copylink pix-light-white"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="pix_section pix-padding-v-65" id="intro" style="display: block;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-xs-12 col-sm-12 column">
+                <div class="pix-content pix-padding-bottom-30">
+                    <h2 class="pix-black-gray-dark text-center pix-no-margin-top secondary-font">
+                        <span><strong>{$__subject__.playername}介绍</strong></span>
+                    </h2>
+                    <div class="pix-black-gray-light big-text text-center">
+                        <span>关于此参赛{$__subject__.playername}的详细介绍</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10 col-xs-12 col-sm-12 column col-md-offset-1">
+                <div class="pix-content text-left">
+                    <div class="pix-gray detail">
+                        {$__player__.content}
+                    </div>
+                </div>
+                <div class="pix-content text-center pix-margin-top-30">
+                    <a href="javascript:" data-id="{$__player__.id}" class="btn orange-bg btn-round-lg small-text btn-xl wide-2 pix-white pix-margin-right-10 wide pix-margin-top-10 btn-vote">
+                        <i class="fa fa-thumbs-up"></i>
+                        <span>
+                            <strong>立即投票</strong>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{if $__subject__.iscomment}
+<div class="pix_section pix-padding-v-40 bg-white" id="comment" style="display: block;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-xs-12 col-sm-12 column">
+                <div class="pix-content pix-padding-bottom-30">
+                    <h2 class="pix-black-gray-dark text-center pix-no-margin-top secondary-font">
+                        <span><strong>评论列表</strong></span>
+                    </h2>
+                    <div class="pix-black-gray-light big-text text-center">
+                        <span>你可以在此对参赛{$__subject__.playername}进行评论</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10 col-xs-12 col-sm-10 column col-md-offset-1">
+                <div class="pix-content pix-margin-v-30">
+                    {foreach name="commentList" id="item"}
+                    <div class="media">
+                        <div class="media-right media-top text-center media-box-area">
+                            <div class="pix-inner">
+                                <div class="pix-round-shape-80 pix-margin-h-10">
+                                    <img src="{$item.user.avatar|cdnurl}" class="img-circle" width="80" height="80" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media-body media-top media-box-area">
+                            <div class="pix-inner">
+                                <p class="pix-blue-light-2 small-text pix-no-margin-top">
+                                    <span><b>{$item.user.nickname}</b></span>
+                                    <span>发布于 <b>{$item.createtime|human_date}</b></span>
+                                </p>
+                                <p class="pix-black-gray-light small-text pix-margin-bottom-30">
+                                    <span>{$item.content}</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    {/foreach}
+                    {if $commentList->hasPages()}
+                        <div class="pager text-center pix-padding-top-30">
+                            {:$commentList->render();}
+                        </div>
+                    {/if}
+                </div>
+            </div>
+            <div class="col-md-10 col-xs-12 col-sm-10 column col-md-offset-1">
+                <div class="pix-content pix-padding-bottom-30 pix-margin-v-30 text-center">
+                    <a href="javascript:" class="btn blue-bg btn-round-lg small-text btn-xl wide-2 pix-white pix-margin-right-10 wide pix-margin-top-10" data-toggle="modal" data-target="#postcomment">
+                        <i class="fa fa-comment"></i>
+                        <span>
+                            <strong>发表评论</strong>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="postcomment" class="modal pix_popup" role="dialog" aria-hidden="true" style="display: none;" data-name="postcomment">
+    <div class="modal-dialog modal-sm-2">
+        <div class="modal-content gray-bg">
+            <div class="modal-header">
+                <a href="#" class="close" data-dismiss="modal">×</a>
+            </div>
+            <div class="modal-body">
+                <div class="pix_section animating modal-section popup_section" style="display: block;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12 text-center col-sm-12 column">
+                                <div class="pix-content text-center animating">
+                                    <div class="pix-padding-bottom-20">
+                                        <i class="pixicon-clipboard big-icon pix-orange"></i>
+                                    </div>
+                                    <h5 class="pix-black-gray-dark pix-no-margin-top">
+                                        <span class="pix_edit_text"><strong>发表评论</strong></span>
+                                    </h5>
+                                    <p class="pix-black-gray pix-margin-bottom-30">
+                                        <span class="pix_edit_text">
+                                            感谢你对参赛{$__subject__.playername}的支持！
+                                        </span>
+                                    </p>
+                                    <div class="pix-margin-bottom-30">
+                                        <form id="postform" class="pix-form-style pixfort-form pix-form-white-bg ui-sortable" action="{:addon_url('vote/index/comment')}" method="post">
+                                            {:token()}
+                                            <input type="hidden" name="player_id" value="{$__player__.id}">
+                                            <div class="form-group">
+                                                <textarea name="content" class="form-control" rows="15" placeholder="请输入你的评论内容"></textarea>
+                                            </div>
+                                            <button type="submit" class="btn btn-flat orange-bg pix-white btn-lg small-text btn-block"><span class="pix_edit_text"><strong>提交评论</strong></span></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{/if}
+<script data-render="script">
+    $(function () {
+        refresh_data();
+    });
+</script>

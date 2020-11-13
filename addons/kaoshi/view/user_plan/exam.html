@@ -1,0 +1,27 @@
+<body>
+<div class="cheader">
+	<div class="headerleft">
+		<a href="{:addon_url('kaoshi/index/index')}"><span class="arrow-left"></span></a>
+	</div>
+	<h1>{$title}</h1>
+</div>
+<div class="cmain">
+	{if condition="count($plans) eq 0"}
+	<div style="text-align: center">暂无进行中的考试！</div>
+
+	{else/}
+	<ul class="examp_list formal_examplist">
+		{foreach name="plans" item="vo" }
+			<li>
+				<a href="{:addon_url('kaoshi/exams/getquestion',array('user_plan_id'=>$vo.id))}">
+					<i></i>
+					<em class="icon_pencil"></em>
+					<span class="time">截止日期：{:date('Y-m-d H:i:s',$vo.endtime)}</span>
+					<span class="name">{$vo.plan_name}</span>
+				</a>
+			</li>
+		{/foreach}
+	</ul>
+	{/if}
+</div>
+</body>

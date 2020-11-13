@@ -1,0 +1,31 @@
+<import src="/assets/libs/zanui/loadmore/index.wxml" />
+<image class="iwxcimage" mode="widthFix" src="https://lg-jvaq236y-1255064220.cos.ap-shanghai.myqcloud.com/workforceBanner.png"></image>
+
+
+<view class='jobs_list'  style="margin-top: 18rpx;">
+  <!-- <navigator class='onejobs_c' wx:for="{{ comjob }}" wx:key="key"> -->
+  <div class='onejobs_c' wx:for="{{ comjob }}" wx:key="key">
+    <zan-row>
+      <zan-col col="18" col-class="custom-zan-col">
+        <text class='j_name'>姓名：{{item.name}}</text>
+        <text class='j_cont'>{{item.sfzno}} | {{item.village}} | {{item.tel}}</text>
+        <text class='j_com'>收集归属人：{{item.collect}}</text>
+      </zan-col>
+      <zan-col col="6" col-class="custom-zan-col">
+        <text class='j_pric'>提交时间</text>
+        <text class='j_qita'>{{item.showtime}}</text>
+      </zan-col>
+    </zan-row>
+  </div>
+  <!--  </navigator>--> 
+</view>
+
+ <template is="zan-loadmore" data="{{ nodata: nodata }}" />
+
+
+   <view class="zan-btns">
+    <button class='zan-btn' bindtap="zhuandaozj" style='color:#fff;background-color:#DE3639;'>录入资料</button>
+  </view>
+
+
+    <include src="../zh_other/foot_right.wxml"/>

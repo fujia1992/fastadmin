@@ -1,0 +1,38 @@
+radio-group label {
+  font-size:0.918em;
+  margin:8rpx;
+  padding:6rpx;
+  display:inline-block;
+}
+
+.borleft{
+  border:0 solid #e5e5e5;
+  border-bottom-width:1px;
+}
+.img_list_add {
+  border:1px dashed #b2b9c1;
+  margin:0 18rpx;
+}
+.img_list_s {
+  border: 1px dashed #b2b9c1;
+  margin-top: 30rpx !important;
+}
+.sfzx{
+  height:30px;
+  width: 30px;
+  position: absolute !important;
+  top:-4rpx;
+  right:30rpx;
+}
+
+.subscript {
+  position:relative;
+  margin:18rpx;
+}
+.subscriptx{
+  height: 30px;
+  width: 30px;
+  position: absolute !important;
+  top: -30rpx;
+  right: -30rpx;
+}

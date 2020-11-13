@@ -1,0 +1,161 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Subject_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-subject_id" data-rule="required" data-field="subject_name" data-source="kaoshi/subject/index" class="form-control selectpage" name="row[subject_id]" type="text" value="{$row.subject_id|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Exam_name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-exam_name" data-rule="required" class="form-control" name="row[exam_name]" type="text" value="{$row.exam_name|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-img" class="control-label col-xs-12 col-sm-2">{:__("Img")}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-img" data-rule="" class="form-control" size="50" name="row[img]" type="text" value="{$row.img}">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-img" class="btn btn-danger plupload" data-input-id="c-img" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-img"><i class="fa fa-upload"></i> 上传</button></span>
+                    <span><button type="button" id="fachoose-img" class="btn btn-primary fachoose" data-input-id="c-img" data-mimetype="image/*" data-multiple="false"><i class="fa fa-list"></i> 选择</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-img"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-img"></ul>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Type')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <select  id="c-type" data-rule="required" class="form-control selectpicker" name="row[type]">
+                {foreach name="typeList" item="vo"}
+                <option value="{$key}" {in name="key" value="$row.type"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Setting')}:</label>
+        <div class="col-xs-12 col-sm-8 {if condition="$row.type eq '2'"}hidden{/if}" id="ChooseSubject" >
+            <dl class="fieldlist" data-template="settingdata" data-name="row[settingdata]">
+                <dd>
+                    <ins>题型</ins>
+                    <ins>难度</ins>
+                    <ins>数量</ins>
+                    <ins>分值</ins>
+                </dd>
+                <dd><a href="javascript:;" class="btn btn-sm btn-success btn-append"><i class="fa fa-plus"></i> {:__('Append')}</a></dd>
+                <!--请注意 dd和textarea间不能存在其它任何元素，实际开发中textarea应该添加个hidden进行隐藏-->
+                <textarea name="row[settingdata]" class="form-control hide" cols="30" rows="5">{$row.settingdata}</textarea>
+            </dl>
+            <script id="settingdata" type="text/html">
+                <dd class="form-inline setting-row">
+                    <ins>
+                        <select name="<%=name%>[<%=index%>][type]" id="" class="form-control selectpicker">
+                            <option value="1" <%if(row.type==1){%>selected<%}%>>单选题</option>
+                            <option value="2" <%if(row.type==2){%>selected<%}%>>多选题</option>
+                           <!-- <option value="3" <%if(row.type==3){%>selected<%}%>>判断题</option>-->
+                            <option value="4" <%if(row.type==4){%>selected<%}%>>填空题</option>
+                            <option value="5" <%if(row.type==5){%>selected<%}%>>简答题</option>
+                        </select>
+                    </ins>
+                    <ins>
+                        <select name="<%=name%>[<%=index%>][level]" id="" class="form-control selectpicker">
+                            <option value="1" <%if(row.level==1){%>selected<%}%>>易</option>
+                            <option value="2" <%if(row.level==2){%>selected<%}%>>中</option>
+                            <option value="3" <%if(row.level==3){%>selected<%}%>>难</option>
+                        </select>
+                    </ins>
+                    <ins><input type="number" step="1" min='1' name="<%=name%>[<%=index%>][number]" class="form-control number scoreset" value="<%=row.number%>" placeholder="数量"/></ins>
+                    <ins><input type="number" step="1" min='1' name="<%=name%>[<%=index%>][mark]" class="form-control mark scoreset" value="<%=row.mark%>" placeholder="分值"/></ins>
+                    <!--下面的两个按钮务必保留-->
+                    <span class="btn btn-sm btn-danger btn-remove"><i class="fa fa-times"></i></span>
+                    <span class="btn btn-sm btn-primary btn-dragsort"><i class="fa fa-arrows"></i></span>
+                </dd>
+            </script>
+        </div>
+        <div class="col-xs-12 col-sm-8 {if condition="$row.type eq '1'"}hidden{/if}" id="ChooseSubject1">
+            <dl class="fieldlist" data-template="settingdata1" data-name="row[settingdata]">
+                <dd>
+                    <ins>题目</ins>
+                    <ins>题型</ins>
+                    <ins>分值</ins>
+                </dd>
+                {if condition="$row.type eq '2'"}
+                {foreach  name="questions_data" item="item"  key="key" }
+                <dd class="form-inline">
+                    <input type="hidden" name="row[questions_id][]" value="{$item.questions_id}">
+                    <ins><input type="text" class="form-control" readonly="true" size="10" value="{$item.question}"></ins>
+                    <ins><input type="text" class="form-control" readonly="true" value="{$item.type_name}"></ins>
+                    <ins><input type="text" name="row[onescore][]" class="form-control onescore" value="{$item.score}" placeholder="分数值" onkeyup="value=value.replace(/[^\d]/g,'')"></ins>
+                    <!--下面的两个按钮务必保留-->
+                    <span class="btn btn-sm btn-danger btn-remove remove_subject" subject-value="{$item.questions_id}"><i class="fa fa-times"></i></span>
+                    <span class="btn btn-sm btn-primary btn-dragsort"><i class="fa fa-arrows"></i></span>
+                </dd>
+                {/foreach}
+                {/if}
+                <b id="settingdata1"></b>
+            </dl>
+            <input type="hidden" id="subject_id" value="{$subject_id}"/>
+            <a href="javascript:;" id="AddSubject" class="btn btn-sm btn-success"><i class="fa fa-plus"></i>添加题目</a>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Score')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-score"  class="form-control" name="row[score]" readonly="true"  type="number" step="1" min="0" value="{$row.score|htmlentities}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Pass')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-pass"  class="form-control" name="row[pass]" type="number" step="1" min="0" value="{$row.pass|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">考试时间:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-hours" data-rule="required"  min='1' step="1"  class="form-control" name="row[hours]" type="number" value="{$row.hours|htmlentities}" onkeyup="value=value.replace(/[^\d]/g,'')">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Starttime')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-starttime" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[starttime]" type="text" value="{:$row.starttime?datetime($row.starttime):''}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Endtime')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-endtime" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[endtime]" type="text" value="{:$row.endtime?datetime($row.endtime):''}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Keyword')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-keyword" class="form-control" name="row[keyword]" type="text" value="{$row.keyword|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">选项打乱顺序:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="radio">
+                <label for="row[chaos_status]-normal"><input id="row[chaos_status]-normal" name="row[chaos_status]" type="radio" value="0" {if condition="$row.chaos_status eq '0'"}checked{/if} > 关闭</label>
+                <label for="row[chaos_status]-hidden"><input id="row[chaos_status]-hidden" name="row[chaos_status]" type="radio" value="1" {if condition="$row.chaos_status eq '1'"}checked{/if} > 开启</label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

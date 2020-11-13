@@ -1,0 +1,76 @@
+
+  <form bindsubmit="formSubmit" bindreset="formReset">
+  <zan-panel title="基本信息">
+      <zan-field title="企业名称:" name="name" value='{{comD.name}}'
+      placeholder="请输入企业全称" > </zan-field>
+      <zan-field title="企业电话:" inputType="number" name="tel" value='{{comD.tel}}'
+      placeholder="请输入企业电话" > </zan-field>
+      <zan-field title="工商注册号:" inputType="number" name="no" value='{{comD.no}}'
+      placeholder="工商注册号或统一社会信用代码" > </zan-field>
+       <zan-field title="企业地址:" type="textarea" name="adress" value='{{comD.adress}}'
+      placeholder="请输入详细地址" > </zan-field>
+  </zan-panel>
+
+  <zan-panel title="补充信息描述">
+    <view class='zan-field'>
+      <view class="zan-cell__hd zan-field__title" style='margin:10px 0;'> 企业性质: </view>
+       <radio-group class="zan-field__input zan-cell__bd radio-group borleft" name='xinzhi'>
+        <label class="radio">
+          <radio value="0" color="#d21640" checked="{{comD.xinzhi=='0'? true : false}}"/>国有企业
+        </label>
+         <label class="radio">
+          <radio value="1" color="#d21640" checked="{{comD.xinzhi=='1'? true : false}}"/>私营企业
+         </label>
+         <label class="radio">
+          <radio value="2" color="#d21640" checked="{{comD.xinzhi=='2'? true : false}}"/>中外合作企业
+         </label>
+         <label class="radio">
+          <radio value="3" color="#d21640" checked="{{comD.xinzhi=='3'? true : false}}"/>中外合资企业
+         </label>
+         <label class="radio">
+          <radio value="4" color="#d21640" checked="{{comD.xinzhi=='4'? true : false}}"/>外商独资企业
+         </label>
+      </radio-group>
+    </view>
+    <zan-field title="详细其他描述:" type="textarea" name="content"
+      placeholder="填写一些企业相关的介绍信息" maxlength="-1" value="{{ comD.content }}"> </zan-field>
+   
+  </zan-panel>
+
+  <zan-panel title="企业头像图片">
+    <view class='zan-field'>
+      <image class='img_list_add' mode="aspectFit" 
+        style="width:650rpx;height:320rpx;" bindtap="qiye_img" data-src="{{qiye_img}}" src="{{qiye_img}}" ></image>
+      <image class="sfzx" wx:if="{{qiye_img!='/assets/img/add.png'}}" bindtap='del_qiye_img_fun' src="/assets/img/x.png"></image>
+    </view>
+  </zan-panel>
+
+    <zan-panel title="企业其他展示图片[最多{{imgMaxCount}}张]">
+    <view class='zan-field'>
+      <view class="img_l">
+        <view class="subscript" wx:for="{{imglist}}" style="width:130rpx;height:130rpx;display:inline-block;" wx:key="ilk">
+            <image class='img_list_s' mode="aspectFill" style="width:130rpx;height:130rpx;"
+            bindtap="ylimg" data-src="{{item}}" src="{{item}}"></image>
+            <image class="subscriptx" bindtap='del_img_fun' data-id="{{index}}" src="/assets/img/x.png"></image>  
+        </view> 
+
+        <image class='img_list_add' mode="aspectFill" style="width:130rpx;height:130rpx;" bindtap="checkimg"src="/assets/img/add.png" ></image>
+      </view>
+    </view>
+  </zan-panel>
+
+  <view class="zan-btns">
+    <button formType="submit" class='zan-btn' style='color:#fff;background-color:#DE3639;'>提交修改</button>
+  </view>
+
+  </form>
+
+
+
+<zan-toptips
+  id="zan-toptips"
+  content="{{ content }}"
+  is-show="{{ $zanui.toptips.show }}"
+/>
+
+<zan-toast id="zan-toast-test"></zan-toast>

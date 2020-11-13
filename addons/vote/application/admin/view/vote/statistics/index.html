@@ -1,0 +1,277 @@
+<style>
+    .panel-statistics h4 {
+        color: #666;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .panel-statistics h3 {
+        font-weight: 500;
+        font-size: 14px;
+        color: #333;
+    }
+
+    .panel-statistics em {
+        font-style: normal;
+    }
+
+    .panel-statistics .pull-right {
+        padding-right: 10px;
+    }
+
+    .panel-statistics .table thead tr th {
+        font-weight: normal;
+    }
+
+    .panel-statistics .table tbody tr td {
+        font-weight: normal;
+        vertical-align: middle;
+    }
+
+    .panel-statistics .table tbody tr td p {
+        margin: 0;
+    }
+
+    #echarts1 textarea {
+        display: block;
+    }
+
+    .is-dialog #main {
+        background: #f1f4f6;
+    }
+</style>
+<div class="row">
+    <div class="col-xs-6 col-sm-3">
+        <div class="panel panel-default panel-intro panel-statistics">
+            <div class="panel-body">
+                <div class="pull-left">
+                    <h4>总投票次数</h4>
+                    <h3>{$subject.votes}</h3>
+                </div>
+
+                <div class="pull-right" style="color:#c8cfff;">
+                    <i class="fa fa-database fa-4x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-6 col-sm-3">
+        <div class="panel panel-default panel-intro panel-statistics">
+            <div class="panel-body">
+                <div class="pull-left">
+                    <h4>总投票人数</h4>
+                    <h3>{$subject.voters}</h3>
+                </div>
+
+                <div class="pull-right" style="color:#ffc8c8;">
+                    <i class="fa fa-user fa-4x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-6 col-sm-3">
+        <div class="panel panel-default panel-intro panel-statistics">
+            <div class="panel-body">
+                <div class="pull-left">
+                    <h4>总参赛人数</h4>
+                    <h3>{$subject.players}</h3>
+                </div>
+
+                <div class="pull-right" style="color:#c8e3ff;">
+                    <i class="fa fa-users fa-4x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-6 col-sm-3">
+        <div class="panel panel-default panel-intro panel-statistics">
+            <div class="panel-body">
+                <div class="pull-left">
+                    <h4>总评论次数</h4>
+                    <h3>{$totalComments}</h3>
+                </div>
+
+                <div class="pull-right" style="color:#ffe9c8;">
+                    <i class="fa fa-comments fa-4x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row" style="margin-top:20px;">
+    <div class="col-xs-12 col-sm-6">
+        <div class="panel">
+            <div class="panel-body">
+                <div id="echarts1" style="height:360px;"></div>
+                <a href="javascript:" class="btn btn-refresh hidden" data-type="vote">投票趋势</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+        <div class="panel">
+            <div class="panel-body">
+                <div id="echarts2" style="height:360px;"></div>
+                <a href="javascript:" class="btn btn-refresh hidden" data-type="cate">主题分类</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="row">
+            <div class="col-xs-3" style="margin-bottom:15px;">
+                <div class="panel panel-default panel-intro panel-statistics">
+                    <div class="panel-body">
+                        <h3>今日总投票次数</h3>
+                        <h4>{$todayVotes} 次</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3" style="margin-bottom:15px;">
+                <div class="panel panel-default panel-intro panel-statistics">
+                    <div class="panel-body">
+                        <h3>今日总投票人数</h3>
+                        <h4>{$todayVoters} 人</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3" style="margin-bottom:15px;">
+                <div class="panel panel-default panel-intro panel-statistics">
+                    <div class="panel-body">
+                        <h3>待审核报名用户数</h3>
+                        <h4>{$unsettlePlayer} 篇</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3" style="margin-bottom:15px;">
+                <div class="panel panel-default panel-intro panel-statistics">
+                    <div class="panel-body">
+                        <h3>待审核评论数</h3>
+                        <h4>{$unsettleComment} 条</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row" style="margin-top:20px;">
+    <div class="col-xs-12 col-sm-4">
+        <div class="panel panel-default panel-intro panel-statistics">
+            <div class="panel-body">
+                <h4>投票数排行</h4>
+                <table class="table" style="width:100%">
+                    <thead>
+                    <tr>
+                        <th width="80%">参赛者</th>
+                        <th class="text-center">得票数</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {foreach name="playerVotesList" id="item" empty="
+                    <tr>
+                        <td colspan='2' class='text-center'>暂无数据</td>
+                    </tr>
+                    "}
+                    <tr>
+                        <td>
+                            <p><a href="{$item.url}" target="_blank">{$item.nickname}</a></p>
+                        </td>
+                        <td>
+                            <h5 class="mb-0 text-center">{$item.votes}</h5>
+                        </td>
+                    </tr>
+                    {/foreach}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <div class="panel panel-default panel-intro panel-statistics">
+            <div class="panel-body">
+                <h4>热门浏览排行</h4>
+                <table class="table" style="width:100%">
+                    <thead>
+                    <tr>
+                        <th width="80%">参赛者</th>
+                        <th width="20%" class="text-center">浏览次数</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {foreach name="playerViewsList" id="item" empty="
+                    <tr>
+                        <td colspan='2' class='text-center'>暂无数据</td>
+                    </tr>
+                    "}
+                    <tr>
+                        <td>
+                            <p><a href="{$item.url}" target="_blank">{$item.nickname}</a></p>
+                        </td>
+                        <td>
+                            <h5 class="mb-0 text-center">{$item.views}</h5>
+                        </td>
+                    </tr>
+                    {/foreach}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <div class="panel panel-default panel-intro panel-statistics">
+            <div class="panel-body">
+                <h4>热门评论排行</h4>
+                <table class="table" style="width:100%">
+                    <thead>
+                    <tr>
+                        <th width="80%">参赛者</th>
+                        <th width="20%" class="text-center">评论次数</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {foreach name="playerCommentsList" id="item" empty="
+                    <tr>
+                        <td colspan='2' class='text-center'>暂无数据</td>
+                    </tr>
+                    "}
+                    <tr>
+                        <td>
+                            <p><a href="{$item.url}" target="_blank">{$item.nickname}</a></p>
+                        </td>
+                        <td>
+                            <h5 class="mb-0 text-center">{$item.comments}</h5>
+                        </td>
+                    </tr>
+                    {/foreach}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row" style="margin-top:15px;">
+    <div class="col-xs-12">
+        <div class="panel panel-default panel-intro panel-statistics">
+            <div class="panel-body">
+                <h4>投票趋势</h4>
+                <div id="datefilter">
+                    <form id="form1" action="" role="form" novalidate class="form-inline">
+                        <a href="javascript:;" class="btn btn-primary btn-refresh"><i class="fa fa-refresh"></i></a>
+                        <a href="javascript:;" class="btn btn-success btn-filter">{:__('Today')}</a>
+                        <a href="javascript:;" class="btn btn-success btn-filter">{:__('Yesterday')}</a>
+                        <a href="javascript:;" class="btn btn-success btn-filter">{:__('Last 7 Days')}</a>
+                        <a href="javascript:;" class="btn btn-success btn-filter">{:__('Last 30 Days')}</a>
+                        <a href="javascript:;" class="btn btn-success btn-filter">{:__('Last month')}</a>
+                        <a href="javascript:;" class="btn btn-success btn-filter">{:__('This month')}</a>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                            <input type="text" class="form-control input-inline datetimerange" data-type="trend" placeholder="指定日期" style="width:270px;"/>
+                        </div>
+                    </form>
+                </div>
+                <div id="echarts3" style="height:400px;width:100%;margin-top:15px;"></div>
+            </div>
+        </div>
+    </div>
+</div>

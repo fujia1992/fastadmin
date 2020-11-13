@@ -1,0 +1,95 @@
+  <view class="focus">
+    <swiper indicator-dots="true" autoplay="true" interval="3000" circular="true" duration="1000" class="swiper">
+      <block wx:for="{{ bannerList }}" wx:key="key">
+        <navigator url="{{item.url}}">
+          <swiper-item>
+            <image src="{{item.image}}"/>
+            <text class="text">{{item.name}}</text>
+          </swiper-item>
+        </navigator>
+      </block>
+    </swiper>
+    <view class="overlay">
+      <view class='sel_city' bindtap="selcity">
+        <view class = "zan-capsule zan-capsule--">
+          <view class = "zan-capsule__left" style="background: #38f; border-color: #38f">所属区域</view>
+          <view class = "zan-capsule__right" style="color: #38f; border-color: #38f">{{chose_city.name}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+<view class='complist'>
+  <view class="til_conview">
+    <text class="til_con">
+      最新加入的企业
+    </text>
+  </view>
+    <!-- 推荐企业 S -->
+  <scroll-view scroll-x="true" style="margin-top:28rpx; white-space: nowrap; display: flex;height:268rpx; ">
+    <navigator url="/page/zh_company/ShowOneCompany?id={{ item.Id }}" class='oneC-con' wx:for="{{ companyList }}" wx:for-index="idx" wx:key="key">
+        <image src="https://lg-jvaq236y-1255064220.cos.ap-shanghai.myqcloud.com/company{{idx%4+1}}.png"/>
+        <text>{{item.XinZhiname}} ({{item.jobCount}}个职位)</text>
+        <view class='com_name'>{{item.name}}</view>
+    </navigator>
+  </scroll-view>
+  <!-- 推荐企业 E -->
+</view>
+
+
+
+
+<!-- 职位列表 S -->
+<view class='jobs_list'  style="margin-top: 18rpx;">
+  <navigator url="/page/zh_Jobs/ShowOneJob?id={{ item.Id }}" class='onejobs_c' wx:for="{{ JobsList }}" wx:key="key">
+    <zan-row>
+      <zan-col col="18" col-class="custom-zan-col">
+        <text class='j_name'>{{item.name}}</text>
+        <text class='j_cont'>{{item.zhusuname}} | {{item.Safename}} | {{item.Educationname}}</text>
+        <text class='j_com'>{{item.recruitcompany.name}}</text>
+      </zan-col>
+      <zan-col col="6" col-class="custom-zan-col">
+        <text class='j_pric'>{{item.goldtext}}</text>
+        <text class='j_qita'>{{item.XinZhiname}}</text>
+      </zan-col>
+    </zan-row>
+  </navigator>
+
+<image class='index_endp' mode="widthFix" src='https://lg-jvaq236y-1255064220.cos.ap-shanghai.myqcloud.com/index_end.png'
+  bindtap='gotto_jobslist'
+></image>
+
+<!-- 
+    <view class='onejobs_c'>
+      <zan-row>
+        <zan-col col="18" col-class="custom-zan-col">
+          <text class='j_name'>软件设计师</text>
+          <text class='j_cont'>住宿 | 社保 | 学历</text>
+          <text class='j_com'>泗县恒天塑料包装有限公司</text>
+        </zan-col>
+        <zan-col col="6" col-class="custom-zan-col">
+          <text class='j_pric'>10K-20K</text>
+          <text class='j_qita'>中外合资企业</text>
+        </zan-col>
+      </zan-row>
+    </view>
+-->
+</view>
+<!-- 职位列表 E -->
+
+
+  <!-- 关于城市的选项 -->
+  <view class="actionsheet-container">
+    <!-- 监听自定义事件 cancel 和 actionclick，绑定回调函数 -->
+    <zan-actionsheet
+      show="{{ show }}"
+      actions="{{ actions }}"
+      cancel-text="{{ cancelText }}"
+      cancel-with-mask="{{ cancelWithMask }}"
+      bind:cancel="closeActionSheet"
+      bind:actionclick="handleActionClick"
+    >
+    </zan-actionsheet>
+</view>
+
+<include src="../zh_other/foot_right.wxml"/>

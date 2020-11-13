@@ -1,0 +1,97 @@
+<div class="panel panel-default panel-intro">
+    {:build_heading()}
+
+    <div class="panel-body">
+        <form id="form" class="form-horizontal" role="form" data-toggle="validator" method="POST">
+
+            <div class="form-group">
+                <label class="control-label col-xs-12 col-sm-2">{:__('Content')}:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input id="content" autocomplete="off" data-rule="required" class="form-control" name="content" type="text" value="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-12 col-sm-2">{:__('Platform')}:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input type="checkbox" name="platform[]" checked="checked" value="android"> {:__('Android')}
+                    <input type="checkbox" name="platform[]" checked="checked" value="ios"> {:__('Ios')}
+                </div>
+            </div>
+            <div id="crowd" class="form-group">
+                <label class="control-label col-xs-12 col-sm-2">{:__('Crowd')}:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input type="checkbox" name="crowd[all]" checked="checked" value="all"> {:__('All')}
+                    <input type="checkbox" name="crowd[tag]" class="other" value="tag"> {:__('Tag')}
+                    <input type="checkbox" name="crowd[alias]" class="other" value="alias"> {:__('Alias')}
+                    <input type="checkbox" name="crowd[rid]" class="other" value="rid"> {:__('Registration ID')}
+                </div>
+            </div>
+            <div id="tag" class="form-group crowd_type hidden">
+                <label class="control-label col-xs-12 col-sm-2">{:__('Tag type')}:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input type="checkbox" name="tag[union]" value="union"> {:__('Union')}
+                    <input type="checkbox" name="tag[intersection]" value="intersection"> {:__('Intersection')}
+                    <input type="checkbox" name="tag[complement]" value="complement"> {:__('Complement')}
+                </div>
+            </div>
+            <div id="union" class="form-group crowd_type hidden">
+                <label class="control-label col-xs-12 col-sm-2">(Tag){:__('Union')}:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input autocomplete="off" class="form-control" name="union" placeholder="{:__('Separate multiple items with commas')}" type="text">
+                </div>
+            </div>
+            <div id="intersection" class="form-group crowd_type hidden">
+                <label class="control-label col-xs-12 col-sm-2">(Tag){:__('Intersection')}:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input autocomplete="off" class="form-control" name="intersection" placeholder="{:__('Separate multiple items with commas')}" type="text">
+                </div>
+            </div>
+            <div id="complement" class="form-group crowd_type hidden">
+                <label class="control-label col-xs-12 col-sm-2">(Tag){:__('Complement')}:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input autocomplete="off" class="form-control" name="complement" placeholder="{:__('Separate multiple items with commas')}" type="text">
+                </div>
+            </div>
+            <div id="alias" class="form-group crowd_type hidden">
+                <label class="control-label col-xs-12 col-sm-2">{:__('Alias')}:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input autocomplete="off" class="form-control" name="alias" placeholder="{:__('Separate multiple items with commas')}" type="text">
+                </div>
+            </div>
+            <div id="rid" class="form-group crowd_type hidden">
+                <label class="control-label col-xs-12 col-sm-2">{:__('Registration ID')}:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input autocomplete="off" class="form-control" name="rid" placeholder="{:__('Separate multiple items with commas')}" type="text">
+                </div>
+            </div>
+            <div id="when" class="form-group">
+                <label class="control-label col-xs-12 col-sm-2">{:__('Send time')}:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input type="radio" name="when" checked="checked" value="now"> {:__('Now')}
+                    <input type="radio" name="when" value="timing"> {:__('Timing')}
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-12 col-sm-2">{:__('Whether a constant speed')}:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input id="speedBtn" type="checkbox" name="wcs" value="1"> {:__('Constant speed')}
+                    <input autocomplete="off" class="form-control hidden" name="cs" type="text" placeholder="{:__('Constant speed tips')}">
+                </div>
+            </div>
+            <div id="timing" class="form-group hidden">
+                <label class="control-label col-xs-12 col-sm-2">{:__('Timing')}:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input autocomplete="off" class="form-control datetimepicker" name="timing" type="text" placeholder="{:__('Timing tips')}">
+                </div>
+            </div>
+            <div class="form-group layer-footer">
+                <label class="control-label col-xs-12 col-sm-2"></label>
+                <div class="col-xs-12 col-sm-8">
+                    <button id="subBtn" type="submit" class="btn btn-success btn-embossed">{:__('OK')}</button>
+                    <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>

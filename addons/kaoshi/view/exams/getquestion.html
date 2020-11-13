@@ -1,0 +1,181 @@
+
+<body class="page_answer">
+<div class="cheader">
+	<div class="headerleft">
+		<a href="{:addon_url('kaoshi/user_plan/'.$back)}"><span class="arrow-left"></span></a>
+	</div>
+	<h1>{$title}</h1>
+	<div class="headeright">
+		<a href="javascript:;" id="submitExampBtn">交卷</a>
+	</div>
+</div>
+{php}$qcid = $qmid = 0;{/php}
+{foreach name="questions" item="vo" }
+	{php}$qmid += count($vo['timu']);{/php}
+{/foreach}
+<form id="form1" name="form1" method="post" action="{:addon_url('kaoshi/exams/score',array('id'=>$msg['user_exams_id']))}">
+		{volist name="questions" id="vo" key="k"}
+
+		<div class='questionpanel tab-pane cmain nopad-lr {$k == 1?"active":""}' id="panel-type-{$k}">
+			<h2 class="answertype">{$typeList[$vo['type']]}</h2>
+			{php}$tid = 0;{/php}
+
+			{volist name="$vo['timu']" id="timu" key="key"}
+			{php}$tid++;$qcid++;{/php}
+
+			<div id="question_{$k}{$key}" class="paperexamcontent question">
+				<dl>
+					<dt>
+
+						{$timu['question']}
+						{if condition="isset($timu['annex']) and count($timu['annex']) gt 0"}
+						<div>
+							<a href="{$timu['annex']}"><img src="{$timu['annex']}" alt="" style="max-height: 100px"></a>
+						</div>
+						{/if}
+					</dt>
+					<dd>
+						<ul class="answer_select">
+							{if condition="isset($timu['selectdata'])"}
+							{volist name="$timu['selectdata']" id="xuan" key='step'}
+								<li>
+									<label>
+									<div class="select_input single">
+									 {if condition="$vo['type'] neq 2"}
+										<input type="radio" name="question[{$k}][{$tid}_{$timu['id']}]" rel="{$k}{$tid}" value="{$xuan['key']}" {if condition="isset($answers[$k][$tid.'_'.$timu['id']]) AND $answers[$k][$tid.'_'.$timu['id']] eq $xuan['key']"}  checked="checked" {/if} />
+										<span class="select_input_emulation"></span>
+									{else/}
+										<input type="checkbox" name="question[{$k}][{$tid}_{$timu['id']}][{$step}]" rel="{$k}{$tid}"  value="{$xuan['key']}" {if condition="isset($answers[$k][$tid.'_'.$timu['id']]) AND in_array($xuan['key'], $answers[$k][$tid.'_'.$timu['id']])"} checked="checked" {/if}/>
+										<span class="select_input_emulation"></span>
+									{/if}
+									</div>
+									<div class="select_detai">[{$xuan['key']}]&nbsp;&nbsp;{$xuan['value']}</div>
+									</label>
+								</li>
+							{/volist}
+							{/if}
+						</ul>
+						{if condition="$msg['type'] eq 1"}
+						<p style="margin:15px;"><a href="javascript:;" class='commonbtn J_viewanswer'>查看答案</a></p>
+						{/if}
+					</dd>
+					{if condition="$msg['type'] eq 1"}
+					<dd>
+						<div class="answertip clearfix" style="display:none">
+
+							<div class="right_detail">
+								<p><em>正确答案：</em><b id="rightAnswer">{$real_answers[$timu['id']]['answer']}</b></p>
+								<p style="display:none;" class="J_righttip">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;恭喜您，回答正确</p>
+								<p><em>题目解析：</em>{$real_answers[$timu['id']]['describe']}</p>
+							</div>
+						</div>
+					</dd>
+					{/if}
+				</dl>
+			<div class="answer_foot">
+				<div class="cfoot">
+					{if condition="$qcid gt 1"}
+					<div class="footleft">
+						<a class="btn" href="javascript:;" onclick="javascript:gotoindexquestion({$qcid-2},{$timu['id']});" title="上一题"><span class="arrow-left"></span>上一题</a>
+					</div>
+					{/if}
+					<div class="footcontent">
+					</div>
+					{if condition="$qcid lt $qmid"}
+
+					<div class="footright">
+						<a class="btn nextquestion" href="javascript:;"  data-qcid="{$qcid}" data-tmid="{$timu['id']}" title="下一题">下一题<span class="arrow-right"></span></a>
+
+					</div>
+					{/if}
+				</div>
+			</div>
+		</div>
+			{/volist}
+		</div>
+
+	{/volist}
+<input type="hidden" name="insertscore" value="1" autocomplete="off">
+</form>
+<div class="timeleft">
+	<span class="fa fa-television"></span>
+	<span id="time">
+		<span id="timer_h">00</span>:<span id="timer_m">00</span>:<span id="timer_s">00</span>
+	</span>
+</div>
+
+<div class="exp_answer_panel" id="expanswerPanel">
+	<div class="cheader">
+		<div class="headerleft">
+			<a href="javascript:;" id="panelCloseBtn"><span class="arrow-left"></span></a>
+		</div>
+		<h1>答题卡</h1>
+		<div class="headeright">
+			<a href="javascript:;" id="goBtn">确定交卷</a>
+		</div>
+	</div>
+	<p class="exp_answer_panel_count">
+		共<em class="allquestionnumber">100</em>题，你回答了<em class="yesdonumber">5</em>题，确定交卷吗？
+	</p>
+	<ul class="exp_answer_list">
+		{volist name="questions" id="type" key="t"}
+			{php}$tid = 0;{/php}
+				<li class="questype">{$typeList[$type['type']]}</li>
+				{volist name="$type['timu']" id="timu" key='num'}
+					{php}$tid++;{/php}
+				<li>
+            	<a id="sign_{$t}{$num}" href="javascript:;" onclick="javascript:gotoquestion({$t}{$num},{$t});" rel="0" class=" questionindex  {:isset($answers[$t][$tid.'_'.$timu['id']])?' badge-info ':'' } ">{$num}</a>
+				</li>
+				{/volist}
+
+		{/volist}
+	</ul>
+</div>
+</body>
+<script type="text/javascript">
+	var saveanswer_url = "{:addon_url('kaoshi/Exams/saveuseranswer',array('id'=>$msg['user_exams_id']))}";
+	$(function(){
+		$.get('{:addon_url("kaoshi/Exams/lefttime",array("id"=>$msg["user_exams_id"]))}&rand='+Math.random(),function(data){
+			var setting = {
+
+
+
+				{if condition="$msg['endtime']-180 ELT ($msg['hours'] * 60 + $msg['starttime'])"}
+				time:{:intval(($msg['endtime']- 180 - $msg['starttime'])/60)},
+				{else /}
+				time:{$msg['hours']},
+				{/if}
+
+
+				hbox:$("#timer_h"),
+				mbox:$("#timer_m"),
+				sbox:$("#timer_s"),
+				finish:function(){submitPaper();}
+			}
+			setting.lefttime = parseInt(data);
+			countdown(setting);
+		});
+		gotoindexquestion(0);
+	});
+
+	$("#submitExampBtn").on("click",function() {
+		$("body").css("overflow","hidden");
+		$("#expanswerPanel").show();
+	});
+	$("#panelCloseBtn").on("click",function(){
+		$("body").css("overflow","visible");
+		$("#expanswerPanel").hide();
+	});
+    $('.J_viewanswer').on('click',function () {
+        $(this).parent().parent().next().find(".answertip").show();
+    })
+	$('.nextquestion').on('click',function () {
+	    var qcid = $(this).attr('data-qcid');
+	    var tmid = $(this).attr('data-tmid');
+        gotoindexquestion(qcid,tmid);
+        saveanswer();
+
+    })
+
+
+</script>

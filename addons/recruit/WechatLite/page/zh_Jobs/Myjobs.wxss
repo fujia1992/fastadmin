@@ -1,0 +1,36 @@
+.iwxcimage{
+  width: 100%;
+  display:block;
+}
+
+zan-col text{
+  display: block;
+}
+.j_name{
+  font-size: 1.2em;
+  color: black;
+}
+.j_cont,.j_com{
+  font-size: 0.88em;
+  color: #999;
+}
+.j_com{
+  margin-top: 1em;
+}
+.j_pric{
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #DE3639;
+  text-align: right;
+}
+.j_qita{
+  margin-top: 2.4em;
+  font-size: 0.9em;
+  color: #999;
+  text-align: right;
+}
+.onejobs_c{
+  background-color: white ;
+  margin-bottom: 18rpx;
+  padding: 20px 20px;
+}

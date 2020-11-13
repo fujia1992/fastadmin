@@ -1,0 +1,149 @@
+  <form bindsubmit="formSubmit" bindreset="formReset">
+  <zan-panel title="基本信息">
+      <zan-field title="所属公司:" name="com-name" value='{{josdata.recruitcompany.name}}'
+      disabled="true" > </zan-field>
+      <zan-field title="职位名称:" name="name" value='{{josdata.name}}'
+      placeholder="请输入职位全称" > </zan-field>
+      <zan-field title="招聘人数:" inputType="number" maxlength="6"  name="neednum" value='{{josdata.neednum}}'
+      placeholder="请输入需要招聘的人数" > </zan-field>
+
+      <view class='zan-field'>
+        <view class="zan-cell__hd zan-field__title" style='margin:10px 0;'> 年龄要求: </view>
+        <radio-group class="zan-field__input zan-cell__bd radio-group borleft" name='age'>
+          <label class="radio">
+            <radio value="0" color="#d21640" checked="{{josdata.age=='0'? true : false}}"/>无要求
+          </label>
+          <label class="radio">
+            <radio value="1" color="#d21640" checked="{{josdata.age=='1'? true : false}}"/>18-30岁
+          </label>
+          <label class="radio">
+            <radio value="2" color="#d21640" checked="{{josdata.age=='2'? true : false}}"/>30-45岁
+          </label>
+          <label class="radio">
+            <radio value="3" color="#d21640" checked="{{josdata.age=='3'? true : false}}"/>45-50岁
+          </label>
+          <label class="radio">
+            <radio value="4" color="#d21640" checked="{{josdata.age=='4'? true : false}}"/>其他
+          </label>
+        </radio-group>
+    </view>
+     <view class='zan-field'>
+        <view class="zan-cell__hd zan-field__title" style='margin:10px 0;'> 学历要求: </view>
+        <radio-group class="zan-field__input zan-cell__bd radio-group" name='education'>
+          <label class="radio">
+            <radio value="0" color="#d21640" checked="{{josdata.education=='0'? true : false}}"/>无要求
+          </label>
+          <label class="radio">
+            <radio value="1" color="#d21640" checked="{{josdata.education=='1'? true : false}}"/>小学
+          </label>
+          <label class="radio">
+            <radio value="2" color="#d21640" checked="{{josdata.education=='2'? true : false}}"/>初中
+          </label>
+          <label class="radio">
+            <radio value="3" color="#d21640" checked="{{josdata.education=='3'? true : false}}"/>高中
+          </label>
+          <label class="radio">
+            <radio value="4" color="#d21640" checked="{{josdata.education=='4'? true : false}}"/>大专
+          </label>
+          <label class="radio">
+            <radio value="5" color="#d21640" checked="{{josdata.education=='5'? true : false}}"/>本科
+          </label>
+          <label class="radio">
+            <radio value="6" color="#d21640" checked=""/>研究生及以上
+          </label>
+          </radio-group>
+      </view>
+
+    <view class='zan-field' style='position:relative;display:flex;align-items:center;line-height:1.4;background-color:#fff;font-size:14px;margin-left:10px;border-top:1px solid #e5e5e5;'>
+      <view class="zan-cell__hd zan-field__title" style='margin:10px 0 0 -10px;'> 薪资安排: </view>
+      <picker style='flex:1;line-height:1.6;padding:4px 0;min-height:22px;height:auto;font-size:14px;color:#d21640;font-weight:600;text-align:center;' mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+                 <view> {{multiArray[0][multiIndex[0]]}} - {{multiArray[1][multiIndex[1]]}}</view>
+            </picker>
+       <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+
+  </zan-panel>
+
+  <zan-panel title="补充描述">
+
+    <view class='zan-field'>
+      <view class="zan-cell__hd zan-field__title" style='margin:10px 0;'> 住宿: </view>
+       <radio-group class="zan-field__input zan-cell__bd radio-group borleft" name='stay'>
+        <label class="radio">
+          <radio value="0" color="#d21640" checked="{{josdata.stay=='0'? true : false}}"/>不提供
+        </label>
+         <label class="radio">
+          <radio value="1" color="#d21640" checked="{{josdata.stay=='1'? true : false}}"/>提供
+         </label>
+         <label class="radio">
+          <radio value="2" color="#d21640" checked="{{josdata.stay=='2'? true : false}}"/>提供夫妻房
+         </label>
+      </radio-group>
+    </view>
+    <view class='zan-field'>
+      <view class="zan-cell__hd zan-field__title" style='margin:10px 0;'> 伙食: </view>
+       <radio-group class="zan-field__input zan-cell__bd radio-group borleft" name='food'>
+        <label class="radio">
+          <radio value="0" color="#d21640" checked="{{josdata.food=='0'? true : false}}"/>不提供
+        </label>
+         <label class="radio">
+          <radio value="1" color="#d21640" checked="{{josdata.food=='1'? true : false}}"/>只提供午饭
+         </label>
+         <label class="radio">
+          <radio value="2" color="#d21640" checked="{{josdata.food=='2'? true : false}}"/>提供三餐
+         </label>
+         <label class="radio">
+          <radio value="3" color="#d21640" checked="{{josdata.food=='3'? true : false}}"/>有餐补
+         </label>
+      </radio-group>
+    </view>
+    <view class='zan-field'>
+      <view class="zan-cell__hd zan-field__title" style='margin:10px 0;'> 社保: </view>
+       <radio-group class="zan-field__input zan-cell__bd radio-group borleft" name='safe'>
+        <label class="radio">
+          <radio value="0" color="#d21640" checked="{{josdata.safe=='0'? true : false}}"/>不缴纳
+        </label>
+         <label class="radio">
+          <radio value="1" color="#d21640" checked="{{josdata.safe=='1'? true : false}}"/>缴纳三险
+         </label>
+         <label class="radio">
+          <radio value="2" color="#d21640" checked="{{josdata.safe=='2'? true : false}}"/>缴纳五险
+         </label>
+         <label class="radio">
+          <radio value="3" color="#d21640" checked="{{josdata.safe=='3'? true : false}}"/>缴纳五险一金
+         </label>
+        </radio-group>
+      </view>
+
+    <view class='zan-field'>
+      <view class="zan-cell__hd zan-field__title" style='margin:10px 0;'> 工作地点: </view>
+       <radio-group class="zan-field__input zan-cell__bd radio-group borleft" name='city_id'>
+        <label class="radio" wx:for="{{ city }}" >
+          <radio value="{{item.id}}" color="#d21640" checked="{{item.id==josdata.city_id?'true':''}}" wx:key="key"/>{{item.city}}
+        </label>
+      </radio-group>
+    </view>
+
+    <zan-field title="其他职位描述:" type="textarea" name="content"
+      placeholder="填写一些职位相关的介绍信息" maxlength="-1" value="{{josdata.content}}" > </zan-field>
+   
+  </zan-panel>
+
+
+  <view class="zan-btns">
+    <button formType="submit" class='zan-btn' style='color:#fff;background-color:#DE3639;'>提交修改职位</button>
+  </view>
+
+  </form>
+
+  <include src="../zh_other/foot_right.wxml"/>
+
+
+
+<zan-toptips
+  id="zan-toptips"
+  content="{{ content }}"
+  is-show="{{ $zanui.toptips.show }}"
+/>
+
+<zan-toast id="zan-toast-test"></zan-toast>

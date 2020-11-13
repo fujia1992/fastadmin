@@ -1,0 +1,33 @@
+<?php
+
+return [
+    'Id'  =>  'ID',
+    'Village'  =>  '村名',
+    'Name'  =>  '姓名',
+    'Sex'  =>  '性别',
+    'Sex 0'  =>  '女',
+    'Sex 1'  =>  '男 ',
+    'Sfzno'  =>  '身份证号',
+    'Education'  =>  '学历',
+    'Education 0'  =>  '文盲',
+    'Education 1'  =>  '小学',
+    'Education 2'  =>  '初中',
+    'Education 3'  =>  '高中',
+    'Education 4'  =>  '中专',
+    'Education 5'  =>  '大专',
+    'Education 6'  =>  '本科',
+    'Education 7'  =>  '研究生及以上',
+    'Place'  =>  ' 务工地点',
+    'Salary'  =>  '月工资',
+    'Skill'  =>  '技能特长',
+    'Intent'  =>  '求职意向',
+    'Tel'  =>  '联系电话',
+    'Content'  =>  '备注',
+    'User_id'  =>  '用户id',
+    'Collect'  =>  '收集人',
+    'Createtime'  =>  '创建时间',
+    'Updatetime'  =>  '更新时间',
+    'User.nickname'  =>  '昵称',
+    'User.mobile'  =>  '手机号',
+    'User.avatar'  =>  '头像'
+];

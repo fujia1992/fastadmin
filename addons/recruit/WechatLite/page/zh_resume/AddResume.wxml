@@ -1,0 +1,120 @@
+  <form bindsubmit="formSubmit" bindreset="formReset">
+  <zan-panel title="基本信息">
+      <zan-field title="姓名:" name="name" value=''
+      placeholder="请输入您的真实姓名" > </zan-field>
+
+     <view class='zan-field' style='position:relative;display:flex;align-items:center;line-height:1.4;background-color:#fff;font-size:14px;margin-left:10px;border-bottom:1px solid #e5e5e5;'>
+      <view class="zan-cell__hd zan-field__title" style='margin:0 0 0 -10px;'> 手机号: </view>
+      <input class="weui-input intptel" type="number"  name="tel" value='{{phoneNumber}}'
+          placeholder="请输入手机号" />
+      <button class='phtb' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">自动获取</button>
+    </view>
+
+     <view class='zan-field' style='position:relative;display:flex;align-items:center;line-height:1.4;background-color:#fff;font-size:14px;margin-left:10px;border-bottom:1px solid #e5e5e5;'>
+      <view class="zan-cell__hd zan-field__title" style='margin:10px 0 0 -10px;'> 出生日期: </view>
+      <picker style='flex:1;line-height:1.6;padding:4px 0;min-height:22px;height:auto;font-size:14px;color:#d21640;font-weight:600;text-align:center;'  mode="date" value="{{birthday}}"  bindchange="bindDateChange" name="birthday">
+          <view>{{birthday}} </view>
+        </picker>
+       <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+
+    <view class='zan-field'>
+      <view class="zan-cell__hd zan-field__title" style='margin:10px 0;'> 性别: </view>
+       <radio-group class="zan-field__input zan-cell__bd radio-group borleft" name='sex'>
+        <label class="radio">
+          <radio value="0" color="#d21640" checked=""/>女
+        </label>
+         <label class="radio">
+          <radio value="1" color="#d21640" checked="true"/>男
+         </label>
+      </radio-group>
+    </view>
+
+    <view class='zan-field'>
+        <view class="zan-cell__hd zan-field__title" style='margin:10px 0;'> 学历: </view>
+        <radio-group class="zan-field__input zan-cell__bd radio-group" name='education'>
+          <label class="radio">
+            <radio value="0" color="#d21640" checked=""/>文盲
+          </label>
+          <label class="radio">
+            <radio value="1" color="#d21640" checked=""/>小学
+          </label>
+          <label class="radio">
+            <radio value="2" color="#d21640" checked=""/>初中
+          </label>
+          <label class="radio">
+            <radio value="3" color="#d21640" checked="true"/>高中
+          </label>
+          <label class="radio">
+            <radio value="4" color="#d21640" checked=""/>大专
+          </label>
+          <label class="radio">
+            <radio value="5" color="#d21640" checked=""/>本科
+          </label>
+          <label class="radio">
+            <radio value="6" color="#d21640" checked=""/>研究生及以上
+          </label>
+          </radio-group>
+      </view>
+
+     <view class='zan-field' style='position:relative;display:flex;align-items:center;line-height:1.4;background-color:#fff;font-size:14px;margin-left:10px;border-top:1px solid #e5e5e5;'>
+      <view class="zan-cell__hd zan-field__title" style='margin:10px 0 0 -10px;'> 籍贯: </view>
+      <picker style='flex:1;line-height:1.6;padding:4px 0;min-height:22px;height:auto;font-size:14px;color:#d21640;font-weight:600;text-align:center;'  mode="region" value="{{region}}"  bindchange="bindRegionChange">
+          <view>{{region[0]}}/{{region[1]}}/{{region[2]}}</view>
+        </picker>
+       <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+
+    <view class='zan-field' style='position:relative;display:flex;align-items:center;line-height:1.4;background-color:#fff;font-size:14px;margin-left:10px;border-top:1px solid #e5e5e5;'>
+      <view class="zan-cell__hd zan-field__title" style='margin:10px 0 0 -10px;'> 期望薪资: </view>
+      <picker style='flex:1;line-height:1.6;padding:4px 0;min-height:22px;height:auto;font-size:14px;color:#d21640;font-weight:600;text-align:center;' mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+                 <view> {{multiArray[0][multiIndex[0]]}} - {{multiArray[1][multiIndex[1]]}}</view>
+            </picker>
+       <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+
+  </zan-panel>
+
+  <zan-panel title="补充信息">
+
+    <view class='zan-field'>
+      <view class="zan-cell__hd zan-field__title" style='margin:10px 0;'> 工作地点: </view>
+       <radio-group class="zan-field__input zan-cell__bd radio-group borleft" name='work_city'>
+        <label class="radio" wx:for="{{ city }}" >
+          <radio value="{{item.id}}" color="#d21640" checked="{{index==0?'true':''}}" wx:key="key"/>{{item.city}}
+        </label>
+      </radio-group>
+    </view>
+
+    <zan-field title="自我介绍:" type="textarea" name="content"
+      placeholder="填写一些工作经历，个人优势等等" maxlength="-1" > </zan-field>
+
+    <zan-panel title="个人照片">
+    <view class='zan-field'>
+      <image class='img_list_add' mode="aspectFit" 
+        style="width:650rpx;height:320rpx;" bindtap="qiye_img" data-src="{{qiye_img}}" src="{{qiye_img}}" ></image>
+      <image class="sfzx" wx:if="{{qiye_img!='/assets/img/add.png'}}" bindtap='del_qiye_img_fun' src="/assets/img/x.png"></image>
+    </view>
+  </zan-panel>
+
+   
+  </zan-panel>
+
+
+  <view class="zan-btns">
+    <button formType="submit" class='zan-btn' style='color:#fff;background-color:#DE3639;'>提交简历信息</button>
+  </view>
+
+  </form>
+
+  <include src="../zh_other/foot_right.wxml"/>
+
+
+
+<zan-toptips
+  id="zan-toptips"
+  content="{{ content }}"
+  is-show="{{ $zanui.toptips.show }}"
+/>
+
+<zan-toast id="zan-toast-test"></zan-toast>

@@ -1,0 +1,116 @@
+<import src="/assets/libs/towxml/entry.wxml" />
+
+<!-- 首先是首页的图片 -->
+<view class='imtop'>
+  <image mode="widthFix" src='{{comjob.recruitcompany.cimage}}'></image>
+
+  <view class="titlen centerT zan-font-bold zan-font-16">{{comjob.recruitcompany.name}}</view>
+  <view style="color:#666;" class="centerT zan-font-12">工商注册号：{{comjob.recruitcompany.no}}</view>
+
+  <view class='jiaonaol'>
+    <block wx:if="{{comjob.zhusuname != '不提供' }}">
+     <zan-capsule color="#DE3639" leftText="住宿" rightText="{{comjob.zhusuname}}" />
+    </block>
+    <block wx:if="{{comjob.FoodDname != '不提供' }}">
+     <zan-capsule color="#DE3639" leftText="伙食" rightText="{{comjob.FoodDname}}" />
+    </block>
+    <block wx:if="{{comjob.Safename != '不提供' }}">
+     <zan-capsule color="#DE3639" leftText="社保" rightText="{{comjob.Safename}}" />
+    </block>
+  </view>
+</view>
+
+<view class='OneConte'>
+  <view class='contiel zan-font-bold zan-font-16'>
+          <i class="fa fa-indent fa-fw"></i>
+      岗位介绍
+  </view>
+  <view style='position: relative; overflow: hidden'>
+    <zan-cell-group>
+      <zan-cell title="职位名称" value="{{comjob.name}}"> </zan-cell>
+      <zan-cell title="年龄" value="{{comjob.Agename}}"> </zan-cell>
+      <zan-cell title="学历" value="{{comjob.Educationname}}"> </zan-cell>
+      <zan-cell title="招聘人数" value="{{comjob.neednum}}"> </zan-cell>
+      <zan-cell title="工作地点" value="{{comjob.recruitopencity.city}}"></zan-cell>
+      <zan-cell class="xinshui" title="工资薪水" >
+      <zan-icon slot="icon" type="balance-pay"></zan-icon>
+      <view slot="footer" class="xinshui" >{{comjob.goldtext}}</view>
+      </zan-cell>
+    </zan-cell-group>
+  </view>
+  <zan-panel class="panel-example"  wx:if="{{comjob.content != '' }}">
+    <view style="padding: 15px 15px 5px;">更多职位描述</view>
+    <view class="zan-font-12" style="padding: 0 15px 15px; color:#666;">
+      <template is="entry" data="{{...comjob.content}}" />
+    </view>
+  </zan-panel>
+
+</view>
+
+<view class='OneConte'>
+  <view class='contiel zan-font-bold zan-font-16'>
+          <i class="fa fa-university fa-fw"></i>
+      企业介绍
+  </view>
+  <view style='position: relative; overflow: hidden'>
+    <zan-cell-group>
+      <zan-cell title="企业性质" value="{{comjob.XinZhiname}}"></zan-cell>
+      <zan-cell title="企业电话" value="{{comjob.recruitcompany.tel}}" isLink='true' bindtap="telmake"></zan-cell>
+    </zan-cell-group>
+  </view>
+  <zan-panel class="panel-example">
+    <view style="padding: 15px 15px 5px;">企业地址</view>
+    <view class="zan-font-12" style="padding: 0 15px 15px; color:#666;">
+      {{comjob.recruitcompany.adress}}
+    </view>
+  </zan-panel>
+
+  <zan-panel class="panel-example"  wx:if="{{comjob.recruitcompany.content != '' }}">
+    <view style="padding: 15px 15px 5px;">更多企业描述</view>
+    <view class="zan-font-12" style="padding: 0 15px 15px; color:#666;">
+      <template is="entry" data="{{...comjob.recruitcompany.content}}" />
+    </view>
+  </zan-panel>
+
+  <zan-panel class="panel-example  conmpany_pic" wx:if="{{comjob.recruitcompany.cimages != '' }}">
+    <view style="padding: 15px 15px 5px;">企业照片</view>
+   <!--<view style="padding: 0 15px 15px;" class="con_textall PicArryct">
+      <image bindtap="pic_click" data-src="{{item}}" wx:key="PicArry"  wx:for="{{PicAllData}}" class="picarray" mode="aspectFill" 
+      src="{{item}}"></image>
+    </view> --> 
+    <zan-row>
+      <zan-col col="12" col-class="custom-zan-col imgsd" wx:key="PicArry"  wx:for="{{PicAllData}}">
+        <image bindtap="pic_click" data-src="{{item}}" class="picarray" mode="aspectFill" 
+        src="{{item}}"></image>
+      </zan-col>
+    </zan-row>
+  </zan-panel>
+
+
+  <view class='OneConte'>
+  <view class='contiel zan-font-bold zan-font-16'>
+          <i class="fa fa-wechat fa-fw"></i>
+      职位二维码
+  </view>
+
+  <view style='position: relative; overflow: hidden;text-align:center;margin:28rpx 0;padding-bottom:18rpx;'>
+    <image mode="widthFix" src='{{QrcodeImg}}'></image>
+  </view>
+
+</view>
+
+  <zan-panel >
+    <zan-button-group>
+      <zan-button type="danger" bindtap="editziliao">修改职位信息</zan-button>
+      <zan-button type="warn" bindtap="delZiLiao">删除职位信息</zan-button>
+    </zan-button-group>
+ </zan-panel>
+
+
+
+</view>
+
+<include src="../zh_other/foot_right.wxml"/>
+
+
+<zan-dialog id="zan-base-dialog"></zan-dialog>

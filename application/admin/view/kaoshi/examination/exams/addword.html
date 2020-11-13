@@ -1,0 +1,95 @@
+<style>
+    ins{
+        text-align: center;
+    }
+</style>
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="kaoshi/examination/exams/save">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Subject_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-subject_id" data-rule="required" data-field="name" data-source="zj_class_class/index" class="form-control selectpage" name="row[subject_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Exam_name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-exam_name" data-rule="required" class="form-control" name="row[exam_name]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-img" class="control-label col-xs-12 col-sm-2">{:__("Img")}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-img" data-rule="" class="form-control" size="50" name="row[img]" type="text" >
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-img" class="btn btn-danger plupload" data-input-id="c-img" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-img"><i class="fa fa-upload"></i> 上传</button></span>
+                    <span><button type="button" id="fachoose-img" class="btn btn-primary fachoose" data-input-id="c-img" data-mimetype="image/*" data-multiple="false"><i class="fa fa-list"></i> 选择</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-img"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-img"></ul>
+        </div>
+    </div>
+	<div class="form-group uploadword">
+        <label for="c-local" class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button id="plupload-local" class="btn btn-primary plupload" data-input-id="c-local" data-url="{:url('/kaoshi/examination/exams/upload')}" data-mimetype="docx"><i class="fa fa-upload"></i>上传Word</button>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Score')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-score" data-rule="required" class="form-control" name="row[score]" type="number" value="0" readonly="true">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Pass')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-pass" data-rule="required" class="form-control" name="row[pass]" type="number" step="1" min="0" value="0">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">考试时间:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-hours" data-rule="required"  min='1' step="1"  class="form-control" name="row[hours]" type="number" value="60" onkeyup="value=value.replace(/[^\d]/g,'')">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Starttime')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-starttime" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[starttime]" type="text" value="{:date('Y-m-d H:i:s')}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Endtime')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-endtime" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[endtime]" type="text" value="{:date('Y-m-d H:i:s',strtotime('+1 day'))}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Keyword')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-keyword"  class="form-control" name="row[keyword]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">选项打乱顺序:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="radio">
+                <label for="row[chaos_status]-normal"><input id="row[chaos_status]-normal" name="row[chaos_status]" type="radio" value="0"> 关闭</label>
+                <label for="row[chaos_status]-hidden"><input id="row[chaos_status]-hidden" name="row[chaos_status]" type="radio" value="1"> 开启</label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

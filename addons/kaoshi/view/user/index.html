@@ -1,0 +1,75 @@
+<body>
+<div class="cheader">
+    <div class="headerleft">
+        <a href="{:addon_url('kaoshi/index/index')}"><span class="arrow-left"></span></a>
+    </div>
+    <h1>{$title}</h1>
+    <!--<div class="headeright">-->
+    <!--<a href="javascript:;" data-subform="personForm">完成</a>-->
+    <!--</div>-->
+</div>
+<div class="cmain nopad-lr">
+
+    <div class="common_form">
+        <form method="post" action="{:addon_url('kaoshi/index/index')}" id="personForm">
+            <div class="form_group">
+                <div class="form_control">
+                    <em>姓名</em>
+                    <div class="control">
+                        <span class="control-detail">{$user.nickname}</span>
+                    </div>
+                </div>
+                <div class="form_control">
+                    <em>性别</em>
+                    <div class="control">
+                        <span class="control-detail">{$user.gender==0?"女":"男"}</span>
+                    </div>
+                </div>
+                <div class="form_control">
+                    <em>邮箱</em>
+                    <div class="control">
+                        <span class="control-detail">{$user.email}</span>
+                    </div>
+                </div>
+                <div class="form_control">
+                    <em>电话</em>
+                    <div class="control">
+                        <span class="control-detail">{$user.mobile}</span>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="form_group">
+
+            <div class="form_control">
+                <em>余额</em>
+                <div class="control">
+                    <span class="control-detail">{$user.money}</span>
+                </div>
+            </div>
+            <div class="form_control">
+                <em>积分</em>
+                <div class="control">
+                    <span class="control-detail">{$user.score}</span>
+                </div>
+            </div>
+            <div class="form_control">
+                <em>登录时间</em>
+                <div class="control">
+                    <span class="control-detail">
+                        {$user.logintime|date="Y-m-d H:i:s",###}
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="form_group">
+            <div class="form_single_control">
+                <a href="{:addon_url('kaoshi/user/changepwd')}"><span class="icon_lock1"></span> 重置密码</a>
+            </div>
+        </div>
+        <div class="form_btn">
+            <a style="background-color: #D43232;" href="{:url('index/user/logout')}" class="commonbtn">退出</a>
+        </div>
+    </div>
+</div>
+</body>

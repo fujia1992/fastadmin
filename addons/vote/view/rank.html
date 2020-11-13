@@ -1,0 +1,105 @@
+{layout name="common/layout" /}
+
+<div class="pix_section pix-padding-v-65 pix-cover-bg" id="header" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('{$__subject__.banner|cdnurl}');">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-xs-12 col-sm-12 column">
+                <div class="pix-content text-center">
+                    <div class="pix-margin-bottom-30 header-logo">
+                        <img src="__ADDON__/img/vote.png" width="120" alt="">
+                    </div>
+                    <h1 class="pix-white text-center secondary-font pix-small-width-text">
+                        <span><strong>{$__subject__.title}</strong></span>
+                    </h1>
+                    <div><h5 class="pix-slight-white text-center pix-margin-bottom-50 pix-small-width-text">
+                        <span>{$__subject__.intro}</span>
+                    </h5></div>
+
+                    <a href="{$__subject__.url}" class="btn green-blue-bg btn-xl pix-white">
+                        <i class="fa fa-reply"></i>
+                        <span><strong>返回投票</strong></span>
+                    </a>
+
+                    {if $__subject__.status!='expired' || $__subject__.endtime < time()}
+                    <div class="pix-padding-top-50" style="color:#fff;font-size:16px;">
+                        投票时间：{:date('Y年m月d日',$__subject__.begintime)}~{:date('Y年m月d日',$__subject__.endtime)}
+                    </div>
+                    {/if}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="pix_section pix-padding-v-40 bg-white" id="ranklist" style="display: block;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-xs-12 col-sm-12 column">
+                <div class="pix-content pix-padding-bottom-30">
+                    <h2 class="pix-black-gray-dark text-center pix-no-margin-top secondary-font">
+                        <span><strong>排行榜</strong></span>
+                    </h2>
+                    <div class="pix-black-gray-light big-text text-center">
+                        <span>实时当前参赛{$__subject__.playername}的排名信息</span>
+                    </div>
+                </div>
+            </div>
+            {if $categoryList}
+            <div class="col-md-10 col-xs-12 col-sm-10 column col-md-offset-1">
+                <div class="pix-content pix-padding-bottom-10">
+                    <ul class="list-inline category-list">
+                        <li><a href="?#ranklist" class="{:$Think.get.category==0?'active':''}">全部</a></li>
+                        {foreach name="categoryList" id="item"}
+                        <li><a href="?category={$item.id}#ranklist" class="{:$Think.get.category==$item.id?'active':''}">{$item.name}</a></li>
+                        {/foreach}
+                    </ul>
+                </div>
+            </div>
+            {/if}
+            <div class="col-md-10 col-xs-12 col-sm-10 column col-md-offset-1">
+
+                <div class="pix-content pix-padding-bottom-30 pix-margin-v-30">
+                    {foreach name="rankList" id="item"}
+                        <div class="rank-item pix-padding-20 gray-bg pix-margin-bottom-20">
+                             <div class="row">
+                                 <div class="col-xs-3 text-center">第 {$item.rank} 名</div>
+                                 <div class="col-xs-3 col-sm-2">
+                                     <a href="{$item.url}">{$item.nickname}</a>
+                                 </div>
+                                 <div class="col-xs-2 col-sm-2 text-left">
+                                     <a href="{$item.url}" class="img-circle" style="display:block;max-width:60px;overflow:hidden;">
+                                         <div class="embed-responsive embed-responsive-square">
+                                             <img src="{$item.image|cdnurl}" alt="{$item.nickname}" class="embed-responsive-item">
+                                         </div>
+                                     </a>
+                                 </div>
+                                 <div class="hidden-xs col-sm-3 text-center">
+                                     <div class="progress progress-striped active bg-white" data-toggle="tooltip" title="占比{:$item->getPercent($__subject__.votes)}%">
+                                         <div class="progress-bar progress-bar-success" style="width: {:$item->getPercent($__subject__.votes)}%"></div>
+                                     </div>
+                                 </div>
+                                 <div class="col-xs-4 col-sm-2 text-center">{$item.votes} 票</div>
+                             </div>
+                        </div>
+                    {/foreach}
+                </div>
+            </div>
+            <div class="col-md-10 col-xs-12 col-sm-10 column col-md-offset-1">
+                <div class="pix-content pix-padding-bottom-30 pix-margin-bottom-30 text-center">
+                    <a href="{$__subject__.url}" class="btn blue-bg btn-round-lg small-text btn-xl wide-2 pix-white pix-margin-right-10 wide">
+                        <i class="fa fa-thumbs-up"></i>
+                        <span>
+                            <strong>去投票</strong>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script data-render="script">
+    $(function () {
+        refresh_data();
+    });
+</script>

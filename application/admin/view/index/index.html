@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="{$config.language}">
+    <head>
+        <!-- 加载样式及META信息 -->
+        {include file="common/meta" /}
+    </head>
+    <body class="hold-transition skin-green sidebar-mini fixed {if $Think.config.fastadmin.multiplenav}multiplenav{/if}" id="tabs">
+        <div class="wrapper">
+
+            <!-- 头部区域 -->
+            <header id="header" class="main-header">
+                {include file='common/header' /}
+            </header>
+
+            <!-- 左侧菜单栏 -->
+            <aside class="main-sidebar">
+                {include file='common/menu' /}
+            </aside>
+
+            <!-- 主体内容区域 -->
+            <div class="content-wrapper tab-content tab-addtabs">
+                {if $fixedmenu}
+                <div role="tabpanel" class="tab-pane {:$referermenu?'':'active'}" id="con_{$fixedmenu.id}">
+                    <iframe src="{$fixedmenu.url}?addtabs=1" width="100%" height="100%" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling-x="no" scrolling-y="auto" allowtransparency="yes"></iframe>
+                </div>
+                {/if}
+                {if $referermenu}
+                <div role="tabpanel" class="tab-pane active" id="con_{$referermenu.id}">
+                    <iframe src="{$referermenu.url}?addtabs=1" width="100%" height="100%" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling-x="no" scrolling-y="auto" allowtransparency="yes"></iframe>
+                </div>
+                {/if}
+            </div>
+
+            <!-- 底部链接,默认隐藏 -->
+            <footer class="main-footer hide">
+                <div class="pull-right hidden-xs">
+                </div>
+                <strong>Copyright &copy; 2017-2020 <a href="__PUBLIC__">{$site.name}</a>.</strong> All rights reserved.
+            </footer>
+
+            <!-- 右侧控制栏 -->
+            <div class="control-sidebar-bg"></div>
+            {include file="common/control" /}
+        </div>
+
+        <!-- 加载JS脚本 -->
+        {include file="common/script" /}
+    </body>
+</html>
+<script>
+    /**
+     * 与GatewayWorker建立websocket连接，域名和端口改为你实际的域名端口，
+     * 其中端口为Gateway端口，即start_gateway.php指定的端口。
+     * start_gateway.php 中需要指定websocket协议，像这样
+     * $gateway = new Gateway(websocket://0.0.0.0:7272);
+     */
+    ws = new WebSocket("ws://127.0.0.1:7272");
+    ws.onopen = function() {
+        console.log("连接成功");
+        ws.send('tom');
+        console.log("给服务端发送一个字符串：tom");
+    };
+    // 服务端主动推送消息时会触发这里的onmessage
+    ws.onmessage = function(e){
+        alert(e);
+        // json数据转换成js对象
+        var data = eval("("+e.data+")");
+        var type = data.type || '';
+        switch(type){
+            // Events.php中返回的init类型的消息，将client_id发给后台进行uid绑定
+            case 'ping':
+                // 利用jquery发起ajax请求，将client_id发给后端进行uid绑定
+                $.post('./bind.php', {client_id: data.client_id}, function(data){}, 'json');
+                break;
+            // 当mvc框架调用GatewayClient发消息时直接alert出来
+            default :
+                alert(e.data);
+        }
+    }
+</script>

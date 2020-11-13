@@ -1,0 +1,46 @@
+<style>
+    .title{text-align: center;padding-bottom: 10px;padding-top: 10px;} 
+    .desp{text-align: center;}
+    .tbody{margin-top: 20px;line-height: 30px;}
+    .tbody .tptopn{text-indent: 10px}
+    .tbody .tptopn input{margin-right: 2px}
+    .tbody .tptopn textarea{margin-right: 2%}
+</style>
+<div class="title">
+    <h3>{$row.name}</h3>
+</div>
+<div class="desp">
+    {$row.description}
+</div>
+<div class="tbody">
+    {if condition="$list neq null"}
+    {volist name="list" id="val" key="key"}
+    <div class='row'>
+        <div class="col-xs-12 col-md-12">{$key}、{$val.title}</div>
+        {if condition="$val['option_type']>1"}
+        <div class="col-xs-12 col-md-12 tptopn">
+            <textarea rows="2" cols="60"></textarea>
+        </div>
+        {/if}
+        {if condition="$val['option_type']==1"}
+        <div class="col-xs-12 col-md-12 tptopn">
+            {volist name="$val['oplist']" id="tption"}
+            <div class="col-xs-12 col-md-12">
+                <input name="" type="checkbox" value="$tption.id">{$tption.content}
+            </div>
+            {/volist}
+        </div>
+        {/if}
+        {if condition="$val['option_type']==0"}
+        <div class="col-xs-12 col-md-12 tptopn">
+            {volist name="$val['oplist']" id="tption"}
+            <div class="col-xs-12 col-md-12">
+                <input name="" type="radio" value="$tption.id">{$tption.content}
+            </div>
+            {/volist}
+        </div>
+        {/if}
+    </div>
+    {/volist}
+    {/if}
+</div>

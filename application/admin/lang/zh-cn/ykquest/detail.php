@@ -1,0 +1,32 @@
+<?php
+
+return [
+    'Title' => '题目',
+    'Option_type' => '类型',
+    'Option_type 0' => '单选题',
+    'Option_type 1' => '多选题',
+    'Option_type 2' => '下拉题',
+    'Option_type 3' => '文本',
+    'Survey_id' => '问卷编号',
+    'Admin_id' => '填写人',
+    'Weigh' => '权重',
+    'Createtime' => '创建时间',
+    'Updatetime' => '更新时间',
+    'Deletetime' => '删除时间',
+    'Survey.id' => '编号',
+    'Survey.name' => '所属问卷',
+    'Survey.admin_id' => '问卷发起人',
+    'Survey.status' => '状态',
+    'Survey.status 0' => '关闭',
+    'Survey.status 1' => '开启',
+    'Survey.starttime' => '开始时间',
+    'Survey.endtime' => '结束时间',
+    'Survey.description' => '描述',
+    'Survey.type_id' => '类型',
+    'Survey.createtime' => '创建时间',
+    'Survey.updatetime' => '更新时间',
+    'Survey.deletetime' => '删除时间',
+    "Count" => "回答数",
+    "Bl" => "百分比(%)",
+    "option detail" => "详细"
+];

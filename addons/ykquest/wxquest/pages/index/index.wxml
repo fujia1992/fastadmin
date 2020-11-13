@@ -1,0 +1,19 @@
+<view class='page' wx:if="{{islists}}">
+  <!-- 每一条文字 -->
+    <view  class='lists'>
+    <block wx:for="{{lists}}" wx:key="key">
+       <view class="item">
+        <view class="box" data-id="{{item.id}}" data-index="{{item.id}}" catchtap="edit">
+          <view class="edit"><image src='/images/edit2.png'></image></view>
+          <view class='time'>开始时间：{{item.starttime}}</view>
+          <view class="content">{{item.name}}</view>
+        </view>
+      </view> 
+    </block>
+  </view> 
+</view>
+<view wx:else class="empty">
+  <image src='/images/empty.png'></image> 
+  <view class="empty-text">暂无问卷调查</view>
+</view>
+

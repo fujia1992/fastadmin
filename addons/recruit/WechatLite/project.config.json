@@ -1,0 +1,108 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.4.1",
+	"appid": "",
+	"projectname": "%E6%8B%9B%E8%81%98%2B%E6%8F%92%E4%BB%B6%E7%89%88",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 10,
+			"list": [
+				{
+					"id": 0,
+					"name": "个人简历",
+					"pathName": "page/zh_resume/ShowOneResume",
+					"query": "id=14"
+				},
+				{
+					"id": -1,
+					"name": "管理企业",
+					"pathName": "page/zh_company/AddCompany",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "企业展示",
+					"pathName": "page/zh_company/ShowOneCompany",
+					"query": "id=8"
+				},
+				{
+					"id": -1,
+					"name": "编辑我的企业资料",
+					"pathName": "page/zh_company/EditConpany",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "编辑我的职位",
+					"pathName": "page/zh_Jobs/EditJob",
+					"query": "id=6"
+				},
+				{
+					"id": -1,
+					"name": "职位列表",
+					"pathName": "page/zh_Jobs/JobsList",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "tab展示页",
+					"pathName": "page/zh_Jobs/JobsList_demo",
+					"query": ""
+				},
+				{
+					"id": 7,
+					"name": "职位展示",
+					"pathName": "page/zh_Jobs/ShowOneJob",
+					"query": "id=8"
+				},
+				{
+					"id": 8,
+					"name": "简历展示",
+					"pathName": "page/zh_resume/ShowOneResume",
+					"query": "id=14",
+					"scene": "1011"
+				},
+				{
+					"id": -1,
+					"name": "编辑我的",
+					"pathName": "page/zh_resume/EditResume",
+					"query": "id=14",
+					"scene": "1011"
+				},
+				{
+					"id": 10,
+					"name": "资讯管理",
+					"pathName": "page/zh_news/index",
+					"query": "id=11"
+				}
+			]
+		}
+	}
+}

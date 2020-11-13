@@ -1,0 +1,70 @@
+<import src="/assets/libs/towxml/entry.wxml" />
+<view class='imtop'>
+  <image mode="widthFix" src='{{comD.cimage}}'></image>
+
+  <view class="titlen centerT zan-font-bold zan-font-16">{{comD.name}}</view>
+  <view style="color:#666;" class="centerT zan-font-12">工商注册号：{{comD.no}}</view>
+
+</view>
+
+
+<view class='OneConte'>
+  <view class='contiel zan-font-bold zan-font-16'>
+          <i class="fa fa-university fa-fw"></i>
+      企业介绍
+  </view>
+
+<view style='position: relative; overflow: hidden'>
+  <zan-cell-group>
+    <zan-cell title="企业性质" value="{{comD.XinZhiname}}"></zan-cell>
+    <zan-cell title="企业电话" value="{{comD.tel}}" isLink='true' bindtap="telmake"></zan-cell>
+  </zan-cell-group>
+</view>
+  <zan-panel class="panel-example">
+    <view style="padding: 15px 15px 5px;">企业地址</view>
+    <view class="zan-font-12" style="padding: 0 15px 15px; color:#666;">
+      {{comD.adress}}
+    </view>
+  </zan-panel>
+
+
+  <zan-panel class="panel-example"  wx:if="{{comD.content != '' }}">
+    <view style="padding: 15px 15px 5px;">更多企业描述</view>
+    <view class="zan-font-12" style="padding: 0 15px 15px; color:#666;">
+      <template is="entry" data="{{...article}}" />
+    </view>
+  </zan-panel>
+  <zan-panel class="panel-example  conmpany_pic" wx:if="{{comD.cimages != '' }}">
+    <view style="padding: 15px 15px 5px;">企业照片</view>
+    <zan-row>
+      <zan-col col="12" col-class="custom-zan-col imgsd" wx:key="PicArry"  wx:for="{{PicAllData}}">
+        <image bindtap="pic_click" data-src="{{item}}" class="picarray" mode="aspectFill" 
+        src="{{item}}"></image>
+      </zan-col>
+    </zan-row>
+  </zan-panel>
+</view>
+
+
+<view class='OneConte' wx:if="{{comD.JobsList}}">
+  <view class='contiel zan-font-bold zan-font-16'>
+          <i class="fa fa-suitcase fa-fw"></i>
+      企业职位
+  </view>
+  <navigator url="/page/zh_Jobs/ShowOneJob?id={{ item.Id }}" class='onejobs_c' wx:for="{{ comD.JobsList }}" wx:key="key">
+    <zan-row>
+      <zan-col col="18" col-class="custom-zan-col">
+        <text class='j_name'>{{item.name}}</text>
+        <text class='j_cont'>{{item.zhusuname}} | {{item.Safename}} | {{item.Educationname}}</text>
+        <text class='j_com'>{{comD.name}}</text>
+      </zan-col>
+      <zan-col col="6" col-class="custom-zan-col">
+        <text class='j_pric'>{{item.goldtext}}</text>
+        <text class='j_qita'>{{item.XinZhiname}}</text>
+      </zan-col>
+    </zan-row>
+  </navigator>
+</view>
+
+
+<include src="../zh_other/foot_right.wxml"/>

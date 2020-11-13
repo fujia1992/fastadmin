@@ -1,0 +1,42 @@
+[ 2020-07-10T14:06:44+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000108s ]
+[ info ] [ LOG ] INIT File
+[ 2020-07-10T14:06:44+08:00 ][ info ] [ CACHE ] INIT File
+[ 2020-07-10T14:06:44+08:00 ][ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.002907s ]
+[ 2020-07-10T14:06:44+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003245s ]
+[ 2020-07-10T14:06:44+08:00 ][ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ 2020-07-10T14:06:44+08:00 ][ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000506s ]
+[ 2020-07-10T14:06:44+08:00 ][ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'start',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ 2020-07-10T14:06:44+08:00 ][ info ] [ HEADER ] array (
+)
+[ 2020-07-10T14:06:44+08:00 ][ info ] [ PARAM ] array (
+)
+[ 2020-07-10T14:21:33+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000105s ]
+[ info ] [ LOG ] INIT File
+[ 2020-07-10T14:21:33+08:00 ][ info ] [ CACHE ] INIT File
+[ 2020-07-10T14:21:33+08:00 ][ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.003506s ]
+[ 2020-07-10T14:21:33+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003829s ]
+[ 2020-07-10T14:21:33+08:00 ][ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ 2020-07-10T14:21:33+08:00 ][ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000485s ]
+[ 2020-07-10T14:21:33+08:00 ][ info ] [ BIND ] 'http/worker'
+[ 2020-07-10T14:21:33+08:00 ][ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'http',
+    1 => 'worker',
+    2 => 'start',
+  ),
+)
+[ 2020-07-10T14:21:33+08:00 ][ info ] [ HEADER ] array (
+)
+[ 2020-07-10T14:21:33+08:00 ][ info ] [ PARAM ] array (
+)
+[ 2020-07-10T14:21:33+08:00 ][ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001378s ]

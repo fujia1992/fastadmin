@@ -1,0 +1,20 @@
+ <import src="/assets/libs/zanui/loadmore/index.wxml" />
+<image class="iwxcimage" mode="widthFix" src="https://lg-jvaq236y-1255064220.cos.ap-shanghai.myqcloud.com/resumedelivery_banner.png"></image>
+
+<view class='jobs_list'  style="margin-top: 18rpx;">
+  <navigator url="/page/zh_Jobs/ShowOneJob?id={{ item.job_id }}" class='onejobs_c' wx:for="{{ comjob }}" wx:key="key">
+    <zan-row>
+      <zan-col col="18" col-class="custom-zan-col">
+        <text class='j_name'>{{item.job_name}}</text>
+        <text class='j_cont'>{{item.job.zhusuname}} | {{item.job.Safename}} | {{item.job.Educationname}}</text>
+        <text class='j_com'>{{item.com_name}}</text>
+      </zan-col>
+      <zan-col col="6" col-class="custom-zan-col">
+        <text class='j_pric'>{{item.job.goldtext}}</text>
+        <text class='j_qita'>{{item.showtime}}</text>
+      </zan-col>
+    </zan-row>
+  </navigator>
+</view>
+
+ <template is="zan-loadmore" data="{{ nodata: nodata }}" />

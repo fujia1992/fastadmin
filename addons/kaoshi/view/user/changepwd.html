@@ -1,0 +1,51 @@
+
+<body>
+<div class="cheader">
+    <div class="headerleft">
+        <a href="{:addon_url('kaoshi/user/index')}"><span class="arrow-left"></span></a>
+    </div>
+    <h1>{$title}</h1>
+</div>
+<div class="cmain nopad-lr">
+    <div class="common_form common_form2 resetpwd_form">
+        <form method="post" action="" id="personForm">
+            <div class="form_control">
+                <em>当前密码</em>
+                <div class="control pad-r-25 pos-rela">
+                    <input type="password" class="noborder" placeholder="旧密码" name="oldpassword"/>
+                    <div class="toggle_switch">
+					<span class="toggle_switch_bar">
+						<span class="switcher"></span>
+					</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form_control">
+                <em>新密码</em>
+                <div class="control pad-r-25 pos-rela">
+                    <input type="password" class="noborder" placeholder="新密码" name="newpassword"/>
+                    <div class="toggle_switch">
+					<span class="toggle_switch_bar">
+						<span class="switcher"></span>
+					</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form_control">
+                <em>确认新密码</em>
+                <div class="control pad-r-25 pos-rela">
+                    <input type="password" class="noborder" placeholder="确认新密码" name="renewpassword"/>
+                    <div class="toggle_switch">
+					<span class="toggle_switch_bar">
+						<span class="switcher"></span>
+					</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form_btn">
+                <input type="submit" value="确定" class="commonbtn" />
+            </div>
+        </form>
+    </div>
+</div>
+</body>

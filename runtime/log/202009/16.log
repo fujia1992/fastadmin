@@ -1,0 +1,136 @@
+---------------------------------------------------------------
+[ 2020-09-16T08:04:35+08:00 ] 127.0.0.1 GET admin.fastadmin.com/
+[运行时间：9.486453s] [吞吐率：0.11req/s] [内存消耗：4,309.66kb] [文件加载：140]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000144s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.201993s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000048s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000067s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.052333s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1600130223%7C6c2d7bb1a34f1a6849c967cff5283f16',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:80.0) Gecko/20100101 Firefox/80.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.113907s ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/index.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\fastadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-16T08:04:35+08:00 ] 127.0.0.1 GET admin.fastadmin.com/favicon.ico
+[运行时间：0.473275s] [吞吐率：2.11req/s] [内存消耗：2,668.96kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003679s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000047s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000425s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1600130223%7C6c2d7bb1a34f1a6849c967cff5283f16',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'image/webp,*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:80.0) Gecko/20100101 Firefox/80.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-16T16:40:56+08:00 ] 127.0.0.1 GET admin.fastadmin.com/
+[运行时间：0.146519s] [吞吐率：6.83req/s] [内存消耗：4,309.67kb] [文件加载：140]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000420s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004557s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000048s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000449s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1600130223%7C6c2d7bb1a34f1a6849c967cff5283f16',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:80.0) Gecko/20100101 Firefox/80.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001359s ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/index.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\fastadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-16T16:40:56+08:00 ] 127.0.0.1 GET admin.fastadmin.com/favicon.ico
+[运行时间：0.053736s] [吞吐率：18.61req/s] [内存消耗：2,668.96kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004259s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000090s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000135s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000473s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1600130223%7C6c2d7bb1a34f1a6849c967cff5283f16',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'image/webp,*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:80.0) Gecko/20100101 Firefox/80.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

@@ -1,0 +1,17 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/detail/index",
+        "pages/logs/logs",
+        "pages/auth/index"
+
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "问卷调查",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

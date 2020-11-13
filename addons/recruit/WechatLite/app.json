@@ -1,0 +1,74 @@
+{
+  "pages": [
+    "page/zh_index/index",
+    "page/zh_other/sel_group",
+    "page/my/index",
+    "page/my/profile",
+    "page/zh_news/index",
+    "page/zh_Jobs/ShowOneJob",
+    "page/zh_company/AddCompany",
+    "page/zh_company/MyCompany",
+    "page/zh_company/EditConpany",
+    "page/zh_Jobs/Myjobs",
+    "page/zh_Jobs/AddJob",
+    "page/zh_Jobs/PreEditJob",
+    "page/zh_Jobs/EditJob",
+    "page/zh_Jobs/JobsList",
+    "page/zh_Jobs/JobsList_demo",
+    "page/zh_resume/MyResunme",
+    "page/zh_resume/AddResume",
+    "page/zh_resume/EditResume",
+    "page/zh_company/ShowOneCompany",
+    "page/zh_resume/ShowOneResume",
+    "page/my/resumedelivery",
+    "page/zh_workforce/Myworkforce",
+    "page/zh_workforce/Add"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#DE3639",
+    "navigationBarTitleText": "找活",
+    "navigationBarTextStyle": "#FFFFFF",
+    "backgroundColor": "#DE3639",
+    "backgroundTextStyle": "#FFFFFF",
+    "backgroundColorTop": "#DE3639",
+    "backgroundColorBottom": "#f8f8f8"
+  },
+  "tabBar": {
+    "color": "#515151",
+    "selectedColor": "#DE3639",
+    "borderStyle": "black",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "page/zh_index/index",
+        "iconPath": "assets/images/tabbar/index.png",
+        "selectedIconPath": "assets/images/tabbar/index-s.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "page/zh_Jobs/JobsList",
+        "iconPath": "assets/images/tabbar/zw.png",
+        "selectedIconPath": "assets/images/tabbar/zw-s.png",
+        "text": "职位列表"
+      },
+      {
+        "pagePath": "page/my/index",
+        "iconPath": "assets/images/tabbar/wode.png",
+        "selectedIconPath": "assets/images/tabbar/wode-s.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

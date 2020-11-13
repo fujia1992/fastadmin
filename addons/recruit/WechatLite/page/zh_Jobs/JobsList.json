@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "职位列表",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "zan-icon": "../../assets/libs/zanui/icon/index",
+    "zan-cell": "../../assets/libs/zanui/cell/index",
+    "zan-cell-group": "../../assets/libs/zanui/cell-group/index",
+    "zan-search": "../../assets/libs/zanui/search/index",
+    "zan-panel": "../../assets/libs/zanui/panel/index",
+    "zan-row": "../../assets/libs/zanui/row/index",
+    "zan-col": "../../assets/libs/zanui/col/index"
+  }
+}

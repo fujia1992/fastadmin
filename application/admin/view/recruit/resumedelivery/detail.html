@@ -1,0 +1,44 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>属性</th>
+            <th>{:__('Content')}</th>
+        </tr>
+    </thead>
+    <tbody>
+		<tr>
+            <td>简历ID</td>
+            <td>{$row.id}</td>
+        </tr>
+        <tr>
+            <td>姓名</td>
+            <td>{$row.name}</td>
+        </tr>
+        <tr>
+            <td>电话</td>
+            <td>{$row.tel}</td>
+        </tr>
+        <tr>
+            <td>生日</td>
+            <td>{$row.birthday}</td>
+        </tr>
+        <tr>
+            <td>照片</td>
+            <td><img src="{$row.c_avatar}"/ style="max-height: 28em;"></td>
+        </tr>
+        <!--
+	        {volist name="row" id="vo"  }
+	        <tr>
+	            <td>{$key}</td>
+	            <td>{$vo}</td>
+	        </tr>
+	        {/volist}
+    	-->
+    </tbody>
+</table>
+<div class="hide layer-footer">
+    <label class="control-label col-xs-12 col-sm-2"></label>
+    <div class="col-xs-12 col-sm-8">
+        <button type="reset" class="btn btn-primary btn-embossed btn-close" onclick="Layer.closeAll();">{:__('Close')}</button>
+    </div>
+</div>

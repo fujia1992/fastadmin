@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "增加企业信息",
+  "usingComponents": {
+    "zan-button": "/assets/libs/zanui/btn/index",
+    "zan-button-group": "/assets/libs/zanui/btn-group/index",
+    "zan-cell-group": "/assets/libs/zanui/cell-group/index",
+    "zan-field": "/assets/libs/zanui/field/index",
+    "zan-panel": "/assets/libs/zanui/panel/index",
+    "zan-toptips": "/assets/libs/zanui/toptips/index",
+    "zan-select": "/assets/libs/zanui/select/index",
+    "zan-toast": "/assets/libs/zanui/toast/index"
+  }
+}

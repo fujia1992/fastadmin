@@ -1,0 +1,36 @@
+<div class="panel panel-default panel-intro">
+    {:build_heading()}
+
+    <div class="panel-body">
+        <form id="form" class="form-horizontal" role="form" data-toggle="validator" method="POST">
+
+            <div class="form-group">
+                <label class="control-label col-xs-12 col-sm-2">{:__('Msg_id')}:</label>
+                <div class="col-xs-12 col-sm-2">
+                    <input id="msg_id" autocomplete="off" data-rule="required" class="form-control" name="msg_id" type="text" value="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-12 col-sm-2">{:__('Registration ID')}:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <textarea placeholder="{:__('Separate multiple items with commas')}" name="rid" class="form-control" data-rule="required" rows="6"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="date" class="control-label col-xs-12 col-sm-2">{:__('Date')}:</label>
+                <div class="col-xs-12 col-sm-4">
+                    <input id="date" class="form-control datetimepicker" data-date-format="YYYY-MM-DD" name="date" type="text">
+                </div>
+            </div>
+            <div class="form-group layer-footer">
+                <label class="control-label col-xs-12 col-sm-2"></label>
+                <div class="col-xs-12 col-sm-8">
+                    <button type="submit" class="btn btn-success btn-embossed">{:__('OK')}</button>
+                    <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+                </div>
+            </div>
+        </form>
+
+        <div id="result"></div>
+    </div>
+</div>

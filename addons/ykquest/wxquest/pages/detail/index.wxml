@@ -1,0 +1,46 @@
+
+<view class="content">
+  <view wx:if="{{isGet&&!btnsucess}}">
+   <view class="title" >{{info.name}}</view>
+   <view class="descript">{{info.description}}</view>
+   <form bindsubmit="formSubmit" >
+   <view class="oplist">
+      <view wx:for="{{lists}}" wx:key="key">
+       <view class="quest">
+          <view class="proble">
+          {{index+1}}: {{item.title}}
+          </view>
+          <view wx:if="{{item.option_type=='0'}}">
+              <radio-group class="radio-group" name="quest[{{item.id}}]"  data-index="1">
+                <radio wx:for="{{item.oplist}}" class="radio" wx:for-item="opitems" wx:key="opitems"  value="{{opitems.id}}">
+                    <text>{{opitems.content}}</text>
+                </radio>
+            </radio-group>
+           </view>
+             <view wx:if="{{item.option_type=='1'}}">
+               <checkbox-group name="quest[{{item.id}}]">
+                <view class="checkbox" wx:for="{{item.oplist}}" wx:for-item="opitems" wx:key="opitems"  >
+                  <checkbox value="{{opitems.id}}"   />{{opitems.content}}
+                </view>
+              </checkbox-group>
+           </view>
+             <view wx:if="{{item.option_type=='3'}}">
+                 <textarea class="tarea" name="quest[{{item.id}}]" maxlength="150"/>
+             </view>
+       </view>
+      </view>
+
+   </view>
+  <view class="btn-area" wx:if="{{btnshwo}}">
+    <button class="btn-sub" formType="submit">提交</button>
+  </view>
+   </form>
+  </view>
+  <view wx:if="{{!isGet}}" class="msg">
+     {{msg}}
+  </view>
+  <view class="success" wx:if="{{btnsucess}}">
+  <view><image src='/images/success.png'></image></view>
+      成功提交，感谢合作
+  </view>
+</view>

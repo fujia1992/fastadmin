@@ -1,0 +1,254 @@
+{layout name="common/layout" /}
+
+<div class="pix_section pix-padding-v-65 pix-cover-bg" id="header" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('{$__subject__.banner|cdnurl}');">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-xs-12 col-sm-12 column">
+                <div class="pix-content text-center">
+                    <div class="pix-margin-bottom-30 header-logo">
+                        <img src="__ADDON__/img/vote.png" width="120" alt="">
+                    </div>
+                    <h1 class="pix-white text-center secondary-font pix-small-width-text">
+                        <span><strong>{$__subject__.title}</strong></span>
+                    </h1>
+                    <div>
+                        <h5 class="pix-slight-white text-center pix-margin-bottom-50 pix-small-width-text">
+                            <span>{$__subject__.intro}</span>
+                        </h5>
+                    </div>
+                    <div>
+                        <a href="javascript:" class="btn {:$__subject__['status']=='notstarted'?'dark-yellow-bg':($__subject__['status']=='expired'?'gray-5-bg':'green-bg')} btn-xl pix-white btn-startvote">
+                            <i class="fa fa-thumbs-up"></i>
+                            <!--@formatter:off-->
+                            {if $__subject__.status=='notstarted'}
+                                <span><strong>未开始</strong></span>
+                            {elseif $__subject__.status=='expired' /}
+                                <span><strong>已结束</strong></span>
+                            {else /}
+                                <span><strong>开始投票</strong></span>
+                            {/if}
+                            <!--@formatter:on-->
+                        </a>
+                        <a href="{$__subject__.rank_url}" class="btn blue-bg btn-xl pix-white">
+                            <i class="fa fa-bar-chart"></i>
+                            <span><strong><span class="hidden-xs">查看</span>排行榜</strong></span>
+                        </a>
+                    </div>
+                    {if $__subject__.status!='expired' || $__subject__.endtime < time()}
+                    <div class="pix-padding-top-50" style="color:#fff;font-size:16px;">
+                        投票时间：{:date('Y年m月d日',$__subject__.begintime)}~{:date('Y年m月d日',$__subject__.endtime)}
+                    </div>
+                    {/if}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="pix_section gray-bg pix-padding bg-white" id="statistics" style="display: block;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-xs-12 col-sm-12 column">
+                <div class="pix-content pix-padding-bottom-30">
+                    <h2 class="pix-black-gray-dark text-center pix-no-margin-top secondary-font">
+                        <span><b>统计报表</b></span>
+                    </h2>
+                    <p class="pix-black-gray-light big-text text-center">
+                        <span>当前赛程的实时统计信息和当前参赛{$__subject__.playername}投票的实时信息</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6 col-sm-3 column">
+                <div class="pix-content text-center pix-margin-v-20">
+						<span class="">
+							<i class="iconfont icon-chart big-icon-80 pix-black-gray-dark"></i>
+						</span>
+                    <h1 class="pix-yellow pix-margin-top-10 pix-no-margin-bottom number-count" data-to="{$__subject__.votes}">
+                        {$__subject__.votes|number_format}
+                    </h1>
+                    <h5 class="pix-black-gray-dark pix-no-margin-top">
+							<span><strong>累积投票数</strong>
+							</span>
+                    </h5>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6 col-sm-3 column">
+                <div class="pix-content text-center pix-margin-v-20">
+						<span class="">
+							<i class="iconfont icon-user big-icon-80 pix-black-gray-dark"></i>
+						</span>
+                    <h1 class="pix-yellow pix-margin-top-10 pix-no-margin-bottom number-count" data-to="{$__subject__.views}">
+                        {$__subject__.views|number_format}
+                    </h1>
+                    <h5 class="pix-black-gray-dark pix-no-margin-top">
+							<span><strong>累积访问次数</strong>
+							</span>
+                    </h5>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6 col-sm-3 column">
+                <div class="pix-content text-center pix-margin-v-20">
+						<span class="">
+							<i class="iconfont icon-calendar big-icon-80 pix-black-gray-dark"></i>
+						</span>
+                    <h1 class="pix-yellow pix-margin-top-10 pix-no-margin-bottom number-count" data-to="{$__subject__.players}">
+                        {$__subject__.players|number_format}
+                    </h1>
+                    <h5 class="pix-black-gray-dark pix-no-margin-top">
+							<span><strong>参赛人数</strong>
+							</span>
+                    </h5>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6 col-sm-3 column">
+                <div class="pix-content text-center pix-margin-v-20">
+						<span class="">
+							<i class="iconfont icon-users big-icon-80 pix-black-gray-dark"></i>
+						</span>
+                    <h1 class="pix-yellow pix-margin-top-10 pix-no-margin-bottom number-count" data-to="{$__subject__.voters}">
+                        {$__subject__.voters|number_format}
+                    </h1>
+                    <h5 class="pix-black-gray-dark pix-no-margin-top">
+                        <span><strong>累积投票人数</strong></span>
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div class="pix-padding-top-50 text-center">
+            以上数据为实时统计数据，数据真实有效
+        </div>
+    </div>
+</div>
+
+<div class="pix_section pix-padding-v-65" id="rules" style="display: block;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-xs-12 col-sm-12 column">
+                <div class="pix-content text-center pix-margin-bottom-30">
+                    <h2 class="pix-no-margin-top pix-black">
+                        <span>活动规则</span>
+                    </h2>
+                    <p class="pix-black-gray-light big-text text-center pix-margin-bottom-30 pix-md-width-text">
+                        请仔细阅读活动相关规则信息
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-10 col-xs-12 col-sm-12 column col-md-offset-1">
+                <div class="pix-content text-left">
+                    <div class="pix-gray detail">
+                        {$__subject__.content}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="pix_section pix-padding-v-50 bg-white" id="players" style="display: block;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-xs-12 col-sm-12 column">
+                <div class="pix-content pix-padding-bottom-30">
+                    <h2 class="pix-black-gray-dark text-center pix-no-margin-top secondary-font">
+                        <span><b>参赛{$__subject__.playername}</b></span>
+                    </h2>
+                    <p class="pix-black-gray-light big-text text-center">
+                        <span>请为参赛{$__subject__.playername}进行投票，感谢你的支持</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12 col-sm-12 col-md-offset-3 column">
+                <div class="pix-content pix-padding-bottom-30">
+                    <form class="pix-form-style pixfort-form form-round-lg ui-sortable" id="searchform" data-pagesize="{$__subject__.pagesize}" novalidate="true" action="#players">
+                        <div class="form-group">
+                            <input type="text" class="form-control text-center" id="searchinput" name="q" value="{$Think.get.q|default=''}" placeholder="请输入{$__subject__.playername}ID或名称进行搜索">
+                            <span id="searchbtn" class="fa fa-search"></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            {if $categoryList}
+            <div class="col-xs-12">
+                <div class="pix-content pix-padding-bottom-30">
+                    <ul class="list-inline category-list">
+                        <li><a href="?{if $Think.get.q}q={$Think.get.q}{/if}#players" class="{:$Think.get.category==0?'active':''}">全部</a></li>
+                        {foreach name="categoryList" id="item"}
+                        <li><a href="?category={$item.id}{if $Think.get.q}&q={$Think.get.q}{/if}#players" class="{:$Think.get.category==$item.id?'active':''}">{$item.name}</a></li>
+                        {/foreach}
+                    </ul>
+                </div>
+            </div>
+            {/if}
+
+            {foreach name="playerList" id="item"}
+            <div class="col-md-4 col-xs-12 col-sm-4 column player-item" data-id="{$item.id}" data-nickname="{$item.nickname}">
+                <div class="pix-content pix-radius-3 gray-bg text-center pix-margin-v-10">
+                    <div class="img-zoom pix-padding-h-20 pix-padding-v-30" style="display:block;">
+                        <a href="{$item.url}" class="img-circle img-avatar">
+                            <div class="embed-responsive embed-responsive-square">
+                                <img src="{$item.image|cdnurl}" alt="{$item.nickname}" class="embed-responsive-item">
+                            </div>
+                        </a>
+                        <h5 class="pix-black-gray-dark pix-no-margin-bottom">
+                            <span><strong>{if $config.isnumber}{:$item.number}. {/if}{$item.nickname}</strong></span>
+                        </h5>
+                        <h6 class="pix-brown pix-no-margin-top">
+                            <span><strong>{$item.intro}</strong></span>
+                        </h6>
+                        <div class="pix-black-gray-light pix-margin-bottom-20" style="line-height:24px;">
+                            <div>当前得票: <span class="text-danger" data-to="{$item.votes}">{$item.votes}</span> 票</div>
+                            <div>总排名: {$item.rank}</div>
+                            <!--<div>分类排名: {$item.category_rank}</div>-->
+                            <!--<div>占比: {:$item->getPercent($__subject__.votes)} %</div>-->
+                        </div>
+                        <div>
+                            <a href="javascript:" class="btn blue-bg btn-md pix-white btn-vote {:$__subject__.pervotelimit<=$item.voted||$__subject__.status=='expired'?'disabled':''}" data-id="{$item.id}">
+                                <i class="fa fa-thumbs-up"></i>
+                                <!--@formatter:off-->
+                                {if $item.voted}
+                                    <span><strong>{if $__subject__.pervotelimit==1}已投票{else/}已投 {$item.voted} 票{/if}</strong></span>
+                                {elseif $__subject__.status=='expired' /}
+                                    <span><strong>已结束</strong></span>
+                                {else /}
+                                    <span><strong>投一票</strong></span>
+                                {/if}
+                                <!--@formatter:on-->
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/foreach}
+
+            {if !$playerList->total()}
+            <div class="col-xs-12 text-center">暂未找到更多的{$__subject__.playername}</div>
+            {/if}
+        </div>
+        {if $playerList->hasPages()}
+        <div class="pager pix-margin-top-30">
+            {:$playerList->render()}
+        </div>
+        {/if}
+    </div>
+</div>
+
+{if $__subject__.isapply}
+<div class="pix_section bg-white" id="apply" style="display: block;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-xs-12 col-sm-10 column col-md-offset-1">
+                <div class="pix-content pix-padding-bottom-30 pix-margin-bottom-30 text-center">
+                    <a href="{$__subject__.apply_url}" class="btn blue-bg btn-round-lg small-text btn-xl wide-2 pix-white pix-margin-right-10 wide pix-margin-top-10">
+                        <i class="fa fa-pencil"></i>
+                        <span>
+                            <strong>立即报名</strong>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{/if}

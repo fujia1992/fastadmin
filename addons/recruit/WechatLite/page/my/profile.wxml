@@ -1,0 +1,30 @@
+
+
+<view class="container">
+
+  <form bindsubmit="formSubmit">
+    <view class="zan-panel">
+      <view class="zan-cell zan-field">
+        <input type="text" hidden="{{ true }}" name="avatar" value="{{ userInfo.avatar }}" />
+        <view class="zan-cell__hd zan-field__title">头像</view>
+        <image class="my-avatar" bindtap="uploadAvatar" src='{{ userInfo.avatar }}'></image>
+      </view>
+      <view class="zan-cell zan-field">
+        <view class="zan-cell__hd zan-field__title">用户名</view>
+        <input type="text" name="username" value="{{ userInfo.username }}" placeholder="请输入用户名" class="zan-field__input zan-cell__bd" placeholder-class="zan-field__placeholder" />
+      </view>
+      <view class="zan-cell zan-field">
+        <view class="zan-cell__hd zan-field__title">昵称</view>
+        <input type="text" name="nickname" value="{{ userInfo.nickname }}" placeholder="请输入昵称" class="zan-field__input zan-cell__bd" placeholder-class="zan-field__placeholder" />
+      </view>
+      <view class="zan-cell zan-field">
+        <view class="zan-cell__hd zan-field__title">格言警句</view>
+        <input type="text" name="bio" value="{{ userInfo.bio }}" placeholder="随便说点什么格言警句" class="zan-field__input zan-cell__bd" placeholder-class="zan-field__placeholder" />
+      </view>
+    </view>
+
+    <view class="zan-btns">
+      <button formType="submit" class='zan-btn' style='color:#fff;background-color:#DE3639;'>提交</button>
+    </view>
+  </form>
+</view>

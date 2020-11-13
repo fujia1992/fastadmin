@@ -1,0 +1,14 @@
+[ 2020-10-12T12:12:29+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000150s ]
+[ info ] [ LOG ] INIT File
+[ 2020-10-12T12:12:29+08:00 ][ info ] [ CACHE ] INIT File
+[ 2020-10-12T12:12:29+08:00 ][ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005536s ]
+[ 2020-10-12T12:12:29+08:00 ][ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000046s ]
+[ 2020-10-12T12:12:29+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000444s ]
+[ 2020-10-12T12:12:29+08:00 ][ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000038s ]
+[ 2020-10-12T12:12:29+08:00 ][ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000027s ]
+[ 2020-10-12T12:12:55+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000155s ]
+[ info ] [ LOG ] INIT File
+[ 2020-10-12T12:12:55+08:00 ][ info ] [ CACHE ] INIT File
+[ 2020-10-12T12:12:55+08:00 ][ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005386s ]
+[ 2020-10-12T12:12:55+08:00 ][ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000047s ]
+[ 2020-10-12T12:12:55+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000399s ]

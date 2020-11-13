@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "个人简历",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "zan-panel": "/assets/libs/zanui/panel/index",
+    "zan-row": "/assets/libs/zanui/row/index",
+    "zan-col": "/assets/libs/zanui/col/index",
+    "zan-icon": "/assets/libs/zanui/icon/index",
+    "zan-cell": "/assets/libs/zanui/cell/index",
+    "zan-cell-group": "/assets/libs/zanui/cell-group/index"
+  }
+}

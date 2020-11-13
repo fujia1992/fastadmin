@@ -1,0 +1,81 @@
+<import src="/assets/libs/towxml/entry.wxml" />
+<import src="/assets/libs/zanui/loadmore/index.wxml" />
+
+<view class="container">
+
+  <!-- S 封面 -->
+  <view class="cover" style="background-image:url({{ archivesInfo.image }})">
+    <view class="overlay">
+      <button data-name="shareBtn" class='share' open-type="share">
+        <i class="fa fa-share-alt"></i>
+      </button>
+    </view>
+  </view>
+  <!-- E 封面 -->
+
+  <!-- S 标题 -->
+  <view class="title">
+    <view class="h1">{{ archivesInfo.title }}</view>
+    <view class="date">{{ archivesInfo.updatetime }}</view>
+  </view>
+  <!-- E 标题 -->
+
+  <!-- S 正文 -->
+  <view class="content">
+    <template is="entry" data="{{...archivesInfo.article}}" />
+  </view>
+  <!-- E 正文 -->
+
+  <view class='OneConte'>
+    <view class='contiel zan-font-bold zan-font-16'>
+            <i class="fa fa-wechat fa-fw"></i>
+        分享二维码
+    </view>
+
+    <view style='position: relative; overflow: hidden;text-align:center;margin:28rpx 58rpx;padding-bottom:18rpx;'>
+      <image mode="widthFix" src='{{QrcodeImg}}'></image>
+    </view>
+
+  </view>
+
+  <!-- S 报名 -->
+  <form wx:if="{{archivesInfo.baoming=='baoming'}}" bindsubmit="formSubmit" bindreset="formReset">
+
+   <zan-panel title="报名信息">
+    <zan-field title="姓名:" name="tname" value=''
+      placeholder="报名人姓名" > </zan-field>
+
+    <view class='zan-field' style='position:relative;display:flex;align-items:center;line-height:1.4;background-color:#fff;font-size:14px;margin-left:10px;border-bottom:1px solid #e5e5e5;'>
+      <view class="zan-cell__hd zan-field__title" style='margin:0 0 0 -10px;'> 手机号: </view>
+      <input class="weui-input intptel" type="number" maxlength="20" name="ttel" value='{{phoneNumber}}'
+          placeholder="报名人联系电话" />
+      <button class='phtb' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">自动获取</button>
+    </view>
+
+   </zan-panel>
+
+   <view class="zan-btns">
+      <button formType="submit" class='zan-btn' style='color:#fff;background-color:#DE3639;'>提交报名</button>
+   </view>
+
+  </form>
+  <!-- E 报名 -->
+
+
+  <zan-panel class="cell-panel-demo" wx:if="{{Jobfair.length!=0}}" title="我的报名历史">
+    <zan-cell wx:for="{{ Jobfair }}" wx:key="key" title="{{item.tname}}:{{item.ttel}}" value="{{item.showtime}}">
+      <zan-icon slot="icon" type="checked"></zan-icon>
+    </zan-cell>
+  </zan-panel>
+
+
+</view>
+
+<include src="../zh_other/foot_right.wxml"/>
+
+
+<zan-toptips
+  id="zan-toptips"
+  content="{{ content }}"
+  is-show="{{ $zanui.toptips.show }}"
+/>

@@ -1,0 +1,160 @@
+2020-07-27 16:41:05 pid:1 Error: Call to undefined method GatewayWorker\Gateway::getClientSessionsByGroup() in E:\fastadmin\application\push\controller\Events.php:69
+Stack trace:
+#0 [internal function]: app\push\controller\Events::onMessage('7f0000010fa0000...', '{"type":"login"...')
+#1 E:\fastadmin\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('app\\push\\contro...', '7f0000010fa0000...', '{"type":"login"...')
+#2 E:\fastadmin\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\fastadmin\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #158)
+#4 E:\fastadmin\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\Select->loop()
+#5 E:\fastadmin\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#6 E:\fastadmin\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#7 E:\fastadmin\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#8 E:\fastadmin\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#9 E:\fastadmin\application\push\controller\BaseServer.php(62): Workerman\Worker::runAll()
+#10 E:\fastadmin\application\push\controller\Websocket.PHP(16): app\push\controller\BaseServer->__construct()
+#11 [internal function]: app\push\controller\Websocket->__construct()
+#12 E:\fastadmin\thinkphp\library\think\App.php(359): ReflectionClass->newInstanceArgs(Array)
+#13 E:\fastadmin\thinkphp\library\think\Loader.php(479): think\App::invokeClass('app\\push\\contro...')
+#14 E:\fastadmin\thinkphp\library\think\App.php(580): think\Loader::controller('websocket', 'controller', false, 'Error')
+#15 E:\fastadmin\thinkphp\library\think\App.php(456): think\App::module(Array, Array, true)
+#16 E:\fastadmin\thinkphp\library\think\App.php(139): think\App::exec(Array, Array)
+#17 E:\fastadmin\thinkphp\start.php(19): think\App::run()
+#18 E:\fastadmin\websocket.php(5): require('E:\\fastadmin\\th...')
+#19 {main}
+2020-07-27 16:41:05 pid:1 Worker process terminated
+2020-07-27 16:41:06 pid:1 Error: Call to undefined method GatewayWorker\Gateway::getClientSessionsByGroup() in E:\fastadmin\application\push\controller\Events.php:69
+Stack trace:
+#0 [internal function]: app\push\controller\Events::onMessage('7f0000010fa0000...', '{"type":"login"...')
+#1 E:\fastadmin\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('app\\push\\contro...', '7f0000010fa0000...', '{"type":"login"...')
+#2 E:\fastadmin\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\fastadmin\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #158)
+#4 E:\fastadmin\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\Select->loop()
+#5 E:\fastadmin\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#6 E:\fastadmin\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#7 E:\fastadmin\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#8 E:\fastadmin\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#9 E:\fastadmin\application\push\controller\BaseServer.php(62): Workerman\Worker::runAll()
+#10 E:\fastadmin\application\push\controller\Websocket.PHP(16): app\push\controller\BaseServer->__construct()
+#11 [internal function]: app\push\controller\Websocket->__construct()
+#12 E:\fastadmin\thinkphp\library\think\App.php(359): ReflectionClass->newInstanceArgs(Array)
+#13 E:\fastadmin\thinkphp\library\think\Loader.php(479): think\App::invokeClass('app\\push\\contro...')
+#14 E:\fastadmin\thinkphp\library\think\App.php(580): think\Loader::controller('websocket', 'controller', false, 'Error')
+#15 E:\fastadmin\thinkphp\library\think\App.php(456): think\App::module(Array, Array, true)
+#16 E:\fastadmin\thinkphp\library\think\App.php(139): think\App::exec(Array, Array)
+#17 E:\fastadmin\thinkphp\start.php(19): think\App::run()
+#18 E:\fastadmin\websocket.php(5): require('E:\\fastadmin\\th...')
+#19 {main}
+2020-07-27 16:41:06 pid:1 Worker process terminated
+2020-07-27 16:41:06 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2020-07-27 16:41:06 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2020-07-27 16:41:06 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2020-07-27 16:41:09 pid:1 Error: Call to undefined method GatewayWorker\Gateway::getClientSessionsByGroup() in E:\fastadmin\application\push\controller\Events.php:69
+Stack trace:
+#0 [internal function]: app\push\controller\Events::onMessage('7f0000010fa0000...', '{"type":"login"...')
+#1 E:\fastadmin\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('app\\push\\contro...', '7f0000010fa0000...', '{"type":"login"...')
+#2 E:\fastadmin\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\fastadmin\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #158)
+#4 E:\fastadmin\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\Select->loop()
+#5 E:\fastadmin\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#6 E:\fastadmin\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#7 E:\fastadmin\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#8 E:\fastadmin\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#9 E:\fastadmin\application\push\controller\BaseServer.php(62): Workerman\Worker::runAll()
+#10 E:\fastadmin\application\push\controller\Websocket.PHP(16): app\push\controller\BaseServer->__construct()
+#11 [internal function]: app\push\controller\Websocket->__construct()
+#12 E:\fastadmin\thinkphp\library\think\App.php(359): ReflectionClass->newInstanceArgs(Array)
+#13 E:\fastadmin\thinkphp\library\think\Loader.php(479): think\App::invokeClass('app\\push\\contro...')
+#14 E:\fastadmin\thinkphp\library\think\App.php(580): think\Loader::controller('websocket', 'controller', false, 'Error')
+#15 E:\fastadmin\thinkphp\library\think\App.php(456): think\App::module(Array, Array, true)
+#16 E:\fastadmin\thinkphp\library\think\App.php(139): think\App::exec(Array, Array)
+#17 E:\fastadmin\thinkphp\start.php(19): think\App::run()
+#18 E:\fastadmin\websocket.php(5): require('E:\\fastadmin\\th...')
+#19 {main}
+2020-07-27 16:41:09 pid:1 Worker process terminated
+2020-07-27 16:41:10 pid:1 Error: Call to undefined method GatewayWorker\Gateway::getClientSessionsByGroup() in E:\fastadmin\application\push\controller\Events.php:69
+Stack trace:
+#0 [internal function]: app\push\controller\Events::onMessage('7f0000010fa0000...', '{"type":"login"...')
+#1 E:\fastadmin\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('app\\push\\contro...', '7f0000010fa0000...', '{"type":"login"...')
+#2 E:\fastadmin\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\fastadmin\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #158)
+#4 E:\fastadmin\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\Select->loop()
+#5 E:\fastadmin\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#6 E:\fastadmin\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#7 E:\fastadmin\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#8 E:\fastadmin\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#9 E:\fastadmin\application\push\controller\BaseServer.php(62): Workerman\Worker::runAll()
+#10 E:\fastadmin\application\push\controller\Websocket.PHP(16): app\push\controller\BaseServer->__construct()
+#11 [internal function]: app\push\controller\Websocket->__construct()
+#12 E:\fastadmin\thinkphp\library\think\App.php(359): ReflectionClass->newInstanceArgs(Array)
+#13 E:\fastadmin\thinkphp\library\think\Loader.php(479): think\App::invokeClass('app\\push\\contro...')
+#14 E:\fastadmin\thinkphp\library\think\App.php(580): think\Loader::controller('websocket', 'controller', false, 'Error')
+#15 E:\fastadmin\thinkphp\library\think\App.php(456): think\App::module(Array, Array, true)
+#16 E:\fastadmin\thinkphp\library\think\App.php(139): think\App::exec(Array, Array)
+#17 E:\fastadmin\thinkphp\start.php(19): think\App::run()
+#18 E:\fastadmin\websocket.php(5): require('E:\\fastadmin\\th...')
+#19 {main}
+2020-07-27 16:41:10 pid:1 Worker process terminated
+2020-07-27 16:41:10 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2020-07-27 16:43:15 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot declare class Events, because the name is already in use in E:\fastadmin\application\push\controller\Events.php on line 28"
+2020-07-27 16:43:16 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot declare class Events, because the name is already in use in E:\fastadmin\application\push\controller\Events.php on line 28"
+2020-07-27 16:43:17 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot declare class Events, because the name is already in use in E:\fastadmin\application\push\controller\Events.php on line 28"
+2020-07-27 16:43:18 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot declare class Events, because the name is already in use in E:\fastadmin\application\push\controller\Events.php on line 28"
+2020-07-27 16:43:19 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2020-07-27 16:43:19 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2020-07-27 16:43:19 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot declare class Events, because the name is already in use in E:\fastadmin\application\push\controller\Events.php on line 28"
+2020-07-27 16:43:20 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot declare class Events, because the name is already in use in E:\fastadmin\application\push\controller\Events.php on line 28"
+2020-07-27 16:43:21 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot declare class Events, because the name is already in use in E:\fastadmin\application\push\controller\Events.php on line 28"
+2020-07-27 16:43:22 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2020-07-27 16:43:22 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2020-07-27 16:43:22 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot declare class Events, because the name is already in use in E:\fastadmin\application\push\controller\Events.php on line 28"
+2020-07-27 16:43:23 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot declare class Events, because the name is already in use in E:\fastadmin\application\push\controller\Events.php on line 28"
+2020-07-27 16:44:39 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot declare class Events, because the name is already in use in E:\fastadmin\application\push\controller\Events.php on line 28"
+2020-07-27 16:44:40 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot declare class Events, because the name is already in use in E:\fastadmin\application\push\controller\Events.php on line 28"
+2020-07-27 16:44:41 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot declare class Events, because the name is already in use in E:\fastadmin\application\push\controller\Events.php on line 28"
+2020-07-27 16:47:13 pid:1 Error: Call to undefined method GatewayWorker\Gateway::getClientSessionsByGroup() in E:\fastadmin\application\push\controller\Events.php:70
+Stack trace:
+#0 [internal function]: app\push\controller\Events::onMessage('7f0000010fa0000...', '{"type":"login"...')
+#1 E:\fastadmin\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('app\\push\\contro...', '7f0000010fa0000...', '{"type":"login"...')
+#2 E:\fastadmin\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\fastadmin\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #158)
+#4 E:\fastadmin\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\Select->loop()
+#5 E:\fastadmin\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#6 E:\fastadmin\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#7 E:\fastadmin\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#8 E:\fastadmin\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#9 E:\fastadmin\application\push\controller\BaseServer.php(62): Workerman\Worker::runAll()
+#10 E:\fastadmin\application\push\controller\Websocket.PHP(16): app\push\controller\BaseServer->__construct()
+#11 [internal function]: app\push\controller\Websocket->__construct()
+#12 E:\fastadmin\thinkphp\library\think\App.php(359): ReflectionClass->newInstanceArgs(Array)
+#13 E:\fastadmin\thinkphp\library\think\Loader.php(479): think\App::invokeClass('app\\push\\contro...')
+#14 E:\fastadmin\thinkphp\library\think\App.php(580): think\Loader::controller('websocket', 'controller', false, 'Error')
+#15 E:\fastadmin\thinkphp\library\think\App.php(456): think\App::module(Array, Array, true)
+#16 E:\fastadmin\thinkphp\library\think\App.php(139): think\App::exec(Array, Array)
+#17 E:\fastadmin\thinkphp\start.php(19): think\App::run()
+#18 E:\fastadmin\websocket.php(5): require('E:\\fastadmin\\th...')
+#19 {main}
+2020-07-27 16:47:13 pid:1 Worker process terminated
+2020-07-27 16:47:14 pid:1 Error: Call to undefined method GatewayWorker\Gateway::getClientSessionsByGroup() in E:\fastadmin\application\push\controller\Events.php:70
+Stack trace:
+#0 [internal function]: app\push\controller\Events::onMessage('7f0000010fa0000...', '{"type":"login"...')
+#1 E:\fastadmin\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('app\\push\\contro...', '7f0000010fa0000...', '{"type":"login"...')
+#2 E:\fastadmin\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\fastadmin\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #158)
+#4 E:\fastadmin\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\Select->loop()
+#5 E:\fastadmin\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#6 E:\fastadmin\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#7 E:\fastadmin\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#8 E:\fastadmin\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#9 E:\fastadmin\application\push\controller\BaseServer.php(62): Workerman\Worker::runAll()
+#10 E:\fastadmin\application\push\controller\Websocket.PHP(16): app\push\controller\BaseServer->__construct()
+#11 [internal function]: app\push\controller\Websocket->__construct()
+#12 E:\fastadmin\thinkphp\library\think\App.php(359): ReflectionClass->newInstanceArgs(Array)
+#13 E:\fastadmin\thinkphp\library\think\Loader.php(479): think\App::invokeClass('app\\push\\contro...')
+#14 E:\fastadmin\thinkphp\library\think\App.php(580): think\Loader::controller('websocket', 'controller', false, 'Error')
+#15 E:\fastadmin\thinkphp\library\think\App.php(456): think\App::module(Array, Array, true)
+#16 E:\fastadmin\thinkphp\library\think\App.php(139): think\App::exec(Array, Array)
+#17 E:\fastadmin\thinkphp\start.php(19): think\App::run()
+#18 E:\fastadmin\websocket.php(5): require('E:\\fastadmin\\th...')
+#19 {main}
+2020-07-27 16:47:14 pid:1 Worker process terminated
+2020-07-27 16:47:15 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2020-07-27 16:47:15 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html

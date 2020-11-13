@@ -1,0 +1,58 @@
+<script>
+    var typelist = {$typeList|json_encode};
+    var contentlist = {:$row&&$row.applyfield_list?json_encode($row.applyfield_list):'[]'};
+</script>
+<style>
+    .iteminner {margin-bottom:15px;border-bottom:1px solid #ddd;}
+</style>
+<script id="itemtpl" type="text/html">
+    <div class="col-xs-6 iteminner">
+        <input type="hidden" name="applyfield[<%=i%>][id]" value="<%=id?id:0%>">
+        <div class="form-group">
+            <div class="control-label col-xs-4"><span class="text-danger">*</span> 类型</div>
+            <div class="col-xs-8">
+                <select name="applyfield[<%=i%>][type]" <%=readonly?'readonly':''%> class="form-control">
+                    <%for(var m in typelist){%>
+                    <option value="<%=m%>" <%=m==type?'selected':''%>><%=typelist[m]%></option>
+                    <%}%>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="control-label col-xs-4"><span class="text-danger">*</span> 变量名</div>
+            <div class="col-xs-8">
+                <input type="text" name="applyfield[<%=i%>][name]" <%=readonly?'readonly':''%> class="form-control" value="<%=name%>" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="control-label col-xs-4"><span class="text-danger">*</span> 标题</div>
+            <div class="col-xs-8">
+                <input type="text" name="applyfield[<%=i%>][title]" <%=readonly?'readonly':''%> class="form-control" value="<%=title%>" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="control-label col-xs-4">默认值</div>
+            <div class="col-xs-8">
+                <input type="text" name="applyfield[<%=i%>][defaultvalue]" class="form-control" value="<%=defaultvalue%>" />
+            </div>
+        </div>
+        <div class="form-group multiple">
+            <div class="control-label col-xs-4">数据列表</div>
+            <div class="col-xs-8">
+                <textarea name="applyfield[<%=i%>][content]" <%=['select','selects','checkbox','radio'].indexOf(type)>-1?'':'readonly'%> cols="30" rows="3" class="form-control" data-rule="required"><%=content%></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="control-label col-xs-4"></div>
+            <div class="col-xs-8">
+                <a href="javascript:;" class="btn btn-primary btn-dragsort btn-xs"><i class="fa fa-arrows"></i></a> 
+                <%if(['mobile', 'name', 'gender', 'ethnic'].indexOf(name)==-1){%>
+                <a href="javascript:;" class="btn btn-danger btn-delone btn-xs"><i class="fa fa-trash"></i></a>
+                <%}%>
+            </div>
+        </div>
+    </div>
+    <%if(line%2==0){%>
+    <div class="clearfix"></div>
+    <%}%>
+</script>

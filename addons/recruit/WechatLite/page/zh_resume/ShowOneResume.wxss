@@ -1,0 +1,104 @@
+/**基础风格样式**/
+@import '/assets/libs/towxml/style/main.wxss';
+
+/**主题配色（浅色样式）**/
+@import '/assets/libs/towxml/style/theme/light.wxss';
+@import "../../assets/libs/zanui/index.wxss";
+
+.imtop{
+  width: 100%;
+  /*background-color: #DE3639;*/
+  background-color: white;
+  padding-bottom:20rpx;
+  box-shadow: 2px 4px 6px #d6d6d6;
+}
+.imtop image{
+  width: 100%;
+  /*max-height: 480rpx;*/
+  display:block;
+}
+.iwxcimage{
+  width: 100%;
+  display:block;
+}
+.centerT{
+  text-align: center;
+}
+.titlen{
+  margin-top: 28rpx;
+  margin-bottom: 18rpx;
+  color: #DE3639;
+}
+
+.jiaonaol{
+  margin:18rpx 30rpx;
+  text-align:center;
+}
+.OneConte{
+  background: white;
+  margin-top: 28rpx;
+  padding-top: 28rpx;
+  box-shadow: 2px 4px 6px #d6d6d6;
+}
+.contiel{
+  text-align:center;
+  color: #DE3639;
+}
+
+.xinshui {
+  color:#DE3639;
+  font-weight: bold;
+}
+.con_textall.PicArryct{
+  padding:1em 0.8em;
+  text-align:left;
+}
+
+.picarray{
+  width:360rpx;
+  height:240rpx;
+  margin:10rpx auto;
+  position:relative;
+  display:block;
+}
+
+.imgsd{
+  /*padding-left:10rpx;*/
+}
+.zan-cell::after {
+	content: '';
+  display: none;
+	border: 0 ;
+}
+
+.header{
+  position: relative;
+  width: 100%;
+  height: 298rpx;
+}
+
+.header .avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 458rpx;
+  height: 458rpx;
+  text-align: center;
+  background: #fff;
+  margin: 15px auto;
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  margin-top:-158rpx;
+  left:146rpx;
+}
+
+.header .avatar image {
+  width: 100%;
+  height: 100%;
+}
+.tophei{
+  width:100%;
+  height:208rpx;
+  background-color:#DE3639;
+  border-radius:0px 0px 218rpx 218rpx;
+}

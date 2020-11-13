@@ -1,0 +1,30 @@
+
+<div class="form-group">
+    <h3>仅供参考!每次考题都将随机生成！</h3>
+</div>
+
+{foreach name='questions'  item="vo" key="k"}
+<div class="form-group">
+    <h4>题型{$k+1}：{$typeList[$vo[0]['type']]}</h4>
+</div>
+
+{foreach name='vo'  item="timu"}
+<div class="form-group">
+    <h5>题目：{$timu['question']}<br></h5>
+    {foreach name="timu['selectdata']"  item="select"}
+    {if condition="$timu['type'] eq 2"}
+    <input type="checkbox" value="{$select['key']}" {:in_array($select['key'],$timu['answer'])?"checked":""}>{$select['key']}、{$select['value']}&nbsp;&nbsp;&nbsp;&nbsp;
+
+    {else/}
+    <input type="radio" value="{$select['key']}" {$select['key'] == $timu['answer']?"checked":""}>{$select['key']}、{$select['value']}&nbsp;&nbsp;&nbsp;&nbsp;
+
+    {/if}
+    {/foreach}
+
+</div>
+
+
+{/foreach}
+
+
+{/foreach}

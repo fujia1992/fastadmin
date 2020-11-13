@@ -1,0 +1,25 @@
+<body>
+<div class="cheader">
+	<div class="headerleft">
+		<a href="{:addon_url('kaoshi/index/index')}"><span class="arrow-left"></span></a>
+	</div>
+	<h1>本次成绩</h1>
+</div>
+<div class="example_result">
+	<div class="example_result_wrap">
+		<div class="example_result_area">
+			<div class="example_result_num">
+				本次分数为
+				<em>{$score}分</em>
+			</div>
+			<div class="example_result_bottom clearfix">
+				<span class="fr">目前{$number}人参与</span>
+			</div>
+		</div>
+		<div style="margin:10px 10%;">
+			<a href="{:addon_url('kaoshi/exams/answercard',array('id' => $msg['id']))}" class="commonbtn">查看答案及解析</a>
+		</div>
+		<a href="{:addon_url('kaoshi/index/index')}" class="returnlink">返回首页</a>
+	</div>
+</div>
+</body>

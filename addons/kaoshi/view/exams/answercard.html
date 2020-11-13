@@ -1,0 +1,158 @@
+<body class="page_answer">
+<div class="cheader">
+	<div class="headerleft">
+		<a href="{:addon_url('kaoshi/user_plan/exam')}"><span class="arrow-left"></span></a>
+	</div>
+	<h1>{$title}</h1>
+	<div class="headeright">
+		<a href="javascript:;" id="submitExampBtn">答题卡</a>
+	</div>
+</div>
+{php}$qcid = $qmid = 0;{/php}
+{foreach name="questions" item="vo" }
+	{php}$qmid += count($vo['timu']);{/php}
+{/foreach}
+<form id="form1" name="form1" action="#">
+{volist name="questions" id="vo" key="k"}
+	
+		<div class='questionpanel tab-pane cmain nopad-lr {$k == 1?"active":""}' id="panel-type-{$k}">
+			<h2 class="answertype">{$typeList[$vo['type']]}</h2>
+			{php}$tid = 0;{/php}
+
+			{volist name="$vo['timu']" id="timu" key="key"}
+			{php}$tid++;$qcid++;{/php}
+			<div id="question_{$k}{$key}" class="paperexamcontent question">
+				<dl>
+					<dt>
+						{$timu['question']}
+						{if condition="isset($timu['annex']) and count($timu['annex']) gt 0"}
+						<div>
+							<a href="{$timu['annex']}"><img src="{$timu['annex']}" alt="" style="max-height: 100px"></a>
+						</div>
+						{/if}
+					</dt>
+					<dd>
+						<ul class="answer_select">
+							{if condition="isset($timu['selectdata'])"}
+
+							{volist name="$timu['selectdata']" id="xuan" key='step'}
+								<li>
+									<label>
+									<div class="select_input single">
+									 {if condition="$vo['type'] neq 2"}
+										<input disabled="true" type="radio" name="question[{$k}][{$tid}_{$timu['id']}]" rel="{$k}{$tid}" value="{$xuan['key']}" {if condition="isset($answers[$k][$tid.'_'.$timu['id']]) AND $answers[$k][$tid.'_'.$timu['id']] eq $xuan['key']"} checked {/if}  value="{$xuan['key']}"/>
+										<span class="select_input_emulation"></span>
+									{else/}
+										<input type="checkbox" name="question[{$k}][{$tid}_{$timu['id']}][{$step}]" rel="{$k}{$tid}"  value="{$xuan['key']}" {if condition="isset($answers[$k][$tid.'_'.$timu['id']]) AND in_array($xuan['key'], $answers[$k][$tid.'_'.$timu['id']])"} checked {/if}/>
+										<span class="select_input_emulation"></span>
+									{/if}
+									</div>
+									<div class="select_detai">[{$xuan['key']}]&nbsp;&nbsp;{$xuan['value']}</div>
+									</label>
+								</li>
+							{/volist}
+							{/if}
+						</ul>
+					</dd>
+					<dd>
+						<div class="answertip clearfix">	
+
+							<div class="right_detail">
+								<p><em>正确答案：</em><b id="rightAnswer">{$real_answers[$timu['id']]['answer']}</b></p>
+								{if condition="isset($answers[$k][$tid.'_'.$timu['id']]) and $answers[$k][$tid.'_'.$timu['id']] eq $real_answers[$timu['id']]['answer']"}
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;恭喜您，回答正确</p>
+								{else /}
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;对不起，回答错误</p>
+								{/if}
+								<p><em>题目解析：</em>{$real_answers[$timu['id']]['describe']}</p>
+							</div>
+						</div>
+					</dd>
+				</dl>
+			<div class="answer_foot">
+				<div class="cfoot">
+					{if condition="$qcid gt 1"}
+					<div class="footleft">
+						<a class="btn" href="javascript:;" onclick="javascript:gotoindexquestion({$qcid-2},{$timu['id']});" title="上一题"><span class="arrow-left"></span>上一题</a>
+					</div>
+					{/if}
+					<div class="footcontent">
+					</div>
+					{if condition="$qcid lt $qmid"}
+
+					<div class="footright">
+						<a class="btn" href="javascript:;" onclick="javascript:gotoindexquestion({$qcid},{$timu['id']});" title="下一题">下一题<span class="arrow-right"></span></a>
+					}
+					</div>
+					{/if}
+				</div>
+			</div>
+		</div>
+			{/volist}
+		</div>
+	
+{/volist}
+</form>
+<div class="exp_answer_panel jiexi_panel" id="expanswerPanel">
+	<div class="cheader">
+		<div class="headerleft">
+			<a href="javascript:;" id="panelCloseBtn"><span class="arrow-left"></span></a>
+		</div>
+		<h1>答题卡</h1>
+		<div class="headeright">
+			<a href="{:addon_url('kaoshi/exams/getquestion',array('user_plan_id'=>$user_plan_id))}">重新考试</a>
+		</div>
+	</div>
+	<p class="exp_answer_panel_count">
+		共<em class="allquestionnumber">0</em>题，你答对了<em class="yesdonumber">0</em>题
+	</p>
+	<ul class="exp_answer_list">
+		{volist name="questions" id="type" key="t"}
+				<li class="questype">{$typeList[$type['type']]}</li>
+				{volist name="$type['timu']" id="timu" key='num'}
+				<li>
+					{php}$step_str = $num.'_'.$timu['id'];$timu_answer = $real_answers[$timu['id']]['answer'];{/php}
+					{if condition="!isset($answers[$t][$step_str])"}
+
+					<a id="sign_{$t}{$num}" href="javascript:;" onclick="javascript:gotoquestion({$t}{$num},{$t});" rel="0" class=" questionindex signBorder">{$num}</a>
+					{else/}
+            		<a id="sign_{$t}{$num}" href="javascript:;" onclick="javascript:gotoquestion({$t}{$num},{$t});" rel="0" class=" questionindex signBorder {if condition='$answers[$t][$step_str] eq $timu_answer'} badge-info {else/} error  {/if}
+            	">{$num}</a>
+				{/if}
+				</li>
+				{/volist}
+		{/volist}
+	</ul>
+</div>
+</body>
+<include file="Public/script" />
+<script type="text/javascript">
+	function gotoquestion(questid, questypeid) {
+		$(".questionpanel").hide();
+		$(".paperexamcontent").hide();
+		$("#panel-type-" + questypeid).show();
+		$("#question_" + questid).show();
+		$("body").css("overflow","visible");
+		$("#expanswerPanel").hide();
+		 //$('#modal').modal('hide');
+	}
+	function gotoindexquestion(index) {
+		$(".questionpanel").hide();
+		$(".paperexamcontent").hide();
+		$(".paperexamcontent").eq(index).show();
+		$(".paperexamcontent").eq(index).parents(".questionpanel").show();
+	}
+	$(function(){
+		gotoindexquestion(0);
+		$('.allquestionnumber').html($('.paperexamcontent').length);
+		$('.yesdonumber').html($('.exp_answer_list .badge-info').length);
+	});
+	$("#submitExampBtn").on("click",function() {
+		$("body").css("overflow","hidden");
+		$("#expanswerPanel").show();
+	});
+	$("#panelCloseBtn").on("click",function(){
+		$("body").css("overflow","visible");
+		$("#expanswerPanel").hide();
+	});
+</script>

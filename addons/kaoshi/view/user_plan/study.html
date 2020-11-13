@@ -1,0 +1,33 @@
+
+<body>
+<div class="cheader">
+	<div class="headerleft">
+		<a href="{:addon_url('kaoshi/index/index')}"><span class="arrow-left"></span></a>
+	</div>
+	<h1>{$title}</h1>
+</div>
+<div class="cmain nopad-lr">
+	{if condition="count($plans) eq 0"}
+	<div style="text-align: center">暂无进行中的学习！</div>
+	{else/}
+	<ul class="study_list">
+		{foreach name="plans" item="vo" }
+			<li>
+				<a href="{:addon_url('kaoshi/exams/getquestion',array('user_plan_id'=>1))}">
+					<div class="study_content">
+						<h4 class="study_name">{$vo.plan_name}</h4>
+						<div class="study_process">
+							截止日期:{:date('Y-m-d H:i:s',$vo.endtime)}
+							
+							<span>
+								上次学习:{$vo.lasttime|default='暂未开始学习'}
+							</span>
+						</div>
+					</div>
+				</a>
+			</li>
+		{/foreach}
+	</ul>
+	{/if}
+</div>
+</body>

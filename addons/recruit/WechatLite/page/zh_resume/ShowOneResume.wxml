@@ -1,0 +1,73 @@
+<import src="/assets/libs/towxml/entry.wxml" />
+
+
+<view class='imtop'>
+  <view class='tophei'></view>
+  <view class='header'>
+    <image class="avatar" mode="aspectFill" src='{{ResumeD.c_avatar}}'></image>
+  </view>
+
+  <view class="titlen centerT zan-font-bold zan-font-16">姓名：{{ResumeD.name}}</view>
+  <view style="color:#666;" class="centerT zan-font-12">简历更新时间：{{ResumeD.updatetime}}</view>
+</view>
+
+<view class='OneConte'>
+  <view class='contiel zan-font-bold zan-font-16'>
+          <i class="fa fa-address-card fa-fw"></i>
+      个人资料
+  </view>
+
+<view style='position: relative; overflow: hidden'>
+  <zan-cell-group>
+    <zan-cell title="性别" value="{{ResumeD.sex=='0'? '女' : '男'}}"></zan-cell>
+    <zan-cell title="年龄" value="{{ResumeD.age}}岁"></zan-cell>
+    <zan-cell title="属相" value="{{ResumeD.shengxiao}}"></zan-cell>
+    <zan-cell title="星座" value="{{ResumeD.xinzuo}}"></zan-cell>
+    <zan-cell title="籍贯" value="{{ResumeD.native_place}}"></zan-cell>
+  </zan-cell-group>
+</view>
+
+</view>
+
+<view class='OneConte'>
+  <view class='contiel zan-font-bold zan-font-16'>
+          <i class="fa fa-file-text-o fa-fw"></i>
+      更多信息
+  </view>
+
+  <view style='position: relative; overflow: hidden'>
+    <zan-cell-group>
+      <zan-cell title="学历" value="{{ResumeD.Educationname}}"></zan-cell>
+
+      <zan-cell class="xinshui" title="期望工资" >
+        <zan-icon slot="icon" type="balance-pay"></zan-icon>
+        <view slot="footer" class="xinshui" >{{ResumeD.gold1}} - {{ResumeD.gold2}} </view>
+      </zan-cell>
+      <zan-cell title="求职地点" value="{{ResumeD.workcity}}"></zan-cell>
+
+      <zan-cell class="xinshui" title="电话" value="{{ResumeD.tel}}" isLink='true' bindtap="telmake"></zan-cell>
+    </zan-cell-group>
+  </view>
+
+    <zan-panel class="panel-example"  wx:if="{{comD.content != '' }}">
+    <view style="padding: 15px 15px 5px;">自我介绍</view>
+    <view class="zan-font-12" style="padding: 0 15px 15px; color:#666;">
+      <template is="entry" data="{{...ResumeD.content}}" />
+    </view>
+  </zan-panel>
+
+</view>
+
+<view class='OneConte'>
+  <view class='contiel zan-font-bold zan-font-16'>
+          <i class="fa fa-wechat fa-fw"></i>
+      简历二维码
+  </view>
+
+  <view style='position: relative; overflow: hidden;text-align:center;margin:28rpx 0;padding-bottom:18rpx;'>
+    <image mode="widthFix" src='{{QrcodeImg}}'></image>
+  </view>
+
+</view>
+
+<include src="../zh_other/foot_right.wxml"/>

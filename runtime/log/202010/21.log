@@ -1,0 +1,3593 @@
+---------------------------------------------------------------
+[ 2020-10-21T12:15:14+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/dashboard?ref=addtabs
+[Х©░Х║▄Ф≈╤И≈╢О╪ 0.784072s] [Е░·Е░░Г▌┤О╪ 1.28req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 3,472.82kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 136]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000134s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.030176s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000034s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.006659s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dashboard',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'ref' => 'addtabs',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.021206s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\fastadmin\public/../application/common\view\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000045s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000017s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000413s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-21T12:16:52+08:00 ] 127.0.0.1 GET admin.fastadmin.com/uploads/20200720/3788e6c1e7baa60d62492ba72149499f.jpg
+[Х©░Х║▄Ф≈╤И≈╢О╪ 0.084565s] [Е░·Е░░Г▌┤О╪ 11.83req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 2,698.31kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003496s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000031s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000050s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000540s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'error',
+    1 => '404',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-21T16:07:12+08:00 ] 127.0.0.1 GET admin.fastadmin.com/
+[Х©░Х║▄Ф≈╤И≈╢О╪ 0.310844s] [Е░·Е░░Г▌┤О╪ 3.22req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,270.36kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 146]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000082s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003575s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000049s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000533s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001686s ]
+[ info ] [ BEHAVIOR ] Run \addons\ftp\Ftp @upload_config_init [ RunTime:0.018338s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.012490s ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/index.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000068s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\fastadmin\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000037s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000034s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-21T16:07:12+08:00 ] 127.0.0.1 GET admin.fastadmin.com/assets/img/bg-pattern.png
+[Х©░Х║▄Ф≈╤И≈╢О╪ 0.057654s] [Е░·Е░░Г▌┤О╪ 17.34req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 2,685.70kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003260s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000029s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000048s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000625s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'error',
+    1 => '404',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747',
+  'referer' => 'http://admin.fastadmin.com/assets/css/index.css',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'image/webp,*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-21T16:07:16+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/dashboard?ref=addtabs
+[Х©░Х║▄Ф≈╤И≈╢О╪ 0.067101s] [Е░·Е░░Г▌┤О╪ 14.90req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 3,465.84kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 136]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004649s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000044s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000078s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000446s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dashboard',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'ref' => 'addtabs',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001180s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\fastadmin\public/../application/common\view\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000031s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000017s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000525s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-21T16:07:18+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/index/login?url=%2FshSjpTOLDc.php%2Fdashboard%3Fref%3Daddtabs
+[Х©░Х║▄Ф≈╤И≈╢О╪ 0.147706s] [Е░·Е░░Г▌┤О╪ 6.77req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 3,791.88kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003560s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000031s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000051s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000464s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/dashboard?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'url' => '/shSjpTOLDc.php/dashboard?ref=addtabs',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001383s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\ftp\Ftp @upload_config_init [ RunTime:0.000479s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.000444s ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000068s ]
+[ info ] [ RUN ] app\admin\controller\Index->login[ E:\fastadmin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/admin\view\index\login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'background',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000074s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000018s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000388s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-21T16:07:18+08:00 ] 127.0.0.1 GET admin.fastadmin.com/assets/img/avatar.png
+[Х©░Х║▄Ф≈╤И≈╢О╪ 0.047157s] [Е░·Е░░Г▌┤О╪ 21.21req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 2,686.52kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004056s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000038s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000061s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000365s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'error',
+    1 => '404',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/index/login?url=%2FshSjpTOLDc.php%2Fdashboard%3Fref%3Daddtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'image/webp,*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-21T16:07:18+08:00 ] 127.0.0.1 GET admin.fastadmin.com/assets/img/loginbg.jpg
+[Х©░Х║▄Ф≈╤И≈╢О╪ 0.053163s] [Е░·Е░░Г▌┤О╪ 18.81req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 2,686.52kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004122s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000065s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000090s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000350s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'error',
+    1 => '404',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/index/login?url=%2FshSjpTOLDc.php%2Fdashboard%3Fref%3Daddtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'image/webp,*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-21T16:07:18+08:00 ] 127.0.0.1 GET admin.fastadmin.com/assets/img/avatar.png
+[Х©░Х║▄Ф≈╤И≈╢О╪ 0.051306s] [Е░·Е░░Г▌┤О╪ 19.49req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 2,686.52kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004224s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000044s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000068s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000351s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'error',
+    1 => '404',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/index/login?url=%2FshSjpTOLDc.php%2Fdashboard%3Fref%3Daddtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'image/webp,*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-21T16:07:18+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/ajax/lang?callback=define&controllername=index&v=1603267638
+[Х©░Х║▄Ф≈╤И≈╢О╪ 0.066170s] [Е░·Е░░Г▌┤О╪ 15.11req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 3,794.66kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003771s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000051s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000356s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/index/login?url=%2FshSjpTOLDc.php%2Fdashboard%3Fref%3Daddtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1603267638',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001475s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\ftp\Ftp @upload_config_init [ RunTime:0.000344s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.000282s ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000026s ]
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ E:\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000418s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-21T16:07:19+08:00 ] 127.0.0.1 GET admin.fastadmin.com/uploads/20200720/e13d815c114176a3537b40215dbd5b10.jpg
+[Х©░Х║▄Ф≈╤И≈╢О╪ 0.049209s] [Е░·Е░░Г▌┤О╪ 20.32req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 2,686.58kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003221s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000029s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000049s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.001127s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'error',
+    1 => '404',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/index/login?url=%2FshSjpTOLDc.php%2Fdashboard%3Fref%3Daddtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'image/webp,*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-21T16:07:21+08:00 ] 127.0.0.1 GET admin.fastadmin.com/assets/libs/fastadmin-layer/dist/theme/default/loading-0.gif
+[Х©░Х║▄Ф≈╤И≈╢О╪ 0.052137s] [Е░·Е░░Г▌┤О╪ 19.18req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 2,686.56kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003442s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000069s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000101s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000418s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'error',
+    1 => '404',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/assets/libs/fastadmin-layer/dist/theme/default/layer.css',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'image/webp,*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-21T16:07:23+08:00 ] 127.0.0.1 POST admin.fastadmin.com/shSjpTOLDc.php/index/login?url=%2FshSjpTOLDc.php%2Fdashboard%3Fref%3Daddtabs
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.474126s] [Е░·Е░░Г▌┤О╪ 0.40req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,627.45kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 150]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003526s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000029s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000049s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000356s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/index/login?url=%2FshSjpTOLDc.php%2Fdashboard%3Fref%3Daddtabs',
+  'connection' => 'keep-alive',
+  'origin' => 'http://admin.fastadmin.com',
+  'content-length' => '73',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'url' => '/shSjpTOLDc.php/dashboard?ref=addtabs',
+  '__token__' => 'ed157b0b2631a860948a417de36a8915',
+  'username' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001288s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\ftp\Ftp @upload_config_init [ RunTime:0.000351s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.000275s ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000028s ]
+[ info ] [ RUN ] app\admin\controller\Index->login[ E:\fastadmin\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.104543s ]
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:07:26+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/dashboard?ref=addtabs
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.226295s] [Е░·Е░░Г▌┤О╪ 0.45req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,661.27kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000029s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003522s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000050s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000452s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dashboard',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/index/login?url=%2FshSjpTOLDc.php%2Fdashboard%3Fref%3Daddtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'ref' => 'addtabs',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001201s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000922s ]
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:07:28+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/index/index
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.516631s] [Е░·Е░░Г▌┤О╪ 0.40req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 5,332.93kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 160]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000032s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005544s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000059s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000094s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000720s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'connection' => 'keep-alive',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/index/login?url=%2FshSjpTOLDc.php%2Fdashboard%3Fref%3Daddtabs',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003023s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ftp\Ftp @upload_config_init [ RunTime:0.000768s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.000721s ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000058s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ E:\fastadmin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/admin\view\index\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'menulist',
+  6 => 'navlist',
+  7 => 'fixedmenu',
+  8 => 'referermenu',
+  9 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000074s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000036s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000662s ]
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:07:28+08:00 ] 127.0.0.1 GET admin.fastadmin.com/uploads/20200720/e13d815c114176a3537b40215dbd5b10.jpg
+[Х©░Х║▄Ф≈╤И≈╢О╪ 0.065537s] [Е░·Е░░Г▌┤О╪ 15.26req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 2,685.94kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000031s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005571s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000051s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000077s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000367s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'error',
+    1 => '404',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/index/index',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'image/webp,*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-21T16:07:30+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/dashboard?addtabs=1
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.186347s] [Е░·Е░░Г▌┤О╪ 0.46req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,926.99kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 149]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000029s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003946s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000042s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000064s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000413s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dashboard',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/index/index',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003039s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ftp\Ftp @upload_config_init [ RunTime:0.000468s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.000419s ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000043s ]
+[ info ] [ RUN ] app\admin\controller\Dashboard->index[ E:\fastadmin\application\admin\controller\Dashboard.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/admin\view\dashboard\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'totaluser',
+  6 => 'totalviews',
+  7 => 'totalorder',
+  8 => 'totalorderamount',
+  9 => 'todayuserlogin',
+  10 => 'todayusersignup',
+  11 => 'todayorder',
+  12 => 'unsettleorder',
+  13 => 'sevendnu',
+  14 => 'sevendau',
+  15 => 'paylist',
+  16 => 'createlist',
+  17 => 'addonversion',
+  18 => 'uploadmode',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000041s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000016s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000339s ]
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:07:33+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/ajax/lang?callback=define&controllername=index&v=1603267646
+[Х©░Х║▄Ф≈╤И≈╢О╪ 4.055314s] [Е░·Е░░Г▌┤О╪ 0.25req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,978.34kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 148]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004114s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000046s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000070s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000374s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/index/index',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1603267646',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001104s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ftp\Ftp @upload_config_init [ RunTime:0.000866s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.000795s ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000067s ]
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ E:\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000748s ]
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:07:35+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/ajax/lang?callback=define&controllername=dashboard&v=1603267648
+[Х©░Х║▄Ф≈╤И≈╢О╪ 4.065615s] [Е░·Е░░Г▌┤О╪ 0.25req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,976.69kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 148]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004200s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000056s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000154s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000420s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/dashboard?addtabs=1',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'dashboard',
+  'v' => '1603267648',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001402s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ftp\Ftp @upload_config_init [ RunTime:0.000574s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.000450s ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000029s ]
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ E:\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000370s ]
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:07:39+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?addtabs=1
+[Х©░Х║▄Ф≈╤И≈╢О╪ 4.380660s] [Е░·Е░░Г▌┤О╪ 0.23req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,967.23kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 149]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003698s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000050s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000410s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'kaoshi.subject',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001140s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ftp\Ftp @upload_config_init [ RunTime:0.001069s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.000936s ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/subject.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000145s ]
+[ info ] [ RUN ] app\common\controller\Backend->index[ E:\fastadmin\application\admin\library\traits\Backend.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/admin\view\kaoshi\subject\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000505s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000112s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001048s ]
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:07:41+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/ajax/lang?callback=define&controllername=kaoshi.subject&v=1603267654
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.121421s] [Е░·Е░░Г▌┤О╪ 0.47req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,973.70kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 148]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003065s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000049s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000354s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?addtabs=1',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'kaoshi.subject',
+  'v' => '1603267654',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001684s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ftp\Ftp @upload_config_init [ RunTime:0.000940s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.000855s ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000079s ]
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ E:\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/subject.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000573s ]
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:07:44+08:00 ] 127.0.0.1 GET admin.fastadmin.com/assets/libs/fastadmin-layer/dist/theme/default/loading-1.gif
+[Х©░Х║▄Ф≈╤И≈╢О╪ 0.052601s] [Е░·Е░░Г▌┤О╪ 19.01req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 2,686.56kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000129s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003409s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000050s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000422s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'error',
+    1 => '404',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/assets/libs/fastadmin-layer/dist/theme/default/layer.css',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'image/webp,*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-21T16:07:45+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1603267659427
+[Х©░Х║▄Ф≈╤И≈╢О╪ 4.160767s] [Е░·Е░░Г▌┤О╪ 0.24req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 5,007.60kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 151]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003699s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000028s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000049s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000316s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'kaoshi.subject',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?addtabs=1',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/json',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1603267659427',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001131s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ftp\Ftp @upload_config_init [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.000931s ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/subject.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000087s ]
+[ info ] [ RUN ] app\common\controller\Backend->index[ E:\fastadmin\application\admin\library\traits\Backend.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000482s ]
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:07:48+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 4.888094s] [Е░·Е░░Г▌┤О╪ 0.20req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004415s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000044s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000071s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000580s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.017765s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:07:52+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject/add?dialog=1
+[Х©░Х║▄Ф≈╤И≈╢О╪ 8.312073s] [Е░·Е░░Г▌┤О╪ 0.12req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 5,360.20kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 152]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000147s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004233s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000032s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000053s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000797s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'kaoshi.subject',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?addtabs=1',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'dialog' => '1',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001710s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ftp\Ftp @upload_config_init [ RunTime:0.001416s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.000951s ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/subject.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000050s ]
+[ info ] [ RUN ] app\common\controller\Backend->add[ E:\fastadmin\application\admin\library\traits\Backend.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/admin\view\kaoshi\subject\add.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000043s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000021s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000470s ]
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:07:54+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/ajax/lang?callback=define&controllername=kaoshi.subject&v=1603267664
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.122505s] [Е░·Е░░Г▌┤О╪ 0.47req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,973.70kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 148]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000079s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003781s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000050s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000444s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject/add?dialog=1',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'kaoshi.subject',
+  'v' => '1603267664',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001551s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ftp\Ftp @upload_config_init [ RunTime:0.000352s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.000356s ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000027s ]
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ E:\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/subject.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000317s ]
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:07:56+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 3.403328s] [Е░·Е░░Г▌┤О╪ 0.29req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003315s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000087s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000121s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000549s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001683s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:08:05+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.196767s] [Е░·Е░░Г▌┤О╪ 0.46req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003618s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000034s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000054s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000519s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001563s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:08:06+08:00 ] 127.0.0.1 GET admin.fastadmin.com/assets/libs/nice-validator/dist/images/validator_default.png
+[Х©░Х║▄Ф≈╤И≈╢О╪ 0.071150s] [Е░·Е░░Г▌┤О╪ 14.05req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 2,686.56kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000024s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002950s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000028s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000046s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000420s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'error',
+    1 => '404',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/assets/libs/nice-validator/dist/jquery.validator.css',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'image/webp,*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-21T16:08:15+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.153513s] [Е░·Е░░Г▌┤О╪ 0.46req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003390s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000031s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000049s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000444s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001667s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:08:25+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.169309s] [Е░·Е░░Г▌┤О╪ 0.46req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003257s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000029s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000046s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000588s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001583s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:08:35+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.182016s] [Е░·Е░░Г▌┤О╪ 0.46req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003283s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000048s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000442s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.002236s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:08:45+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.132923s] [Е░·Е░░Г▌┤О╪ 0.47req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003246s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000032s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000053s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000403s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001608s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:08:55+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.149918s] [Е░·Е░░Г▌┤О╪ 0.47req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004242s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000032s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000053s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000440s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001600s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:09:05+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.154070s] [Е░·Е░░Г▌┤О╪ 0.46req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003392s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000031s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000052s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000414s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001748s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:09:15+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.138116s] [Е░·Е░░Г▌┤О╪ 0.47req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004696s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000042s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000067s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000669s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.002288s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:09:25+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.126930s] [Е░·Е░░Г▌┤О╪ 0.47req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003451s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000032s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000052s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000442s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001619s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:09:35+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.180567s] [Е░·Е░░Г▌┤О╪ 0.46req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003506s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000032s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000052s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000475s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001725s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:09:45+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.163630s] [Е░·Е░░Г▌┤О╪ 0.46req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003801s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000049s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000511s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001650s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:09:55+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.178261s] [Е░·Е░░Г▌┤О╪ 0.46req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003873s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000032s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000050s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000450s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001702s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:10:05+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.170469s] [Е░·Е░░Г▌┤О╪ 0.46req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004330s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000047s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000092s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000491s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001713s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:10:15+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.105816s] [Е░·Е░░Г▌┤О╪ 0.47req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004585s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000091s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000139s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000665s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001980s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:10:25+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.199100s] [Е░·Е░░Г▌┤О╪ 0.45req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000030s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.006094s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000056s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000093s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000784s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.003312s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:10:35+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.154771s] [Е░·Е░░Г▌┤О╪ 0.46req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004449s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000041s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000067s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000572s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.002122s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:10:45+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.124027s] [Е░·Е░░Г▌┤О╪ 0.47req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003540s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000049s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000571s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001788s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:10:55+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.167920s] [Е░·Е░░Г▌┤О╪ 0.46req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003967s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000031s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000050s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000439s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001590s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:11:05+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.169474s] [Е░·Е░░Г▌┤О╪ 0.46req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004223s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000033s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000053s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000536s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001841s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:11:15+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.204709s] [Е░·Е░░Г▌┤О╪ 0.45req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003653s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000034s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000489s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001735s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:11:25+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.163685s] [Е░·Е░░Г▌┤О╪ 0.46req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003613s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000032s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000052s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000658s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001588s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:11:35+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.151291s] [Е░·Е░░Г▌┤О╪ 0.46req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003596s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000050s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000366s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001491s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:11:45+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.132989s] [Е░·Е░░Г▌┤О╪ 0.47req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003296s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000035s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000398s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.002232s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:11:55+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.163663s] [Е░·Е░░Г▌┤О╪ 0.46req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003421s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000031s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000049s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000547s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001470s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:12:05+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.122323s] [Е░·Е░░Г▌┤О╪ 0.47req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002785s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000027s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000046s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000343s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001649s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:12:15+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.130336s] [Е░·Е░░Г▌┤О╪ 0.47req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003793s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000029s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000050s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000436s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001800s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:12:25+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.108100s] [Е░·Е░░Г▌┤О╪ 0.47req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003587s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000044s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000094s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000453s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001698s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:12:35+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.211286s] [Е░·Е░░Г▌┤О╪ 0.45req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000026s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004552s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000038s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000062s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000523s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.002054s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:12:45+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.164953s] [Е░·Е░░Г▌┤О╪ 0.46req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003623s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000033s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000053s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000472s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001605s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:12:49+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject/add?dialog=1
+[Х©░Х║▄Ф≈╤И≈╢О╪ 5.850409s] [Е░·Е░░Г▌┤О╪ 0.17req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 5,062.12kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 149]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004279s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000040s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000062s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000478s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'kaoshi.subject',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?addtabs=1',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'dialog' => '1',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001182s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ftp\Ftp @upload_config_init [ RunTime:0.001483s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.001368s ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/subject.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000139s ]
+[ info ] [ RUN ] app\common\controller\Backend->add[ E:\fastadmin\application\admin\library\traits\Backend.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/admin\view\kaoshi\subject\add.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000122s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000076s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001298s ]
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:12:52+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/ajax/lang?callback=define&controllername=kaoshi.subject&v=1603267964
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.151412s] [Е░·Е░░Г▌┤О╪ 0.46req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,973.70kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 148]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003345s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000029s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000048s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000449s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject/add?dialog=1',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'kaoshi.subject',
+  'v' => '1603267964',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001418s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ftp\Ftp @upload_config_init [ RunTime:0.001428s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.001036s ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000079s ]
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ E:\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/subject.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000992s ]
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:12:55+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.126241s] [Е░·Е░░Г▌┤О╪ 0.47req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000028s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004168s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000040s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000064s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000539s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.002065s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:13:05+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.152849s] [Е░·Е░░Г▌┤О╪ 0.46req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003555s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000031s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000051s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000392s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001510s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:13:15+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.155069s] [Е░·Е░░Г▌┤О╪ 0.46req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003484s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000032s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000051s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000464s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001758s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:13:25+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.178032s] [Е░·Е░░Г▌┤О╪ 0.46req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003526s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000048s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000608s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001801s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:13:35+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.151260s] [Е░·Е░░Г▌┤О╪ 0.46req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003728s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000049s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000450s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001627s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:13:45+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.177063s] [Е░·Е░░Г▌┤О╪ 0.46req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004201s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000031s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000052s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000445s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001603s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:13:55+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.207640s] [Е░·Е░░Г▌┤О╪ 0.45req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003518s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000036s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000058s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000445s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001752s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:14:05+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.145932s] [Е░·Е░░Г▌┤О╪ 0.47req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003313s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000047s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000434s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001611s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:14:15+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.170589s] [Е░·Е░░Г▌┤О╪ 0.46req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003629s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000049s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000520s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001690s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:14:25+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.153930s] [Е░·Е░░Г▌┤О╪ 0.46req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000042s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003560s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000032s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000063s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000451s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001617s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+
+---------------------------------------------------------------
+[ 2020-10-21T16:14:35+08:00 ] 127.0.0.1 GET admin.fastadmin.com/addons/voicenotice/notice/voice
+[Х©░Х║▄Ф≈╤И≈╢О╪ 2.151903s] [Е░·Е░░Г▌┤О╪ 0.46req/s] [Е├┘Е╜≤Ф╤┬Х─≈О╪ 4,099.46kb] [Ф√┤Д╩╤Е┼═Х╫╫О╪ 141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003586s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000031s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000052s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000459s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1603155439%7C79d99568a49d37eb14c419d5c83f5747; PHPSESSID=682dlru3dnc5n3fni6dig1gb8c',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
+  'host' => 'admin.fastadmin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001592s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+

@@ -1,0 +1,27 @@
+<?php
+
+return [
+    'Type'                   => '类型',
+    'Subject_id'             => '主题ID',
+    'Subject_title'          => '投票主题',
+    'Model_id'               => '模型ID',
+    'Model_name'             => '模型名称',
+    'Parent_id'              => '父ID',
+    'Parent_ids'             => '父ID集合',
+    'Child_ids'              => '子ID集合',
+    'Name'                   => '名称',
+    'Image'                  => '图片',
+    'Keywords'               => '关键字',
+    'Description'            => '描述',
+    'Save'                   => '保存',
+    'Weigh'                  => '权重',
+    'Pagesize'               => '分页大小',
+    'Remove'                 => '移除',
+    'Createtime'             => '创建时间',
+    'Updatetime'             => '更新时间',
+    'The data already exist' => '已经存在',
+    'Toggle all'             => '显示全部',
+    'Toggle menu visible'    => '点击切换菜单显示',
+    'Toggle sub menu'        => '点击切换子菜单显示',
+    'Status'                 => '状态',
+];

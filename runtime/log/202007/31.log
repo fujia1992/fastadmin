@@ -1,0 +1,2998 @@
+---------------------------------------------------------------
+[ 2020-07-31T08:00:45+08:00 ] 127.0.0.1 GET admin.fastadmin.com/
+[运行时间：4.729530s] [吞吐率：0.21req/s] [内存消耗：3,957.94kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000222s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003153s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000035s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000053s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000428s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001275s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\fastadmin\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000065s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000038s ]
+[ info ] [ LOG ] INIT File
+[ error ] SQLSTATE[HY000] [2002] ����Ŀ�����������ܾ����޷����ӡ�
+
+---------------------------------------------------------------
+[ 2020-07-31T09:53:33+08:00 ] 127.0.0.1 GET admin.fastadmin.com/
+[运行时间：2.363425s] [吞吐率：0.42req/s] [内存消耗：3,957.02kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000033s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005070s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000047s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000066s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000544s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001327s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\fastadmin\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000068s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000038s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T09:53:35+08:00 ] 127.0.0.1 GET admin.fastadmin.com/
+[运行时间：2.277473s] [吞吐率：0.44req/s] [内存消耗：3,957.02kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000116s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003546s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000038s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000501s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002107s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\fastadmin\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000038s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000022s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T09:53:36+08:00 ] 127.0.0.1 GET admin.fastadmin.com/
+[运行时间：2.275344s] [吞吐率：0.44req/s] [内存消耗：3,957.02kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003880s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000038s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000549s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001115s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\fastadmin\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000039s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000022s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T09:53:36+08:00 ] 127.0.0.1 GET admin.fastadmin.com/
+[运行时间：2.287468s] [吞吐率：0.44req/s] [内存消耗：3,957.02kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000114s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003899s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000045s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000064s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000545s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001304s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\fastadmin\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000038s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000022s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T09:53:36+08:00 ] 127.0.0.1 GET admin.fastadmin.com/
+[运行时间：2.283421s] [吞吐率：0.44req/s] [内存消耗：3,957.02kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000115s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003446s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000037s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000924s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001326s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\fastadmin\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000146s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000238s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T09:53:36+08:00 ] 127.0.0.1 GET admin.fastadmin.com/favicon.ico
+[运行时间：0.097795s] [吞吐率：10.23req/s] [内存消耗：2,437.02kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002702s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000036s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000319s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'image/webp,*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:19:16+08:00 ] 127.0.0.1 GET admin.fastadmin.com/
+[运行时间：2.294541s] [吞吐率：0.44req/s] [内存消耗：3,957.02kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000026s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003509s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000039s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000539s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001866s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\fastadmin\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000144s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000062s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:19:16+08:00 ] 127.0.0.1 GET admin.fastadmin.com/favicon.ico
+[运行时间：0.056547s] [吞吐率：17.68req/s] [内存消耗：2,437.02kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003170s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000038s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000364s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'image/webp,*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:25:41+08:00 ] 127.0.0.1 GET admin.fastadmin.com/
+[运行时间：2.299989s] [吞吐率：0.43req/s] [内存消耗：3,957.02kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003950s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000059s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000078s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000569s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001222s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\fastadmin\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000145s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000092s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:25:45+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/user/index.html
+[运行时间：0.218627s] [吞吐率：4.57req/s] [内存消耗：4,012.77kb] [文件加载：144]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003837s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000042s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000061s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000568s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39',
+  'referer' => 'http://admin.fastadmin.com/',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001329s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/user.php
+[ info ] [ RUN ] app\index\controller\User->index[ E:\fastadmin\application\index\controller\User.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\user\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'title',
+) ]
+[ info ] [ VIEW ] E:\fastadmin\addons\cms\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'sidenav',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000145s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000109s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @user_sidenav_after [ RunTime:0.000137s ]
+[ info ] [ VIEW ] E:\fastadmin\addons\vote\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'usersidebar',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000140s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000091s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @user_sidenav_after [ RunTime:0.000115s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000102s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000081s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:25:46+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/ajax/lang?callback=define&controllername=user&v=1596162345
+[运行时间：0.145514s] [吞吐率：6.87req/s] [内存消耗：3,951.35kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002548s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000034s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000051s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000302s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39',
+  'referer' => 'http://admin.fastadmin.com/index/user/index.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'user',
+  'v' => '1596162345',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001628s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\index\controller\Ajax->lang[ E:\fastadmin\application\index\controller\Ajax.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/user.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:25:46+08:00 ] 127.0.0.1 GET admin.fastadmin.com/
+[运行时间：2.277215s] [吞吐率：0.44req/s] [内存消耗：3,957.04kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003359s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000038s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000433s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39',
+  'referer' => 'http://admin.fastadmin.com/',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001446s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\fastadmin\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000041s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000024s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:25:48+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/user/profile.html
+[运行时间：0.251484s] [吞吐率：3.98req/s] [内存消耗：4,291.48kb] [文件加载：147]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003140s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000037s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000446s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'profile',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39',
+  'referer' => 'http://admin.fastadmin.com/index/user/index.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001531s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/user.php
+[ info ] [ RUN ] app\index\controller\User->profile[ E:\fastadmin\application\index\controller\User.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\user\profile.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'title',
+) ]
+[ info ] [ VIEW ] E:\fastadmin\addons\cms\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'sidenav',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000031s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000022s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @user_sidenav_after [ RunTime:0.000028s ]
+[ info ] [ VIEW ] E:\fastadmin\addons\vote\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'usersidebar',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000032s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000036s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @user_sidenav_after [ RunTime:0.000041s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000095s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000034s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:25:48+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/ajax/lang?callback=define&controllername=user&v=1596162348
+[运行时间：0.064729s] [吞吐率：15.45req/s] [内存消耗：3,951.35kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002677s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000037s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000321s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/user/profile.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'user',
+  'v' => '1596162348',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001081s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\index\controller\Ajax->lang[ E:\fastadmin\application\index\controller\Ajax.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/user.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:25:50+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/user/profile.html
+[运行时间：0.077339s] [吞吐率：12.93req/s] [内存消耗：4,024.37kb] [文件加载：144]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004305s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000038s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000424s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'profile',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/user/profile.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001116s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/user.php
+[ info ] [ RUN ] app\index\controller\User->profile[ E:\fastadmin\application\index\controller\User.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\user\profile.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'title',
+) ]
+[ info ] [ VIEW ] E:\fastadmin\addons\cms\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'sidenav',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000031s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000023s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @user_sidenav_after [ RunTime:0.000029s ]
+[ info ] [ VIEW ] E:\fastadmin\addons\vote\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'usersidebar',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000032s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000022s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @user_sidenav_after [ RunTime:0.000027s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000022s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:25:51+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/ajax/lang?callback=define&controllername=user&v=1596162350
+[运行时间：0.083513s] [吞吐率：11.97req/s] [内存消耗：3,951.35kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002584s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000035s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000052s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000511s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/user/profile.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'user',
+  'v' => '1596162350',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001111s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\index\controller\Ajax->lang[ E:\fastadmin\application\index\controller\Ajax.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/user.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:25:51+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/user/index.html
+[运行时间：0.087177s] [吞吐率：11.47req/s] [内存消耗：4,012.84kb] [文件加载：144]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002765s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000045s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000064s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000331s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/user/profile.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001024s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/user.php
+[ info ] [ RUN ] app\index\controller\User->index[ E:\fastadmin\application\index\controller\User.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\user\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'title',
+) ]
+[ info ] [ VIEW ] E:\fastadmin\addons\cms\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'sidenav',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000049s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000037s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @user_sidenav_after [ RunTime:0.000047s ]
+[ info ] [ VIEW ] E:\fastadmin\addons\vote\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'usersidebar',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000059s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @user_sidenav_after [ RunTime:0.000038s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000034s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000027s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:25:51+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/ajax/lang?callback=define&controllername=user&v=1596162351
+[运行时间：0.092881s] [吞吐率：10.77req/s] [内存消耗：3,951.35kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002775s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000037s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000321s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/user/index.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'user',
+  'v' => '1596162351',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001026s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\index\controller\Ajax->lang[ E:\fastadmin\application\index\controller\Ajax.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/user.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:25:53+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/cms.archives/my.html
+[运行时间：0.422051s] [吞吐率：2.37req/s] [内存消耗：4,609.30kb] [文件加载：154]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003203s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000037s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000486s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms.archives',
+    2 => 'my',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/user/index.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001078s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/cms/archives.php
+[ info ] [ RUN ] app\index\controller\cms\Archives->my[ E:\fastadmin\application\index\controller\cms\Archives.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\cms\archives\my.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'archivesList',
+  4 => 'channelList',
+  5 => 'title',
+  6 => 'model',
+) ]
+[ info ] [ VIEW ] E:\fastadmin\addons\cms\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'sidenav',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000034s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000023s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @user_sidenav_after [ RunTime:0.000029s ]
+[ info ] [ VIEW ] E:\fastadmin\addons\vote\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'usersidebar',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000032s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000022s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @user_sidenav_after [ RunTime:0.000027s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000023s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000018s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:25:54+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/ajax/lang?callback=define&controllername=cms.archives&v=1596162353
+[运行时间：0.081968s] [吞吐率：12.20req/s] [内存消耗：3,939.38kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002602s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000036s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000054s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000362s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/cms.archives/my.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'cms.archives',
+  'v' => '1596162353',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001552s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\index\controller\Ajax->lang[ E:\fastadmin\application\index\controller\Ajax.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/cms/archives.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:25:54+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/cms.order/index.html
+[运行时间：0.230277s] [吞吐率：4.34req/s] [内存消耗：4,565.66kb] [文件加载：156]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003529s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000038s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000448s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms.order',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/cms.archives/my.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001095s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\cms\Order->index[ E:\fastadmin\application\index\controller\cms\Order.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\cms\order\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'orderList',
+  4 => 'title',
+) ]
+[ info ] [ VIEW ] E:\fastadmin\addons\cms\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'sidenav',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000087s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000048s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @user_sidenav_after [ RunTime:0.000061s ]
+[ info ] [ VIEW ] E:\fastadmin\addons\vote\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'usersidebar',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000065s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000178s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @user_sidenav_after [ RunTime:0.000195s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000053s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000047s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:25:55+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/ajax/lang?callback=define&controllername=cms.order&v=1596162354
+[运行时间：0.054155s] [吞吐率：18.47req/s] [内存消耗：3,938.39kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002804s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000038s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000318s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/cms.order/index.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'cms.order',
+  'v' => '1596162354',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001012s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\index\controller\Ajax->lang[ E:\fastadmin\application\index\controller\Ajax.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:25:55+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/cms.comment/index.html
+[运行时间：0.218989s] [吞吐率：4.57req/s] [内存消耗：4,583.40kb] [文件加载：156]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000025s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003066s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000040s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000058s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000406s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms.comment',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/cms.order/index.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001076s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\cms\Comment->index[ E:\fastadmin\application\index\controller\cms\Comment.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\cms\comment\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'commentList',
+  4 => 'title',
+) ]
+[ info ] [ VIEW ] E:\fastadmin\addons\cms\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'sidenav',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000052s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000039s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @user_sidenav_after [ RunTime:0.000049s ]
+[ info ] [ VIEW ] E:\fastadmin\addons\vote\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'usersidebar',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000059s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000036s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @user_sidenav_after [ RunTime:0.000046s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000036s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000032s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:25:55+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/ajax/lang?callback=define&controllername=cms.comment&v=1596162355
+[运行时间：0.058247s] [吞吐率：17.17req/s] [内存消耗：3,938.45kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002806s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000036s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000318s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/cms.comment/index.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'cms.comment',
+  'v' => '1596162355',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001016s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\index\controller\Ajax->lang[ E:\fastadmin\application\index\controller\Ajax.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:28:52+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/vote/subject.html
+[运行时间：0.241908s] [吞吐率：4.13req/s] [内存消耗：4,546.37kb] [文件加载：152]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000036s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003664s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000037s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000530s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'vote',
+    2 => 'subject',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/cms.comment/index.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001262s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/vote.php
+[ info ] [ RUN ] app\index\controller\Vote->subject[ E:\fastadmin\application\index\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\vote\subject.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'subjectList',
+  4 => 'title',
+) ]
+[ info ] [ VIEW ] E:\fastadmin\addons\cms\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'sidenav',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000031s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000022s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @user_sidenav_after [ RunTime:0.000027s ]
+[ info ] [ VIEW ] E:\fastadmin\addons\vote\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'usersidebar',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000021s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @user_sidenav_after [ RunTime:0.000026s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000022s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000018s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:28:52+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/ajax/lang?callback=define&controllername=vote&v=1596162532
+[运行时间：0.068201s] [吞吐率：14.66req/s] [内存消耗：3,950.22kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002686s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000046s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000067s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000327s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/vote/subject.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'vote',
+  'v' => '1596162532',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001081s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\index\controller\Ajax->lang[ E:\fastadmin\application\index\controller\Ajax.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/vote.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:28:54+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/vote/apply.html
+[运行时间：0.221133s] [吞吐率：4.52req/s] [内存消耗：4,653.89kb] [文件加载：156]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003140s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000037s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000054s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000467s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'vote',
+    2 => 'apply',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/vote/subject.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001114s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/vote.php
+[ info ] [ RUN ] app\index\controller\Vote->apply[ E:\fastadmin\application\index\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\vote\apply.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'playerList',
+  4 => 'title',
+) ]
+[ info ] [ VIEW ] E:\fastadmin\addons\cms\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'sidenav',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000038s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000026s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @user_sidenav_after [ RunTime:0.000032s ]
+[ info ] [ VIEW ] E:\fastadmin\addons\vote\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'usersidebar',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000035s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000024s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @user_sidenav_after [ RunTime:0.000031s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000034s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000021s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:28:54+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/ajax/lang?callback=define&controllername=vote&v=1596162533
+[运行时间：0.061913s] [吞吐率：16.15req/s] [内存消耗：3,950.22kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003891s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000043s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000063s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000326s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/vote/apply.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'vote',
+  'v' => '1596162533',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001028s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\index\controller\Ajax->lang[ E:\fastadmin\application\index\controller\Ajax.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/vote.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:28:57+08:00 ] 127.0.0.1 GET admin.fastadmin.com/vote/player/1.html
+[运行时间：0.591045s] [吞吐率：1.69req/s] [内存消耗：4,754.41kb] [文件加载：160]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000043s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003339s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000065s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000084s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000357s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'vote',
+    'controller' => 'player',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/vote/apply.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ E:\fastadmin\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.014252s ]
+[ info ] [ LANG ] E:\fastadmin\addons\vote\lang\zh-cn.php
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\fastadmin\addons\vote\view\player.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => 'isWechat',
+  4 => 'controllerName',
+  5 => '__subject__',
+  6 => '__player__',
+  7 => 'commentList',
+  8 => 'title',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000037s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000360s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:29:04+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/vote/record.html
+[运行时间：0.112445s] [吞吐率：8.89req/s] [内存消耗：4,682.59kb] [文件加载：157]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000032s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003664s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000039s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000058s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000553s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'vote',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/vote/apply.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001290s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/vote.php
+[ info ] [ RUN ] app\index\controller\Vote->record[ E:\fastadmin\application\index\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\vote\record.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'recordList',
+  4 => 'title',
+) ]
+[ info ] [ VIEW ] E:\fastadmin\addons\cms\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'sidenav',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000022s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @user_sidenav_after [ RunTime:0.000028s ]
+[ info ] [ VIEW ] E:\fastadmin\addons\vote\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'usersidebar',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000022s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @user_sidenav_after [ RunTime:0.000028s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000022s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000018s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:29:05+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/ajax/lang?callback=define&controllername=vote&v=1596162544
+[运行时间：0.073170s] [吞吐率：13.67req/s] [内存消耗：3,950.22kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002924s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000038s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000335s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/vote/record.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'vote',
+  'v' => '1596162544',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001358s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\index\controller\Ajax->lang[ E:\fastadmin\application\index\controller\Ajax.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/vote.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:29:10+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/cms.comment/index.html
+[运行时间：0.095140s] [吞吐率：10.51req/s] [内存消耗：4,333.11kb] [文件加载：153]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003167s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000036s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000054s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000627s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms.comment',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/vote/record.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001626s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\cms\Comment->index[ E:\fastadmin\application\index\controller\cms\Comment.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\cms\comment\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'commentList',
+  4 => 'title',
+) ]
+[ info ] [ VIEW ] E:\fastadmin\addons\cms\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'sidenav',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000029s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000022s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @user_sidenav_after [ RunTime:0.000028s ]
+[ info ] [ VIEW ] E:\fastadmin\addons\vote\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'usersidebar',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000069s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000046s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @user_sidenav_after [ RunTime:0.000052s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000021s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000018s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:29:10+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/ajax/lang?callback=define&controllername=cms.comment&v=1596162550
+[运行时间：0.066483s] [吞吐率：15.04req/s] [内存消耗：3,938.45kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003485s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000074s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000097s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000356s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/cms.comment/index.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'cms.comment',
+  'v' => '1596162550',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001049s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\index\controller\Ajax->lang[ E:\fastadmin\application\index\controller\Ajax.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:29:11+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/cms.order/index.html
+[运行时间：0.082103s] [吞吐率：12.18req/s] [内存消耗：4,315.40kb] [文件加载：153]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003835s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000039s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000058s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000453s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms.order',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/cms.comment/index.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001119s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\cms\Order->index[ E:\fastadmin\application\index\controller\cms\Order.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\cms\order\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'orderList',
+  4 => 'title',
+) ]
+[ info ] [ VIEW ] E:\fastadmin\addons\cms\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'sidenav',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000022s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @user_sidenav_after [ RunTime:0.000029s ]
+[ info ] [ VIEW ] E:\fastadmin\addons\vote\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'usersidebar',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000021s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @user_sidenav_after [ RunTime:0.000027s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000021s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000017s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:29:11+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/ajax/lang?callback=define&controllername=cms.order&v=1596162551
+[运行时间：0.076296s] [吞吐率：13.11req/s] [内存消耗：3,938.39kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002600s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000036s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000054s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000321s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/cms.order/index.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'cms.order',
+  'v' => '1596162551',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001009s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\index\controller\Ajax->lang[ E:\fastadmin\application\index\controller\Ajax.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:29:12+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/cms.archives/post.html
+[运行时间：0.130852s] [吞吐率：7.64req/s] [内存消耗：4,511.33kb] [文件加载：151]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003592s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000038s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000445s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms.archives',
+    2 => 'post',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/cms.order/index.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001752s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/cms/archives.php
+[ info ] [ RUN ] app\index\controller\cms\Archives->post[ E:\fastadmin\application\index\controller\cms\Archives.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\cms\archives\post.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'channelOptions',
+  4 => 'archives',
+  5 => 'categoryList',
+  6 => 'title',
+  7 => 'model',
+) ]
+[ info ] [ VIEW ] E:\fastadmin\addons\cms\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'sidenav',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000083s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000064s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @user_sidenav_after [ RunTime:0.000080s ]
+[ info ] [ VIEW ] E:\fastadmin\addons\vote\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'usersidebar',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000062s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000046s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @user_sidenav_after [ RunTime:0.000058s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000092s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000053s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:29:12+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/ajax/lang?callback=define&controllername=cms.archives&v=1596162552
+[运行时间：0.067270s] [吞吐率：14.87req/s] [内存消耗：3,939.38kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003456s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000054s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000075s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000355s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/cms.archives/post.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'cms.archives',
+  'v' => '1596162552',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001046s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\index\controller\Ajax->lang[ E:\fastadmin\application\index\controller\Ajax.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/cms/archives.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:29:13+08:00 ] 127.0.0.1 POST admin.fastadmin.com/index/cms.archives/get_channel_fields
+[运行时间：0.200137s] [吞吐率：5.00req/s] [内存消耗：4,175.41kb] [文件加载：147]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003144s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000042s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000063s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000358s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms.archives',
+    2 => 'get_channel_fields',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/cms.archives/post.html',
+  'connection' => 'close',
+  'origin' => 'http://admin.fastadmin.com',
+  'content-length' => '25',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'channel_id' => '',
+  'archives_id' => '0',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001133s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/cms/archives.php
+[ info ] [ RUN ] app\index\controller\cms\Archives->get_channel_fields[ E:\fastadmin\application\index\controller\cms\Archives.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:29:34+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/cms.archives/tags_autocomplete?q=123
+[运行时间：0.163573s] [吞吐率：6.11req/s] [内存消耗：3,989.70kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000034s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003465s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000038s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000526s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms.archives',
+    2 => 'tags_autocomplete',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/cms.archives/post.html',
+  'connection' => 'close',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'q' => '123',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001287s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/cms/archives.php
+[ info ] [ RUN ] app\index\controller\cms\Archives->tags_autocomplete[ E:\fastadmin\application\index\controller\cms\Archives.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:29:46+08:00 ] 127.0.0.1 GET admin.fastadmin.com/
+[运行时间：2.305479s] [吞吐率：0.43req/s] [内存消耗：3,957.11kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003244s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000037s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000054s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000445s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/cms.archives/post.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001553s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\fastadmin\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000140s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000092s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:29:46+08:00 ] 127.0.0.1 GET admin.fastadmin.com/favicon.ico
+[运行时间：0.059599s] [吞吐率：16.78req/s] [内存消耗：2,436.77kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002691s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000037s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000316s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'image/webp,*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:30:15+08:00 ] 127.0.0.1 GET admin.fastadmin.com/
+[运行时间：2.285646s] [吞吐率：0.44req/s] [内存消耗：3,957.04kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003243s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000038s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000054s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000676s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001082s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\fastadmin\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000143s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000092s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:30:18+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/user/index.html
+[运行时间：0.083288s] [吞吐率：12.01req/s] [内存消耗：4,012.77kb] [文件加载：144]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003206s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000037s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000054s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000445s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001124s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/user.php
+[ info ] [ RUN ] app\index\controller\User->index[ E:\fastadmin\application\index\controller\User.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\user\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'title',
+) ]
+[ info ] [ VIEW ] E:\fastadmin\addons\cms\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'sidenav',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000023s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @user_sidenav_after [ RunTime:0.000029s ]
+[ info ] [ VIEW ] E:\fastadmin\addons\vote\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'usersidebar',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000022s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @user_sidenav_after [ RunTime:0.000027s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000023s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000019s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:30:18+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/ajax/lang?callback=define&controllername=user&v=1596162618
+[运行时间：0.058604s] [吞吐率：17.06req/s] [内存消耗：3,951.35kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002592s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000035s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000053s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000316s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/user/index.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'user',
+  'v' => '1596162618',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001007s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\index\controller\Ajax->lang[ E:\fastadmin\application\index\controller\Ajax.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/user.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:30:30+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/user/profile.html
+[运行时间：0.082409s] [吞吐率：12.13req/s] [内存消耗：4,024.37kb] [文件加载：144]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003307s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000037s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000054s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000452s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'profile',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/user/index.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001148s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/user.php
+[ info ] [ RUN ] app\index\controller\User->profile[ E:\fastadmin\application\index\controller\User.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\user\profile.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'title',
+) ]
+[ info ] [ VIEW ] E:\fastadmin\addons\cms\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'sidenav',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000022s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @user_sidenav_after [ RunTime:0.000028s ]
+[ info ] [ VIEW ] E:\fastadmin\addons\vote\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'usersidebar',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000021s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @user_sidenav_after [ RunTime:0.000027s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000028s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000021s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:30:30+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/ajax/lang?callback=define&controllername=user&v=1596162630
+[运行时间：0.068139s] [吞吐率：14.68req/s] [内存消耗：3,951.35kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000029s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002722s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000037s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000342s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/user/profile.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'user',
+  'v' => '1596162630',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001096s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\index\controller\Ajax->lang[ E:\fastadmin\application\index\controller\Ajax.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/user.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:32:14+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/user/index.html
+[运行时间：0.090492s] [吞吐率：11.05req/s] [内存消耗：4,012.84kb] [文件加载：144]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004204s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000039s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000507s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/user/profile.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001194s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/user.php
+[ info ] [ RUN ] app\index\controller\User->index[ E:\fastadmin\application\index\controller\User.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\user\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'title',
+) ]
+[ info ] [ VIEW ] E:\fastadmin\addons\cms\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'sidenav',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000023s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @user_sidenav_after [ RunTime:0.000028s ]
+[ info ] [ VIEW ] E:\fastadmin\addons\vote\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'usersidebar',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000031s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000022s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @user_sidenav_after [ RunTime:0.000028s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000024s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000019s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:32:15+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/ajax/lang?callback=define&controllername=user&v=1596162734
+[运行时间：0.061422s] [吞吐率：16.28req/s] [内存消耗：3,951.35kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002587s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000035s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000052s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000316s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/user/index.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'user',
+  'v' => '1596162734',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001747s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\index\controller\Ajax->lang[ E:\fastadmin\application\index\controller\Ajax.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/user.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:32:15+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/user/profile.html
+[运行时间：0.075982s] [吞吐率：13.16req/s] [内存消耗：4,024.37kb] [文件加载：144]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003642s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000157s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000209s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000438s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'profile',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/user/index.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001102s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/user.php
+[ info ] [ RUN ] app\index\controller\User->profile[ E:\fastadmin\application\index\controller\User.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\user\profile.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'title',
+) ]
+[ info ] [ VIEW ] E:\fastadmin\addons\cms\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'sidenav',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000023s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @user_sidenav_after [ RunTime:0.000028s ]
+[ info ] [ VIEW ] E:\fastadmin\addons\vote\view\hook\user_sidenav_after.html [ array (
+  0 => 'controllername',
+  1 => 'actionname',
+  2 => 'usersidebar',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000030s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000021s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @user_sidenav_after [ RunTime:0.000026s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000055s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000036s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:32:15+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/ajax/lang?callback=define&controllername=user&v=1596162735
+[运行时间：0.060159s] [吞吐率：16.62req/s] [内存消耗：3,951.35kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003940s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000043s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000063s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000341s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/user/profile.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'user',
+  'v' => '1596162735',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001034s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\index\controller\Ajax->lang[ E:\fastadmin\application\index\controller\Ajax.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/user.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:32:16+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/user/logout.html
+[运行时间：0.213618s] [吞吐率：4.68req/s] [内存消耗：4,195.26kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000036s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002676s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000033s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000050s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000342s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'logout',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/user/profile.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000998s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/user.php
+[ info ] [ RUN ] app\index\controller\User->logout[ E:\fastadmin\application\index\controller\User.php ]
+[ info ] [ BEHAVIOR ] Run Closure @user_logout_successed [ RunTime:0.000122s ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/common\view\tpl\dispatch_jump.tpl [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'code',
+  4 => 'msg',
+  5 => 'data',
+  6 => 'url',
+  7 => 'wait',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000115s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000068s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:32:17+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/user/index.html
+[运行时间：0.067991s] [吞吐率：14.71req/s] [内存消耗：3,663.98kb] [文件加载：138]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003543s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000040s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000059s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000424s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/user/logout.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001361s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\fastadmin\public/../application/common\view\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000045s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000024s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:32:18+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/user/login.html
+[运行时间：0.106919s] [吞吐率：9.35req/s] [内存消耗：4,207.65kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003754s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000040s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000058s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000446s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/user/index.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001100s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/user.php
+[ info ] [ RUN ] app\index\controller\User->login[ E:\fastadmin\application\index\controller\User.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\user\login.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'url',
+  4 => 'title',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000038s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000021s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:32:18+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/ajax/lang?callback=define&controllername=user&v=1596162738
+[运行时间：0.053923s] [吞吐率：18.54req/s] [内存消耗：3,893.98kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002607s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000036s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000053s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000362s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/user/login.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'user',
+  'v' => '1596162738',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001032s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\index\controller\Ajax->lang[ E:\fastadmin\application\index\controller\Ajax.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/user.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:32:20+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/user/register.html?url=http%3A%2F%2Fadmin.fastadmin.com%2Findex%2Fuser%2Findex.html
+[运行时间：0.108178s] [吞吐率：9.24req/s] [内存消耗：4,199.59kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003393s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000038s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000447s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/user/login.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'url' => 'http://admin.fastadmin.com/index/user/index.html',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001106s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/user.php
+[ info ] [ RUN ] app\index\controller\User->register[ E:\fastadmin\application\index\controller\User.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\user\register.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'captchaType',
+  4 => 'url',
+  5 => 'title',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000041s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.000024s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:32:20+08:00 ] 127.0.0.1 GET admin.fastadmin.com/captcha.html
+[运行时间：0.329214s] [吞吐率：3.04req/s] [内存消耗：2,474.59kb] [文件加载：121]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004606s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000070s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000094s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000749s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/user/register.html?url=http%3A%2F%2Fadmin.fastadmin.com%2Findex%2Fuser%2Findex.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'image/webp,*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ E:\fastadmin\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:32:20+08:00 ] 127.0.0.1 GET admin.fastadmin.com/index/ajax/lang?callback=define&controllername=user&v=1596162740
+[运行时间：0.059138s] [吞吐率：16.91req/s] [内存消耗：3,894.46kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002645s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000035s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000053s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000397s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/user/register.html?url=http%3A%2F%2Fadmin.fastadmin.com%2Findex%2Fuser%2Findex.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'user',
+  'v' => '1596162740',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001068s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\index\controller\Ajax->lang[ E:\fastadmin\application\index\controller\Ajax.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/user.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:32:24+08:00 ] 127.0.0.1 GET admin.fastadmin.com/
+[运行时间：2.313381s] [吞吐率：0.43req/s] [内存消耗：3,900.22kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003197s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000037s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000054s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000441s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1595829734; keeplogin=1%7C86400%7C1595993823%7C8d6a6470ef85bfbaed4b597768e50f50; keeplogin=1%7C86400%7C1596081788%7Cef383237b2cb39ceac6667eee6723d39; PHPSESSID=3o7nc3pjv2tbqfvv06t14ure2u',
+  'referer' => 'http://admin.fastadmin.com/index/user/register.html?url=http%3A%2F%2Fadmin.fastadmin.com%2Findex%2Fuser%2Findex.html',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001102s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\fastadmin\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000157s ]
+[ info ] [ BEHAVIOR ] Run \addons\vote\Vote @view_filter [ RunTime:0.002222s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-31T10:33:46+08:00 ] 127.0.0.1 GET admin.fastadmin.com/favicon.ico
+[运行时间：0.051848s] [吞吐率：19.29req/s] [内存消耗：2,435.91kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003562s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000051s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000072s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000564s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'image/webp,*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

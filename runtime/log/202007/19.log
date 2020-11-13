@@ -1,0 +1,1885 @@
+---------------------------------------------------------------
+[ 2020-07-19T23:00:52+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/dashboard?ref=addtabs
+[运行时间：0.238169s] [吞吐率：4.20req/s] [内存消耗：3,006.20kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000142s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.003989s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004012s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000789s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dashboard',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1594858430%7Cfb0ab2797b31bae13acfc94a77934665',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'ref' => 'addtabs',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002019s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\fastadmin\public/../application/common\view\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000650s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:00:53+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/index/login?url=%2FshSjpTOLDc.php%2Fdashboard%3Fref%3Daddtabs
+[运行时间：0.204573s] [吞吐率：4.89req/s] [内存消耗：3,323.59kb] [文件加载：132]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.003941s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003959s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000450s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1594858430%7Cfb0ab2797b31bae13acfc94a77934665; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/dashboard?ref=addtabs',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'url' => '/shSjpTOLDc.php/dashboard?ref=addtabs',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001241s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ E:\fastadmin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/admin\view\index\login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'background',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000392s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:00:54+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/ajax/lang?callback=define&controllername=index&v=1595170853
+[运行时间：0.097599s] [吞吐率：10.25req/s] [内存消耗：3,183.29kb] [文件加载：130]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.003953s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003970s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000313s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1594858430%7Cfb0ab2797b31bae13acfc94a77934665; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/index/login?url=%2FshSjpTOLDc.php%2Fdashboard%3Fref%3Daddtabs',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1595170853',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001362s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ E:\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000396s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:00:54+08:00 ] 127.0.0.1 GET admin.fastadmin.com/uploads/20200706/3788e6c1e7baa60d62492ba72149499f.jpg
+[运行时间：0.050906s] [吞吐率：19.64req/s] [内存消耗：2,239.56kb] [文件加载：116]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.002426s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002439s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000715s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => '20200706',
+    2 => '3788e6c1e7baa60d62492ba72149499f.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1594858430%7Cfb0ab2797b31bae13acfc94a77934665; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/index/login?url=%2FshSjpTOLDc.php%2Fdashboard%3Fref%3Daddtabs',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'image/webp,*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:00:58+08:00 ] 127.0.0.1 POST admin.fastadmin.com/shSjpTOLDc.php/index/login?url=%2FshSjpTOLDc.php%2Fdashboard%3Fref%3Daddtabs
+[运行时间：0.585068s] [吞吐率：1.71req/s] [内存消耗：3,958.79kb] [文件加载：140]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.002517s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002531s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000422s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1594858430%7Cfb0ab2797b31bae13acfc94a77934665; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/index/login?url=%2FshSjpTOLDc.php%2Fdashboard%3Fref%3Daddtabs',
+  'connection' => 'close',
+  'origin' => 'http://admin.fastadmin.com',
+  'content-length' => '85',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'url' => '/shSjpTOLDc.php/dashboard?ref=addtabs',
+  '__token__' => '9ad87960361b69a91524cd30f769a1dc',
+  'username' => 'admin',
+  'password' => '123456',
+  'keeplogin' => '1',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001520s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ E:\fastadmin\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.179205s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:00:58+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/dashboard?ref=addtabs
+[运行时间：0.129118s] [吞吐率：7.74req/s] [内存消耗：3,731.53kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.003829s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003846s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000410s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dashboard',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1595257258%7C4073fd29bbc8539ddb77f8af4e0714f4; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/index/login?url=%2FshSjpTOLDc.php%2Fdashboard%3Fref%3Daddtabs',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'ref' => 'addtabs',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001100s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000352s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:00:58+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/index/index
+[运行时间：0.350377s] [吞吐率：2.85req/s] [内存消耗：4,506.17kb] [文件加载：151]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.002830s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002856s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000613s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1595257258%7C4073fd29bbc8539ddb77f8af4e0714f4; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'connection' => 'close',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/index/login?url=%2FshSjpTOLDc.php%2Fdashboard%3Fref%3Daddtabs',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001185s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->index[ E:\fastadmin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/admin\view\index\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'menulist',
+  6 => 'navlist',
+  7 => 'fixedmenu',
+  8 => 'referermenu',
+  9 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000390s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:00:59+08:00 ] 127.0.0.1 GET admin.fastadmin.com/uploads/20200706/3788e6c1e7baa60d62492ba72149499f.jpg
+[运行时间：0.062869s] [吞吐率：15.91req/s] [内存消耗：2,238.92kb] [文件加载：116]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000036s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.006786s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006803s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000371s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => '20200706',
+    2 => '3788e6c1e7baa60d62492ba72149499f.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1595257258%7C4073fd29bbc8539ddb77f8af4e0714f4; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/index/index',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'image/webp,*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:00:59+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/dashboard?addtabs=1
+[运行时间：0.118049s] [吞吐率：8.47req/s] [内存消耗：4,278.88kb] [文件加载：140]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.002175s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002188s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000320s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dashboard',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1595257258%7C4073fd29bbc8539ddb77f8af4e0714f4; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/index/index',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001021s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ RUN ] app\admin\controller\Dashboard->index[ E:\fastadmin\application\admin\controller\Dashboard.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/admin\view\dashboard\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'totaluser',
+  6 => 'totalviews',
+  7 => 'totalorder',
+  8 => 'totalorderamount',
+  9 => 'todayuserlogin',
+  10 => 'todayusersignup',
+  11 => 'todayorder',
+  12 => 'unsettleorder',
+  13 => 'sevendnu',
+  14 => 'sevendau',
+  15 => 'paylist',
+  16 => 'createlist',
+  17 => 'addonversion',
+  18 => 'uploadmode',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000299s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:00:59+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/ajax/lang?callback=define&controllername=index&v=1595170858
+[运行时间：0.066286s] [吞吐率：15.09req/s] [内存消耗：4,101.83kb] [文件加载：137]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.002311s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002327s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000497s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1595257258%7C4073fd29bbc8539ddb77f8af4e0714f4; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/index/index',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1595170858',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001114s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ E:\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000250s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:01:00+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/ajax/lang?callback=define&controllername=dashboard&v=1595170859
+[运行时间：0.082727s] [吞吐率：12.09req/s] [内存消耗：4,100.17kb] [文件加载：137]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.002562s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002576s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000423s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1595257258%7C4073fd29bbc8539ddb77f8af4e0714f4; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/dashboard?addtabs=1',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'dashboard',
+  'v' => '1595170859',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001258s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ E:\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000322s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:01:03+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?addtabs=1
+[运行时间：1.112649s] [吞吐率：0.90req/s] [内存消耗：4,188.98kb] [文件加载：140]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.002599s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002611s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000469s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'kaoshi.subject',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1595257258%7C4073fd29bbc8539ddb77f8af4e0714f4; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001075s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/subject.php
+[ info ] [ RUN ] app\common\controller\Backend->index[ E:\fastadmin\application\admin\library\traits\Backend.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/admin\view\kaoshi\subject\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000374s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:01:03+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/ajax/lang?callback=define&controllername=kaoshi.subject&v=1595170862
+[运行时间：0.074802s] [吞吐率：13.37req/s] [内存消耗：4,097.17kb] [文件加载：137]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.002645s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002659s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000421s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1595257258%7C4073fd29bbc8539ddb77f8af4e0714f4; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?addtabs=1',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'kaoshi.subject',
+  'v' => '1595170862',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001130s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ E:\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/subject.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000284s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:01:03+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1595170863459
+[运行时间：0.217826s] [吞吐率：4.59req/s] [内存消耗：4,085.28kb] [文件加载：140]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.002963s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002984s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000504s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'kaoshi.subject',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1595257258%7C4073fd29bbc8539ddb77f8af4e0714f4; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?addtabs=1',
+  'connection' => 'close',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/json',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1595170863459',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001232s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/subject.php
+[ info ] [ RUN ] app\common\controller\Backend->index[ E:\fastadmin\application\admin\library\traits\Backend.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000356s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:01:07+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1595170863460
+[运行时间：0.246217s] [吞吐率：4.06req/s] [内存消耗：4,085.28kb] [文件加载：140]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000024s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.003609s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003630s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000411s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'kaoshi.subject',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1595257258%7C4073fd29bbc8539ddb77f8af4e0714f4; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?addtabs=1',
+  'connection' => 'close',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/json',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1595170863460',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001214s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/subject.php
+[ info ] [ RUN ] app\common\controller\Backend->index[ E:\fastadmin\application\admin\library\traits\Backend.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000308s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:01:36+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1595170863461
+[运行时间：0.090935s] [吞吐率：11.00req/s] [内存消耗：4,084.33kb] [文件加载：140]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.002499s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002516s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000455s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'kaoshi.subject',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1595257258%7C4073fd29bbc8539ddb77f8af4e0714f4; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?addtabs=1',
+  'connection' => 'close',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/json',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1595170863461',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001317s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/subject.php
+[ info ] [ RUN ] app\common\controller\Backend->index[ E:\fastadmin\application\admin\library\traits\Backend.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000346s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:01:37+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1595170863462
+[运行时间：0.087307s] [吞吐率：11.45req/s] [内存消耗：4,084.33kb] [文件加载：140]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.002750s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002767s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000488s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'kaoshi.subject',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1595257258%7C4073fd29bbc8539ddb77f8af4e0714f4; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?addtabs=1',
+  'connection' => 'close',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/json',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1595170863462',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001175s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/subject.php
+[ info ] [ RUN ] app\common\controller\Backend->index[ E:\fastadmin\application\admin\library\traits\Backend.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000252s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:01:37+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1595170863463
+[运行时间：0.084983s] [吞吐率：11.77req/s] [内存消耗：4,084.33kb] [文件加载：140]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.002680s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002698s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000420s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'kaoshi.subject',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1595257258%7C4073fd29bbc8539ddb77f8af4e0714f4; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?addtabs=1',
+  'connection' => 'close',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/json',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1595170863463',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001062s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/subject.php
+[ info ] [ RUN ] app\common\controller\Backend->index[ E:\fastadmin\application\admin\library\traits\Backend.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000367s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:01:37+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1595170863464
+[运行时间：0.088571s] [吞吐率：11.29req/s] [内存消耗：4,084.33kb] [文件加载：140]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.003066s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003084s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000451s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'kaoshi.subject',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1595257258%7C4073fd29bbc8539ddb77f8af4e0714f4; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?addtabs=1',
+  'connection' => 'close',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/json',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1595170863464',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001210s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/subject.php
+[ info ] [ RUN ] app\common\controller\Backend->index[ E:\fastadmin\application\admin\library\traits\Backend.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000373s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:01:38+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?addtabs=1
+[运行时间：0.072804s] [吞吐率：13.74req/s] [内存消耗：4,043.40kb] [文件加载：138]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.002673s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002692s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000417s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'kaoshi.subject',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1595257258%7C4073fd29bbc8539ddb77f8af4e0714f4; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?ref=addtabs',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001245s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/subject.php
+[ info ] [ RUN ] app\common\controller\Backend->index[ E:\fastadmin\application\admin\library\traits\Backend.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/admin\view\kaoshi\subject\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000324s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:01:38+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/ajax/lang?callback=define&controllername=kaoshi.subject&v=1595170898
+[运行时间：0.071690s] [吞吐率：13.95req/s] [内存消耗：4,097.17kb] [文件加载：137]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.002762s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002781s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000420s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1595257258%7C4073fd29bbc8539ddb77f8af4e0714f4; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?addtabs=1',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'kaoshi.subject',
+  'v' => '1595170898',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001237s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ E:\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/subject.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000275s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:01:38+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1595170898576
+[运行时间：0.078495s] [吞吐率：12.74req/s] [内存消耗：4,084.33kb] [文件加载：140]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.003239s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003265s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000376s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'kaoshi.subject',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1595257258%7C4073fd29bbc8539ddb77f8af4e0714f4; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject?addtabs=1',
+  'connection' => 'close',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/json',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1595170898576',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001216s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/subject.php
+[ info ] [ RUN ] app\common\controller\Backend->index[ E:\fastadmin\application\admin\library\traits\Backend.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000403s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:01:40+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/kaoshi/examination/questions?addtabs=1
+[运行时间：0.110924s] [吞吐率：9.02req/s] [内存消耗：4,274.48kb] [文件加载：140]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.002571s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002588s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000378s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'kaoshi.examination.questions',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1595257258%7C4073fd29bbc8539ddb77f8af4e0714f4; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/examination/questions?ref=addtabs',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001221s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/examination/questions.php
+[ info ] [ RUN ] app\admin\controller\kaoshi\examination\Questions->index[ E:\fastadmin\application\admin\controller\kaoshi\examination\Questions.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/admin\view\kaoshi\examination\questions\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'typeList',
+  6 => 'levelList',
+  7 => 'statusList',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000267s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:01:41+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/ajax/lang?callback=define&controllername=kaoshi.examination.questions&v=1595170900
+[运行时间：0.056657s] [吞吐率：17.65req/s] [内存消耗：4,098.88kb] [文件加载：137]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.002312s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002330s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000343s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1595257258%7C4073fd29bbc8539ddb77f8af4e0714f4; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/examination/questions?addtabs=1',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'kaoshi.examination.questions',
+  'v' => '1595170900',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001140s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ E:\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/examination/questions.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000278s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:01:41+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/kaoshi/examination/questions/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1595170901031
+[运行时间：0.139158s] [吞吐率：7.19req/s] [内存消耗：4,320.07kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.003394s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003415s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000560s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'kaoshi.examination.questions',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1595257258%7C4073fd29bbc8539ddb77f8af4e0714f4; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/examination/questions?addtabs=1',
+  'connection' => 'close',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/json',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1595170901031',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001509s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/examination/questions.php
+[ info ] [ RUN ] app\admin\controller\kaoshi\examination\Questions->index[ E:\fastadmin\application\admin\controller\kaoshi\examination\Questions.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000262s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:01:43+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/kaoshi/examination/questions/edit/ids/36?dialog=1
+[运行时间：0.109048s] [吞吐率：9.17req/s] [内存消耗：4,315.45kb] [文件加载：140]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.002864s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002893s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000437s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'kaoshi.examination.questions',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1595257258%7C4073fd29bbc8539ddb77f8af4e0714f4; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/examination/questions?addtabs=1',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'dialog' => '1',
+  'ids' => '36',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001091s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/examination/questions.php
+[ info ] [ RUN ] app\admin\controller\kaoshi\examination\Questions->edit[ E:\fastadmin\application\admin\controller\kaoshi\examination\Questions.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/admin\view\kaoshi\examination\questions\edit.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'typeList',
+  6 => 'levelList',
+  7 => 'statusList',
+  8 => 'selectdata',
+  9 => 'row',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000260s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:01:43+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/ajax/lang?callback=define&controllername=kaoshi.examination.questions&v=1595170903
+[运行时间：0.062205s] [吞吐率：16.08req/s] [内存消耗：4,099.43kb] [文件加载：137]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.002355s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002371s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000333s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1595257258%7C4073fd29bbc8539ddb77f8af4e0714f4; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/examination/questions/edit/ids/36?dialog=1',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'kaoshi.examination.questions',
+  'v' => '1595170903',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001124s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ E:\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/examination/questions.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000356s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:01:44+08:00 ] 127.0.0.1 POST admin.fastadmin.com/shSjpTOLDc.php/kaoshi/subject/index
+[运行时间：0.255332s] [吞吐率：3.92req/s] [内存消耗：4,051.95kb] [文件加载：139]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000033s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.002709s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002726s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000432s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'kaoshi.subject',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1595257258%7C4073fd29bbc8539ddb77f8af4e0714f4; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/examination/questions/edit/ids/36?dialog=1',
+  'connection' => 'close',
+  'origin' => 'http://admin.fastadmin.com',
+  'content-length' => '178',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'searchTable' => 'tbl',
+  'searchKey' => 'id',
+  'searchValue' => '6',
+  'orderBy' => 
+  array (
+    0 => 
+    array (
+      0 => 'subject_name',
+      1 => 'ASC',
+    ),
+  ),
+  'showField' => 'subject_name',
+  'keyField' => 'id',
+  'keyValue' => '6',
+  'searchField' => 
+  array (
+    0 => 'subject_name',
+  ),
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001272s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/subject.php
+[ info ] [ RUN ] app\common\controller\Backend->index[ E:\fastadmin\application\admin\library\traits\Backend.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.167172s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:01:45+08:00 ] 127.0.0.1 POST admin.fastadmin.com/shSjpTOLDc.php/kaoshi/examination/questions/edit/ids/36?dialog=1
+[运行时间：0.262032s] [吞吐率：3.82req/s] [内存消耗：4,151.97kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.002668s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002686s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000404s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'kaoshi.examination.questions',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1595257258%7C4073fd29bbc8539ddb77f8af4e0714f4; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/examination/questions/edit/ids/36?dialog=1',
+  'connection' => 'close',
+  'origin' => 'http://admin.fastadmin.com',
+  'content-length' => '2015',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'dialog' => '1',
+  'row' => 
+  array (
+    'subject_id' => '6',
+    'question' => '举头望(_)，低头思(_)',
+    'annex' => '',
+    'type' => '4',
+    'selectdata0' => '[{"key":"A","value":""},{"key":"B","value":""},{"key":"C","value":""},{"key":"D","value":""}]',
+    'selectdata1' => '[{"key":"A","value":""},{"key":"B","value":""},{"key":"C","value":""},{"key":"D","value":""}]',
+    'selectdata2' => '[{"key":"A","value":"\\u5bf9"},{"key":"B","value":"\\u9519"}]',
+    'answer3' => 
+    array (
+      0 => '明月',
+      1 => '故乡',
+    ),
+    'selectdata3' => '[{"value":"\\u660e\\u6708"},{"value":"\\u6545\\u4e61"}]',
+    'answer4' => 
+    array (
+      0 => '',
+    ),
+    'selectdata4' => '[{"key":"","value":""}]',
+    'describe' => '',
+    'level' => '1',
+    'status' => '1',
+    'answer1' => 
+    array (
+      0 => '',
+    ),
+  ),
+  'ids' => '36',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001123s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/examination/questions.php
+[ info ] [ RUN ] app\admin\controller\kaoshi\examination\Questions->edit[ E:\fastadmin\application\admin\controller\kaoshi\examination\Questions.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.097590s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:01:45+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/kaoshi/examination/questions/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1595170901032
+[运行时间：0.095292s] [吞吐率：10.49req/s] [内存消耗：4,320.07kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000087s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.002887s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002904s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000404s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'kaoshi.examination.questions',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1595257258%7C4073fd29bbc8539ddb77f8af4e0714f4; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/examination/questions?addtabs=1',
+  'connection' => 'close',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/json',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1595170901032',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001066s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/examination/questions.php
+[ info ] [ RUN ] app\admin\controller\kaoshi\examination\Questions->index[ E:\fastadmin\application\admin\controller\kaoshi\examination\Questions.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000322s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:01:47+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/kaoshi/examination/exams?addtabs=1
+[运行时间：0.131670s] [吞吐率：7.59req/s] [内存消耗：4,275.18kb] [文件加载：140]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.003000s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003015s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000441s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'kaoshi.examination.exams',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1595257258%7C4073fd29bbc8539ddb77f8af4e0714f4; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/examination/exams?ref=addtabs',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002049s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/examination/exams.php
+[ info ] [ RUN ] app\admin\controller\kaoshi\examination\Exams->index[ E:\fastadmin\application\admin\controller\kaoshi\examination\Exams.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/admin\view\kaoshi\examination\exams\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'typeList',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000354s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:01:47+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/ajax/lang?callback=define&controllername=kaoshi.examination.exams&v=1595170907
+[运行时间：0.069819s] [吞吐率：14.32req/s] [内存消耗：4,098.52kb] [文件加载：137]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.002311s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002325s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000357s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1595257258%7C4073fd29bbc8539ddb77f8af4e0714f4; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/examination/exams?addtabs=1',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'kaoshi.examination.exams',
+  'v' => '1595170907',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001057s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ E:\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/examination/exams.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000421s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:01:47+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/kaoshi/examination/exams/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1595170907500
+[运行时间：0.076627s] [吞吐率：13.05req/s] [内存消耗：4,315.40kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000031s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.002773s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002790s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000363s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'kaoshi.examination.exams',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1595257258%7C4073fd29bbc8539ddb77f8af4e0714f4; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/examination/exams?addtabs=1',
+  'connection' => 'close',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/json',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1595170907500',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001163s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/examination/exams.php
+[ info ] [ RUN ] app\admin\controller\kaoshi\examination\Exams->index[ E:\fastadmin\application\admin\controller\kaoshi\examination\Exams.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000257s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:01:49+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/kaoshi/examination/user_exams_result?addtabs=1
+[运行时间：0.139230s] [吞吐率：7.18req/s] [内存消耗：4,210.36kb] [文件加载：139]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.002762s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002776s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000363s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'kaoshi.examination.user_exams_result',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1595257258%7C4073fd29bbc8539ddb77f8af4e0714f4; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/examination/user_exams_result?ref=addtabs',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001531s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/examination/user_exams_result.php
+[ info ] [ RUN ] app\admin\controller\kaoshi\examination\UserExamsResult->index[ E:\fastadmin\application\admin\controller\kaoshi\examination\UserExamsResult.php ]
+[ info ] [ VIEW ] E:\fastadmin\public/../application/admin\view\kaoshi\examination\user_exams_result\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'typeList',
+  6 => 'statusList',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000529s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:01:49+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/ajax/lang?callback=define&controllername=kaoshi.examination.user_exams_result&v=1595170909
+[运行时间：0.061502s] [吞吐率：16.26req/s] [内存消耗：4,099.48kb] [文件加载：137]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.002291s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002303s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000342s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1595257258%7C4073fd29bbc8539ddb77f8af4e0714f4; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/examination/user_exams_result?addtabs=1',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'kaoshi.examination.user_exams_result',
+  'v' => '1595170909',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001061s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ E:\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/examination/user_exams_result.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000323s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-19T23:01:50+08:00 ] 127.0.0.1 GET admin.fastadmin.com/shSjpTOLDc.php/kaoshi/examination/user_exams_result/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1595170909632
+[运行时间：0.167724s] [吞吐率：5.96req/s] [内存消耗：4,316.76kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.002711s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002727s ]
+[ info ] [ LANG ] E:\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000363s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'kaoshi.examination.user_exams_result',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=41c5fa76-5e76-476e-946f-d80cc0e64df8; pma_lang=zh_CN; keeplogin=1%7C86400%7C1595257258%7C4073fd29bbc8539ddb77f8af4e0714f4; PHPSESSID=3d89fcrdcuecattpnrlmnn41vd',
+  'referer' => 'http://admin.fastadmin.com/shSjpTOLDc.php/kaoshi/examination/user_exams_result?addtabs=1',
+  'connection' => 'close',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/json',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+  'host' => 'admin.fastadmin.com',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1595170909632',
+)
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001308s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\fastadmin\public/../application/admin/lang/zh-cn/kaoshi/examination/user_exams_result.php
+[ info ] [ RUN ] app\admin\controller\kaoshi\examination\UserExamsResult->index[ E:\fastadmin\application\admin\controller\kaoshi\examination\UserExamsResult.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000390s ]
+[ info ] [ LOG ] INIT File

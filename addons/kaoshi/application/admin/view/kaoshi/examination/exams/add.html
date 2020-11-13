@@ -1,0 +1,97 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Subject_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-subject_id" data-rule="required" data-field="subject_name" data-source="kaoshi/subject/index" class="form-control selectpage" name="row[subject_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Exam_name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-exam_name" data-rule="required" class="form-control" name="row[exam_name]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Setting')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+
+
+            <dl class="fieldlist" data-template="settingdata" data-name="row[settingdata]">
+                <dd>
+                    <ins>题型</ins>
+                    <ins>难度</ins>
+                    <ins>数量</ins>
+                    <ins>分值</ins>
+                </dd>
+                <dd><a href="javascript:;" class="btn btn-sm btn-success btn-append"><i class="fa fa-plus"></i> {:__('Append')}</a></dd>
+                <!--请注意 dd和textarea间不能存在其它任何元素，实际开发中textarea应该添加个hidden进行隐藏-->
+                <textarea name="row[settingdata]" class="form-control hide" cols="30" rows="5">[{"type":"1","level":"1","number":"0","mark":"0"}]</textarea>
+            </dl>
+            <script id="settingdata" type="text/html">
+                <dd class="form-inline setting-row">
+                    <ins>
+                        <select name="<%=name%>[<%=index%>][type]" id="" class="form-control selectpicker">
+                            <option value="1">单选题</option>
+                            <option value="2">多选题</option>
+                            <option value="3">判断题</option>
+                        </select>
+                    </ins>
+                    <ins>
+                        <select name="<%=name%>[<%=index%>][level]" id="" class="form-control selectpicker">
+                            <option value="1">易</option>
+                            <option value="2">中</option>
+                            <option value="3">难</option>
+                        </select>
+                    </ins>
+                    <ins><input type="number" step="1" min='1' name="<%=name%>[<%=index%>][number]" class="form-control number scoreset" value="<%=row.number%>" placeholder="数量"/></ins>
+                    <ins><input type="number" step="1" min='1' name="<%=name%>[<%=index%>][mark]" class="form-control mark scoreset" value="<%=row.mark%>" placeholder="分值"/></ins>
+                    <!--下面的两个按钮务必保留-->
+                    <span class="btn btn-sm btn-danger btn-remove"><i class="fa fa-times"></i></span>
+                    <span class="btn btn-sm btn-primary btn-dragsort"><i class="fa fa-arrows"></i></span>
+                </dd>
+            </script>
+
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Score')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-score" data-rule="required" class="form-control" name="row[score]" type="number" value="0" readonly="true">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Pass')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-pass" data-rule="required" class="form-control" name="row[pass]" type="number" step="1" min="0" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Type')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-type" data-rule="required" class="form-control selectpicker" name="row[type]">
+                {foreach name="typeList" item="vo"}
+                    <option value="{$key}" {in name="key" value="1"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Keyword')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-keyword"  class="form-control" name="row[keyword]" type="text">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

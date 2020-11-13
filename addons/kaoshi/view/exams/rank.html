@@ -1,0 +1,38 @@
+<body >
+<div class="cheader">
+	<div class="headerleft">
+		<a href="{:addon_url('kaoshi/index/index')}"><span class="arrow-left"></span></a>
+	</div>
+	<h1>{$title}</h1>
+</div>
+<div class="examp_order_page">
+	<div class="examp_datarange">
+		<h3>{$title}</h3>
+		<p>({$starttime|date='Y/m/d',###}-{$lasttime|date='Y/m/d',###})</p>
+	</div>
+	<div class="examp_my_order_detail clearfix">
+		<span class="fl">我的总分：<em>{$my['score']|default="未参与"}</em>{if condition="isset($my['score']) and is_numeric($my['score'])"}分{/if}</span>
+		<span class="fr">我的排名：<em>{$my['ranking']|default="未参与"}</em></span>
+	</div>
+	<div class="examp_order_wrap">
+		<table>
+			<thead>
+				<tr>
+					<th>姓名</th>
+					<th>总分</th>
+					<th>排名</th>
+				</tr>
+			</thead>
+			<tbody>
+				{volist name="rank" id="vo"}
+				<tr>
+					<td>{$vo.nickname}</td>
+					<td>{$vo.score}分</td>
+					<td>{$vo.ranking}</td>
+				</tr>
+				{/volist}
+			</tbody>
+		</table>
+	</div>
+</div>
+</body>

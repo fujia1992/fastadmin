@@ -1,0 +1,32 @@
+{php}
+$extModel = new \addons\webide\service\CExt;
+$extension = $extModel->getDefaultExtensions();
+$textmodes = $extModel->getAvailiableTextModes();
+{/php}
+
+<label>
+  <span class="icon-pencil big-icon"></span>{:__("Extensions")}</label>
+    <table id="FileExtModeHeader">
+        <thead>
+    <tr>
+      <th>{:__("Extension")}</th>
+      <th>{:__("Mode")}</th>
+    </tr>
+  </thead>
+    </table>
+<div id="FileExtTextModeDiv">
+  <table id="FileExtTextModeTable">
+    <tbody id="FileExtTextModeTableTbody">
+      {foreach name="extension" item="mode"}
+        {if condition="$extModel->validTextMode($mode)"}
+          <tr>
+            <td><input class="FileExtension" type="text" name="extension[]" value="{$key}" /></td>
+            <td>{:$extModel->getTextModeSelect($mode)}</td>
+          </tr>
+        {/if}
+      {/foreach}
+    </tbody>
+  </table>
+</div>
+<br>
+<button class="btn-left" onClick="codiad.fileext_textmode.addFieldToForm()">{:__("New Extension")}</button>

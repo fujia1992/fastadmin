@@ -1,0 +1,183 @@
+<style>
+    .panel-post {
+        position: relative;
+    }
+
+    .btn-post {
+        position: absolute;
+        right: 0;
+        bottom: 10px;
+    }
+
+    .img-border {
+        border-radius: 3px;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    }
+</style>
+<div class="container mt-20">
+    <div id="content-container" class="container">
+        <div class="row">
+            <div class="col-md-3">
+                {include file="common/sidenav" /}
+            </div>
+            <div class="col-md-9">
+                <div class="panel panel-default panel-user">
+                    <div class="panel-body">
+                        <div class="page-header panel-post">
+                            <h2>{:$row?'修改':'添加'}投票</h2>
+                        </div>
+                        <form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+                            {:token()}
+                            <div class="form-group {:in_array('title', $availableFields)?'':'hidden'}">
+                                <label class="control-label col-xs-12 col-sm-2">{:__('Title')}:</label>
+                                <div class="col-xs-12 col-sm-8">
+                                    <input id="c-title" data-rule="required" class="form-control" name="row[title]" type="text" value="{$row.title|default=''}">
+                                </div>
+                            </div>
+                            <div class="form-group {:in_array('image', $availableFields)?'':'hidden'}">
+                                <label class="control-label col-xs-12 col-sm-2">{:__('Image')}:</label>
+                                <div class="col-xs-12 col-sm-8">
+                                    <div class="input-group">
+                                        <input id="c-image" data-rule="required" class="form-control" size="50" name="row[image]" type="text" value="{$row.image|default=''}">
+                                        <div class="input-group-addon no-border no-padding">
+                                            <span><button type="button" id="plupload-image" class="btn btn-danger plupload" data-input-id="c-image" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-image"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                                        </div>
+                                        <span class="msg-box n-right" for="c-image"></span>
+                                    </div>
+                                    <ul class="row list-inline plupload-preview" id="p-image"></ul>
+                                </div>
+                            </div>
+                            <div class="form-group {:in_array('intro', $availableFields)?'':'hidden'}">
+                                <label class="control-label col-xs-12 col-sm-2">{:__('Intro')}:</label>
+                                <div class="col-xs-12 col-sm-8">
+                                    <textarea id="c-intro" data-rule="required" class="form-control" rows="5" name="row[intro]" cols="50">{$row.intro|default=''}</textarea>
+                                </div>
+                            </div>
+                            <div class="form-group {:in_array('content', $availableFields)?'':'hidden'}">
+                                <label class="control-label col-xs-12 col-sm-2">{:__('Content')}:</label>
+                                <div class="col-xs-12 col-sm-8">
+                                    <textarea id="c-content" data-rule="required" class="form-control editor" rows="5" name="row[content]" cols="50">{$row.content|default=''}</textarea>
+                                </div>
+                            </div>
+                            <div class="form-group {:in_array('banner', $availableFields)?'':'hidden'}">
+                                <label class="control-label col-xs-12 col-sm-2">{:__('Banner')}:</label>
+                                <div class="col-xs-12 col-sm-8">
+                                    <div class="input-group">
+                                        <input id="c-banner" class="form-control" size="50" name="row[banner]" type="text" value="{$row.banner|default=''}">
+                                        <div class="input-group-addon no-border no-padding">
+                                            <span><button type="button" id="plupload-banner" class="btn btn-danger plupload" data-input-id="c-banner" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-banner"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                                            <span><button type="button" id="fachoose-banner" class="btn btn-primary fachoose" data-input-id="c-banner" data-mimetype="image/*" data-multiple="false"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                                        </div>
+                                        <span class="msg-box n-right" for="c-banner"></span>
+                                    </div>
+                                    <ul class="row list-inline plupload-preview" id="p-banner"></ul>
+                                </div>
+                            </div>
+                            <div class="form-group {:in_array('pervotenums', $availableFields)?'':'hidden'}">
+                                <label class="control-label col-xs-12 col-sm-2">{:__('Pervotenums')}:</label>
+                                <div class="col-xs-12 col-sm-4">
+                                    <input id="c-pervotenums" data-rule="required" class="form-control" name="row[pervotenums]" type="number" value="{$row.pervotenums|default='5'}">
+                                </div>
+                            </div>
+                            <div class="form-group {:in_array('pervotelimit', $availableFields)?'':'hidden'}">
+                                <label class="control-label col-xs-12 col-sm-2">{:__('Pervotelimit')}:</label>
+                                <div class="col-xs-12 col-sm-4">
+                                    <input id="c-pervotelimit" data-rule="required" class="form-control" name="row[pervotelimit]" type="number" value="{$row.pervotelimit|default='1'}">
+                                </div>
+                            </div>
+                            <div class="form-group {:in_array('pagesize', $availableFields)?'':'hidden'}">
+                                <label class="control-label col-xs-12 col-sm-2">{:__('Pagesize')}:</label>
+                                <div class="col-xs-12 col-sm-4">
+                                    <input id="c-pagesize" data-rule="required" class="form-control" name="row[pagesize]" type="number" value="{$row.pagesize|default='0'}" data-tip="为0表示一页显示全部">
+                                </div>
+                            </div>
+                            <div class="form-group {:in_array('limitarea', $availableFields)?'':'hidden'}">
+                                <label class="control-label col-xs-12 col-sm-2">{:__('Limitarea')}:</label>
+                                <div class="col-xs-12 col-sm-8">
+                                    <input id="c-limitarea" class="form-control" name="row[limitarea]" type="hidden" value="{$row.limitarea|default=''}">
+                                    <div class="city-select" id="mcs" style="max-width:493px;"></div>
+                                </div>
+                            </div>
+                            <div class="form-group {:in_array('needlogin', $availableFields)?'':'hidden'}">
+                                <label class="control-label col-xs-12 col-sm-2">{:__('Needlogin')}:</label>
+                                <div class="col-xs-12 col-sm-8">
+                                    {:Form::radios('row[needlogin]',[1=>__('Yes'), 0=>__('No')],$row?$row['needlogin']:0)}
+                                </div>
+                            </div>
+                            <div class="form-group {:in_array('onlywechat', $availableFields)?'':'hidden'}">
+                                <label class="control-label col-xs-12 col-sm-2">{:__('Onlywechat')}:</label>
+                                <div class="col-xs-12 col-sm-8">
+                                    {:Form::radios('row[onlywechat]',[1=>__('Yes'), 0=>__('No')],$row?$row['onlywechat']:0)}
+                                </div>
+                            </div>
+                            <div class="form-group {:in_array('diyname', $availableFields)?'':'hidden'}">
+                                <label class="control-label col-xs-12 col-sm-2">{:__('Diyname')}:</label>
+                                <div class="col-xs-12 col-sm-4">
+                                    <input id="c-diyname" data-rule="required; diyname" data-id="{$row.id|default=0}" class="form-control" name="row[diyname]" type="text" value="{$row.diyname|default=''}" data-tip="用于参赛主题的URL名称">
+                                </div>
+                            </div>
+                            <div class="form-group {:in_array('playername', $availableFields)?'':'hidden'}">
+                                <label class="control-label col-xs-12 col-sm-2">{:__('Playername')}:</label>
+                                <div class="col-xs-12 col-sm-4">
+                                    <input id="c-playername" class="form-control" name="row[playername]" type="text" value="{$row.playername|default='选手'}" data-tip="用于显示描述参赛信息的名称，常用：选手、作品">
+                                </div>
+                            </div>
+                            <div class="form-group {:in_array('isapply', $availableFields)?'':'hidden'}">
+                                <label class="control-label col-xs-12 col-sm-2">{:__('Isapply')}:</label>
+                                <div class="col-xs-12 col-sm-8">
+                                    {:Form::radios('row[isapply]',[1=>__('Yes'), 0=>__('No')],$row?$row['isapply']:0)}
+                                </div>
+                            </div>
+                            <div class="form-group {:in_array('iscomment', $availableFields)?'':'hidden'}">
+                                <label class="control-label col-xs-12 col-sm-2">{:__('Iscomment')}:</label>
+                                <div class="col-xs-12 col-sm-8">
+                                    {:Form::radios('row[iscomment]',[1=>__('Yes'), 0=>__('No')],$row?$row['iscomment']:0)}
+                                </div>
+                            </div>
+                            <div class="form-group {:in_array('begintime', $availableFields)?'':'hidden'}">
+                                <label class="control-label col-xs-12 col-sm-2">{:__('Begintime')}:</label>
+                                <div class="col-xs-12 col-sm-4">
+                                    <input id="c-begintime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[begintime]" type="text" value="{:$row&&$row.begintime?datetime($row.begintime):''}">
+                                </div>
+                            </div>
+                            <div class="form-group {:in_array('endtime', $availableFields)?'':'hidden'}">
+                                <label class="control-label col-xs-12 col-sm-2">{:__('Endtime')}:</label>
+                                <div class="col-xs-12 col-sm-4">
+                                    <input id="c-endtime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[endtime]" type="text" value="{:$row&&$row.endtime?datetime($row.endtime):''}">
+                                </div>
+                            </div>
+                            {if in_array('category', $availableFields)}
+                            <div class="form-group">
+                                <label for="c-content" class="control-label col-xs-12 col-sm-2">{:__('Category')}:</label>
+                                <div class="col-xs-12 col-sm-8">
+                                    <input id="c-category" data-rule="" class="form-control" name="category" type="text" value="{$row.category|default=''}" data-tip="多个分类请以逗号进行分隔">
+                                </div>
+                            </div>
+                            {/if}
+                            {if in_array('applydata', $availableFields)}
+                            <div class="form-group">
+                                <label for="c-content" class="control-label col-xs-12 col-sm-2">{:__('Fields')}:</label>
+                                <div class="col-xs-12 col-sm-10">
+                                    <div id="itemcontent" class="row" style="padding:10px;background:#eee;margin-left:0;">
+                                        <div class="col-xs-6">
+                                           <a href="javascript:;" class="btn btn-append btn-success">追加</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {/if}
+                            <div class="form-group layer-footer">
+                                <label class="control-label col-xs-12 col-sm-2"></label>
+                                <div class="col-xs-12 col-sm-8">
+                                    <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+                                    <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+                                </div>
+                            </div>
+                        </form>
+                        {include file="vote/tpl" /}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<body>
+<div class="cheader">
+	<div class="headerleft">
+		<a href="{:addon_url('kaoshi/index/index')}"><span class="arrow-left"></span></a>
+	</div>
+	<h1>{$title}</h1>
+</div>
+<div class="cmain">
+	{if condition="count($history) eq 0"}
+	<div style="text-align: center">暂无考试答题记录！</div>
+
+	{else/}
+	<ul class="examp_list">
+		{foreach name="history" item="vo" }
+			<li>
+				<div class="historylist">
+					<i></i>
+					<em class="num">{$vo.score|intval}分</em>
+					<span class="name">{$vo.plan_name}</span>
+				</div>
+			</li>
+		{/foreach}
+	</ul>
+	{/if}
+</div>
+</body>

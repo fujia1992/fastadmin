@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "会员中心",
+      "usingComponents": {
+        "zan-button": "/assets/libs/zanui/btn/index",
+        "zan-button-group": "/assets/libs/zanui/btn-group/index",
+        "zan-panel": "/assets/libs/zanui/panel/index",
+        "zan-row": "/assets/libs/zanui/row/index",
+        "zan-col": "/assets/libs/zanui/col/index",
+        "zan-icon": "/assets/libs/zanui/icon/index",
+        "zan-cell": "/assets/libs/zanui/cell/index",
+        "zan-cell-group": "/assets/libs/zanui/cell-group/index",
+        "zan-dialog": "../../assets/libs/zanui/dialog/index"
+      }
+}

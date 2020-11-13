@@ -1,0 +1,149 @@
+{layout name="common/layout" /}
+
+<link rel="stylesheet" href="__CDN__/assets/libs/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css">
+<link rel="stylesheet" href="__CDN__/assets/libs/toastr/toastr.min.css">
+<link rel="stylesheet" href="__CDN__/assets/libs/nice-validator/dist/jquery.validator.css">
+<link rel="stylesheet" href="__CDN__/assets/libs/bootstrap-select/dist/css/bootstrap-select.min.css">
+
+<style>
+    .pix-form-style input, .pix-form-style textarea, .pix-form-style select {
+        margin-bottom: 0;
+    }
+
+    .pix-form-style .form-group .btn {
+        padding: 14px 20px;
+    }
+
+    .pix-form-style label input {
+        padding: 0;
+        height: 20px;
+        width: 20px;
+        display: inline-block;
+        float: left;
+        margin-top: 3px;
+        margin-right: 5px;
+    }
+
+    .plupload-preview {
+        margin-top: 5px;
+    }
+</style>
+
+<script type="text/javascript">
+    var require = {config: {$jsconfig | json_encode}};
+</script>
+
+<div class="pix_section pix-padding-v-65 pix-cover-bg" id="header" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('{$__subject__.banner|cdnurl}');">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-xs-12 col-sm-12 column">
+                <div class="pix-content text-center">
+                    <div class="pix-margin-bottom-30 header-logo">
+                        <img src="__ADDON__/img/vote.png" width="120" alt="">
+                    </div>
+                    <h1 class="pix-white text-center secondary-font pix-small-width-text">
+                        <span><strong>{$__subject__.title}</strong></span>
+                    </h1>
+                    <div><h5 class="pix-slight-white text-center pix-margin-bottom-50 pix-small-width-text">
+                        <span>{$__subject__.intro}</span>
+                    </h5></div>
+
+                    <a href="{$__subject__.url}" class="btn green-blue-bg btn-xl pix-white">
+                        <i class="fa fa-reply"></i>
+                        <span><strong>返回投票</strong></span>
+                    </a>
+
+                    {if $__subject__.status!='expired' || $__subject__.endtime < time()}
+                    <div class="pix-padding-top-50" style="color:#fff;font-size:16px;">
+                        投票时间：{:date('Y年m月d日',$__subject__.begintime)}~{:date('Y年m月d日',$__subject__.endtime)}
+                    </div>
+                    {/if}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="pix_section pix-padding-v-40" id="ranklist" style="display: block;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-xs-12 col-sm-12 column">
+                <div class="pix-content pix-padding-bottom-30">
+                    <h2 class="pix-black-gray-dark text-center pix-no-margin-top secondary-font">
+                        <span><strong>报名</strong></span>
+                    </h2>
+                    <div class="pix-black-gray-light big-text text-center">
+                        <span>你可以在此填写信息报名参赛</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-10 col-xs-12 col-sm-10 column col-md-offset-1 col-lg-offset-2">
+                <div class="pix-content pix-margin-v-30">
+
+                    <form action="{:addon_url('vote/apply/post')}" class="pix-form-style pixfort-form pix-form-white-bg ui-sortable" role="form" method="post">
+                        <input type="hidden" name="id" value="{$__player__.id|default=0}">
+                        <input type="hidden" name="__diyname__" value="{$__subject__.diyname}">
+                        {:token()}
+                        <div class="form-group">
+                            <label for="nickname">{$__subject__.playername}名称</label>
+                            <input type="text" name="row[nickname]" data-rule="required" id="nickname" class="form-control" value="{$__player__.nickname|default=''}">
+                        </div>
+                        <div class="form-group">
+                            <label for="intro">{$__subject__.playername}简介</label>
+                            <textarea name="row[intro]" id="intro" data-rule="required" cols="30" rows="3" class="form-control">{$__player__.intro|default=''}</textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="content">{$__subject__.playername}详细介绍</label>
+                            <textarea name="row[content]" id="content" data-rule="required" cols="30" rows="10" class="form-control">{$__player__.content|default=''}</textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>{$__subject__.playername}图片</label>
+                            <div class="">
+                                <div class="input-group">
+                                    <input id="c-image" class="form-control" name="row[image]" type="text" value="{$__player__.image|default=''}" data-rule="required">
+                                    <div class="input-group-addon no-border no-padding">
+                                        <button type="button" id="plupload-image" class="btn btn-danger plupload" data-input-id="c-image" data-preview-id="p-image" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false"><i class="fa fa-upload"></i> 上传</button>
+                                        <span class="msg-box n-right" for="c-image"></span>
+                                    </div>
+                                </div>
+                                <ul class="row list-inline plupload-preview" id="p-image"></ul>
+                            </div>
+                        </div>
+
+                        {$__subject__.fieldslist}
+
+                        <div class="pix-content text-center">
+                            <button type="submit" class="btn btn-round-lg blue-bg pix-white btn-lg small-text wide pix-margin-top-20"><span class="pix_edit_text"><strong>提交报名</strong></span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script data-render="script">
+    $(function () {
+        $(document).off("click", '[data-toggle="dropdown"]');
+    });
+</script>
+
+<script data-render="script">
+    require.callback = function () {
+        define('apply/index', ['jquery', 'bootstrap', 'frontend', 'form'], function ($, undefined, Frontend, Form) {
+            var Controller = {
+                index: function () {
+                    Form.api.bindevent($("form[role=form]"), function (data, ret) {
+                        Layer.alert(ret.msg, function () {
+                            location.href = ret.url;
+                        });
+                        return false;
+                    });
+                }
+            };
+            return Controller;
+        });
+    }
+</script>
+
+<script data-render="script" src="__CDN__/assets/js/require{$Think.config.app_debug?'':'.min'}.js" data-main="__CDN__/assets/js/require-frontend{$Think.config.app_debug?'':'.min'}.js?v={$site.version}"></script>

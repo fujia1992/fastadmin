@@ -1,0 +1,87 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+<zan-panel title="基本信息">
+
+<zan-field title="姓名:" name="name" value=''  placeholder="请输入您的真实姓名" > </zan-field>
+
+     <view class='zan-field' style='position:relative;display:flex;align-items:center;line-height:1.4;background-color:#fff;font-size:14px;margin-left:10px;border-bottom:1px solid #e5e5e5;'>
+      <view class="zan-cell__hd zan-field__title" style='margin:0 0 0 -10px;'> 手机号: </view>
+      <input class="weui-input intptel" inputType="number" type="number" name="tel" value='{{phoneNumber}}'
+          placeholder="请输入手机号" />
+      <button class='phtb' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">自动获取</button>
+    </view>
+
+<view class='zan-field'>
+      <view class="zan-cell__hd zan-field__title" style='margin:10px 0;'> 性别: </view>
+       <radio-group class="zan-field__input zan-cell__bd radio-group borleft" name='sex'>
+        <label class="radio">
+          <radio value="0" color="#d21640" checked=""/>女
+        </label>
+         <label class="radio">
+          <radio value="1" color="#d21640" checked="true"/>男
+         </label>
+      </radio-group>
+    </view>
+
+<zan-field title="身份证号:" name="sfzno" value='' inputType="idcard" placeholder="请输入您的身份证号码" > </zan-field>
+
+    <view class='zan-field'>
+        <view class="zan-cell__hd zan-field__title" style='margin:10px 0;'> 学历: </view>
+        <radio-group class="zan-field__input zan-cell__bd radio-group" name='education'>
+          <label class="radio">
+            <radio value="0" color="#d21640" checked=""/>文盲
+          </label>
+          <label class="radio">
+            <radio value="1" color="#d21640" checked=""/>小学
+          </label>
+          <label class="radio">
+            <radio value="2" color="#d21640" checked=""/>初中
+          </label>
+          <label class="radio">
+            <radio value="3" color="#d21640" checked=""/>高中
+          </label>
+          <label class="radio">
+            <radio value="4" color="#d21640" checked="true"/>中专
+          </label>
+          <label class="radio">
+            <radio value="5" color="#d21640" checked=""/>大专
+          </label>
+          <label class="radio">
+            <radio value="6" color="#d21640" checked=""/>本科
+          </label>
+          <label class="radio">
+            <radio value="7" color="#d21640" checked=""/>研究生及以上
+          </label>
+          </radio-group>
+      </view>
+    <zan-field title="薪水:" name="salary" value='' inputType="number" maxlength='7' placeholder="请输入您期望的薪资" > </zan-field>
+</zan-panel>
+<zan-panel title="补充信息">
+   <zan-field title="务工地点:" name="place" value='' placeholder=""></zan-field>
+   <zan-field title="技能特长:" name="skill" value='' placeholder=""></zan-field>
+   <zan-field title="求职意向:" name="intent" value='' placeholder=""></zan-field>
+
+</zan-panel>
+
+<zan-panel title="收集信息">
+   <zan-field title="村名:" name="village" value='' placeholder=""></zan-field>
+   <zan-field title="备注:" type="textarea" name="content" placeholder="" maxlength="-1" > </zan-field>
+   <zan-field title="收集人:" name="collect" value='' placeholder=""></zan-field>
+</zan-panel>
+
+  <view class="zan-btns">
+    <button formType="submit" class='zan-btn' style='color:#fff;background-color:#DE3639;'>提交简历信息</button>
+  </view>
+
+  </form>
+
+  <include src="../zh_other/foot_right.wxml"/>
+
+
+
+<zan-toptips
+  id="zan-toptips"
+  content="{{ content }}"
+  is-show="{{ $zanui.toptips.show }}"
+/>
+
+<zan-toast id="zan-toast-test"></zan-toast>

@@ -1,0 +1,137 @@
+<div id="message"></div>
+<div id="workspace">
+  <!-- left -->
+  <div id="sb-left" class="sidebar">
+    <!-- leftbar -->
+    <div id="sb-left-title">
+      <a id="lock-left-sidebar" class="icon-lock icon"></a>
+      {if condition="$editor.globalSearchEnable"}
+        <a id="finder-quick" class="icon icon-archive"></a>
+        <a id="tree-search" class="icon-search icon"></a>
+        <h2 id="finder-label"> {:__('Explore')} </h2>
+        <div id="finder-wrapper">
+          <a id="finder-options" class="icon icon-cog"></a>
+          <div id="finder-inner-wrapper">
+            <input type="text" id="finder"></input>
+          </div>
+          <ul id="finder-options-menu" class="options-menu">
+            <li class="chosen"><a data-option="left_prefix">{:__('Prefix')}</a></li>
+            <li><a data-option="substring">{:__('Substring')}</a></li>
+            <li><a data-option="regexp">{:__('Regular expression')}</a></li>
+            <li><a data-action="search">{:__('Search File Contents')}</a></li>
+          </ul>
+        </div>
+        {else}
+        <h2 id="finder-label"> {$site.name} </h2>
+      {/if}
+    </div>
+    <!-- left tree -->
+    <div class="sb-left-content">
+      <div id="context-menu" data-path="" data-type="">
+        {foreach $editor.contextMenu as $v} 
+          {if condition="$v['title'] == 'Break'"}
+            <hr class="{$v['applies-to']}">
+            {else /}
+            <a class="{$v['applies-to']}" onclick="{$v['onclick']}">
+              <span class="{$v['icon']}"></span> {$v['title']|__}
+            </a>
+          {/if}
+        {/foreach}
+        <!-- TODO Load Plugins Context Menu -->
+      </div>
+      <div id="file-manager"></div>
+      <ul id="list-active-files"></ul>
+    </div>
+    
+    <!-- project, 适配为 command -->
+    <div id="side-projects" class="sb-left-projects">
+      <div id="project-list" class="sb-project-list">
+        <div class="project-list-title">
+            <h2>{:__('Command')}</h2>
+            <a id="projects-collapse" class="icon-down-dir icon" alt="{:__('Collapse')}"></a>
+            <a id="projects-manage" class="icon-archive icon"></a>
+            <a id="projects-create" class="icon-plus icon" alt="{:__('Create Project')}"></a>
+        </div>
+        <div class="sb-projects-content"></div>    
+      </div>
+    </div>
+    <div class="sidebar-handle"><span>||</span></div>
+  </div>
+  
+  <!-- position -->
+  <div id="cursor-position">{:__('Ln')}: 0 &middot; {:__('Col')}: 0</div>
+  
+  <!-- main editor -->
+  <div id="editor-region">
+    <!-- topbar -->
+    <div id="editor-top-bar">
+      <ul id="tab-list-active-files"></ul>
+      <div id="tab-dropdown">
+        <a id="tab-dropdown-button" class="icon-down-open"></a>
+      </div>
+      <div id="tab-close">
+        <a id="tab-close-button" class="icon-cancel-circled" title="{:__('Close All')}"></a>
+      </div>
+      <ul id="dropdown-list-active-files"></ul>
+      <div class="bar"></div>
+    </div>
+    <!-- editor wrapper -->
+    <div id="root-editor-wrapper"></div>
+    <!-- bar bottom -->
+    <div id="editor-bottom-bar">
+      <a id="settings" class="ico-wrapper"><span class="icon-doc-text"></span>{:__('Settings')}</a>
+      <!-- TODO Load Plugins -->
+      <div class="divider"></div>
+      <a id="split" class="ico-wrapper"><span class="icon-layout"></span>{:__('Split')}</a>
+      <div class="divider"></div>
+      <a id="current-mode"><span class="icon-layout"></span></a>                
+      <div class="divider"></div>
+      <div id="current-file"></div>
+    </div>
+    
+    <!-- Change Mode menu -->
+    <div id="changemode-menu" class="options-menu"></div>
+    <ul id="split-options-menu" class="options-menu">
+      <li id="split-horizontally"><a> {:__('Split Horizontally')} </a></li>
+      <li id="split-vertically"><a> {:__('Split Vertically')} </a></li>
+      <li id="merge-all"><a> {:__('Merge all')} </a></li>
+    </ul>
+  </div>
+
+  <div id="sb-right" class="sidebar">
+    <div class="sidebar-handle">
+      <span><a class="icon-menu"></a></span>
+    </div>
+    <div id="sb-right-title">
+      <span id="lock-right-sidebar" class="icon-switch icon"></span>
+    </div>
+    <div class="sb-right-content">
+      {foreach $editor.rightBar as $v}
+        {if condition="$v['title'] == 'Break'"}
+          <hr>
+          {elseif condition="!$v['onclick']"}
+          <hr><div class='sb-right-category'>{:__($v['title'])}</div>
+          {elseif condition="$v['title'] === 'pluginbar'"}
+          <!-- TODO Loadpluginbar -->
+          {elseif condition="!$v['admin'] || $editor.isSuperAdmin"}
+          <a onclick="{$v['onclick']}">
+            <span class="{$v['icon']} bigger-icon"></span>{:__($v['title'])}
+          </a>
+        {/if}
+      {/foreach}
+    </div>
+  </div>
+</div>
+
+<div id="modal-overlay"></div>
+<div id="modal">
+  <div id="close-handle" class="icon-cancel" onclick="codiad.modal.unload();"></div>
+  <div id="drag-handle" class="icon-location"></div>
+  <div id="modal-content"></div>
+</div>
+<iframe id="download"></iframe>
+<div id="autocomplete"><ul id="suggestions"></ul></div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js"></script>
+{foreach $editor.scriptLoadList as $v}
+  <script src="__CDN__/assets/addons/webide/{$v}"></script>
+{/foreach}
